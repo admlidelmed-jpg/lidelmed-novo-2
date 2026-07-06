@@ -43,7 +43,7 @@
   },
   {
     "nome": "Cama Hospitalar",
-    "descricao": "Cama manual 3 movimentos",
+    "descricao": "Cama manual 2 movimentos",
     "preco": "R$ 3300,00",
     "imagem": "imagens/cama-hospitalar.jpg"
   },
