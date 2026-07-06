@@ -11,30 +11,39 @@
         <p>Material Médico</p>
     </header>
 
-    <main id="grid">
-        <div class="produto">
-            <img src="https://via.placeholder.com/300x220" alt="Produto 1">
-            <h2>Seringa 10ml</h2>
-            <p>Seringa descartável 10ml</p>
-            <p class="preco">R$ 2,50</p>
-            <a href="https://wa.me/5573999999?text=Olá, quero o produto Seringa 10ml">Comprar no WhatsApp</a>
-        </div>
+    <main id="grid"></main>
 
-        <div class="produto">
-            <img src="https://via.placeholder.com/300x220" alt="Produto 2">
-            <h2>Luva de Procedimento</h2>
-            <p>Caixa com 100 unidades</p>
-            <p class="preco">R$ 18,90</p>
-            <a href="https://wa.me/5573999999?text=Olá, quero o produto Luva de Procedimento">Comprar no WhatsApp</a>
-        </div>
+    <script>
+        const produtos = [
+          {"nome": "Colchão Pneumático", "descricao": "Colchão hospitalar antiescaras com motor", "preco": "R$ 350,00", "imagem": "imagens/colchao-pneumatico.jpg"},
+          {"nome": "Aspirador de Secreção Portátil", "descricao": "Aspirador 12V/220V", "preco": "R$ 680,00", "imagem": "imagens/aspirador-secrecao-portatil.jpg"},
+          {"nome": "Andador Articulado", "descricao": "Andador de alumínio com rodas", "preco": "R$ 220,00", "imagem": "imagens/andador-articulado.jpg"},
+          {"nome": "Andador Rodinhas", "descricao": "Andador de alumínio com rodinhas", "preco": "R$ 300,00", "imagem": "imagens/andador-rodinhas.jpg"},
+          {"nome": "Aparelho de Pressão Digital G-Tech", "descricao": "Aparelho de braço automático", "preco": "R$ 200,00", "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg"},
+          {"nome": "Cadeira Higiênica CDS", "descricao": "Cadeira de banho dobrável", "preco": "R$ 450,00", "imagem": "imagens/cadeira-higienica-cds.jpg"},
+          {"nome": "Cadeira CDS", "descricao": "Cadeira de rodas dobrável", "preco": "R$ 800,00", "imagem": "imagens/cadeira-cds.jpg"},
+          {"nome": "Cama Hospitalar", "descricao": "Cama manual 3 movimentos", "preco": "R$ 3300,00", "imagem": "imagens/cama-hospitalar.jpg"},
+          {"nome": "Colchão D33", "descricao": "Colchão hospitalar D33", "preco": "R$ 560,00", "imagem": "imagens/colchao-d33.jpg"},
+          {"nome": "Escadinha Hospitalar", "descricao": "Escadinha 2 degraus", "preco": "R$ 120,00", "imagem": "imagens/escadinha-hospitalar.jpg"},
+          {"nome": "Muleta Axilar", "descricao": "Muleta axilar de alumínio", "preco": "R$ 160,00", "imagem": "imagens/muleta-axilar.jpg"},
+          {"nome": "Muleta Canadense Fixa", "descricao": "Muleta canadense fixa", "preco": "R$ 120,00", "imagem": "imagens/muleta-canadense-fixa.jpg"},
+          {"nome": "Soro Fisiológico", "descricao": "Soro fisiológico 500ml", "preco": "R$ 18,00", "imagem": "imagens/soro-fisiologico.jpg"},
+          {"nome": "Suporte de Soro", "descricao": "Suporte pedestal inox", "preco": "R$ 380,00", "imagem": "imagens/suporte-soro.jpg"}
+        ];
 
-        <div class="produto">
-            <img src="https://via.placeholder.com/300x220" alt="Produto 3">
-            <h2>Máscara Cirúrgica</h2>
-            <p>Caixa com 50 unidades</p>
-            <p class="preco">R$ 12,00</p>
-            <a href="https://wa.me/5573999999999?text=Olá, quero o produto Máscara Cirúrgica">Comprar no WhatsApp</a>
-        </div>
-    </main>
+        const grid = document.getElementById('grid');
+        const zap = '5573SEUNUMERO'; // <--- TROCA AQUI PELO SEU WHATSAPP
+
+        produtos.forEach(p => {
+            grid.innerHTML += `
+            <div class="produto">
+                <img src="${p.imagem}" alt="${p.nome}">
+                <h2>${p.nome}</h2>
+                <p>${p.descricao}</p>
+                <p class="preco">${p.preco}</p>
+                <a href="https://wa.me/${zap}?text=Olá, tenho interesse no ${p.nome}" target="_blank">Comprar no WhatsApp</a>
+            </div>`;
+        });
+    </script>
 </body>
 </html>
