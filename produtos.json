@@ -20,13 +20,13 @@
     "imagem": "imagens/cadeira-de-rodas-MM.jpg",
     "categoria": "Cadeiras de Rodas"
   },
-  {
-    "nome": "Cadeira de rodas 120KG MM",
-    "preco_cartao": 900.00,
-    "preco_avista": 850.00,
-    "imagem": "imagens/cadeira-de-rodas-120KG-MM.webp",
-    "categoria": "Cadeiras de Rodas"
-  },
+ {
+  "nome": "Cadeira de rodas 120KG MM",
+  "preco_cartao": 900.00,
+  "preco_avista": 850.00,
+  "imagem": "imagens/cadeira-de-rodas-120KG-MM.jpg",
+  "categoria": "Cadeiras de Rodas"
+},
   {
     "nome": "Cadeira higiênica simples CDS",
     "preco_cartao": 450.00,
@@ -279,14 +279,14 @@
     "imagem": "imagens/palmilha-silicone.jpg",
     "categoria": "Ortopedia"
   },
-  {
-    "id": "cadeira-motorizada-d800",
-    "nome": "Cadeira Motorizada D800",
-    "categoria": "cadeira-de-rodas-motorizada",
-    "preco_cartao": 6000.00,
-    "preco_avista": 5800.00,
-    "imagem": "cadeira-motorizada-D800.jpg",
-    "descricao": "Cadeira de rodas motorizada D800. Conforto e autonomia para o seu dia a dia.",
-    "destaque": false
-  }
+{
+  "id": "cadeira-motorizada-d800",
+  "nome": "Cadeira Motorizada D800",
+  "categoria": "cadeira-de-rodas-motorizada",
+  "preco_cartao": 6000.00,
+  "preco_avista": 5800.00,
+  "imagem": "imagens/cadeira-motorizada-D800.jpg",
+  "descricao": "Cadeira de rodas motorizada D800. Conforto e autonomia para o seu dia a dia.",
+  "destaque": false
+}
 ]
