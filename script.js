@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${produto.imagem}" alt="${produto.nome}">
             <h3>${produto.nome}</h3>
             <p>${produto.descricao}</p>
-            <a href="https://wa.me/55SEUNUMERO?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
+            <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
           </div>
         `;
         grid.innerHTML += card;
