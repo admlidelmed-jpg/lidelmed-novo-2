@@ -86,7 +86,7 @@
   {
     "nome": "Almofada meia lua para cadeira de banho",
     "preco_cartao": "R$ 180,00",
-    "preco_avista": "R$ 160,00",
+    "preco_avista": "R$ 165,00",
     "imagem": "imagens/almofada-meia-lua.jpg",
     "categoria": "Almofadas"
   },
@@ -100,14 +100,14 @@
   {
     "nome": "Ante refluxo infantil",
     "preco_cartao": "R$ 80,00",
-    "preco_avista": "R$ 65,00",
+    "preco_avista": "R$ 80,00",
     "imagem": "imagens/ante-refluxo-infantil.jpg",
     "categoria": "Acessórios"
   },
   {
     "nome": "Cama hospitalar 2 movimentos",
     "preco_cartao": "R$ 3.300,00",
-    "preco_avista": "R$ 3.100,00",
+    "preco_avista": "R$ 3.150,00",
     "imagem": "imagens/cama-hospitalar.jpg",
     "categoria": "Camas e Móveis"
   },
@@ -121,7 +121,7 @@
   {
     "nome": "Escadinha 2 degraus hospitalar",
     "preco_cartao": "R$ 300,00",
-    "preco_avista": "R$ 250,00",
+    "preco_avista": "R$ 280,00",
     "imagem": "imagens/escadinha-hospitalar.jpg",
     "categoria": "Acessórios"
   },
@@ -156,7 +156,7 @@
   {
     "nome": "Colchão pneumático bivolt",
     "preco_cartao": "R$ 350,00",
-    "preco_avista": "R$ 350,00",
+    "preco_avista": "R$ 330,00",
     "imagem": "imagens/colchao-pneumatico.jpg",
     "categoria": "Colchões"
   },
@@ -204,8 +204,8 @@
   },
   {
     "nome": "Aparelho de pressão G-Tech",
-    "preco_cartao": "R$ 200,00",
-    "preco_avista": "R$ 185,00",
+    "preco_cartao": "R$ 220,00",
+    "preco_avista": "R$ 200,00",
     "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg",
     "categoria": "Monitoramento"
   },
@@ -233,7 +233,7 @@
   {
     "nome": "Bolas para Pilates tamanhos variados",
     "preco_cartao": "R$ 230,00",
-    "preco_avista": "R$ 215,00",
+    "preco_avista": "R$ 230,00",
     "imagem": "imagens/bola-para-pilats.jpg",
     "categoria": "Fisioterapia"
   },
@@ -260,15 +260,15 @@
   },
   {
     "nome": "Soro fisiológico",
-    "preco_cartao": "R$ 15,00",
-    "preco_avista": "R$ 12,00",
+    "preco_cartao": "R$ 18,00",
+    "preco_avista": "R$ 18,00",
     "imagem": "imagens/soro-fisiologico.jpg",
     "categoria": "Acessórios"
   },
   {
     "nome": "Suporte de soro",
-    "preco_cartao": "R$ 250,00",
-    "preco_avista": "R$ 230,00",
+    "preco_cartao": "R$ 380,00",
+    "preco_avista": "R$ 380,00",
     "imagem": "imagens/suporte-soro.jpg",
     "categoria": "Acessórios"
   },
