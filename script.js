@@ -1,23 +1,21 @@
-let produtos = [];
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById('grid');
 
-async function carregarProdutos() {
-  const resposta = await fetch('produtos.json');
-  produtos = await resposta.json();
-  mostrarProdutos(produtos);
-}
-
-function mostrarProdutos(lista) {
-  const container = document.getElementById('produtos');
-  container.innerHTML = '';
-  lista.forEach(p => {
-    container.innerHTML += `
-      <div class="produto">
-        <img src="imagens/${p.imagem}" alt="${p.nome}">
-        <h3>${p.nome}</h3>
-        <p>R$ ${p.preco.toFixed(2).replace('.', ',')}</p>
-      </div>
-    `;
-  });
-}
-
-carregarProdutos();
+  fetch('produtos.json')
+    .then(response => response.json())
+    .then(produtos => {
+      grid.innerHTML = '';
+      produtos.forEach(produto => {
+        const card = `
+          <div class="card">
+            <img src="${produto.imagem}" alt="${produto.nome}">
+            <h3>${produto.nome}</h3>
+            <p>${produto.descricao}</p>
+            <a href="https://wa.me/55SEUNUMERO?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
+          </div>
+        `;
+        grid.innerHTML += card;
+      });
+    })
+    .catch(error => console.error('Erro:', error));
+});
