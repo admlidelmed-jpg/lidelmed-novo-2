@@ -1,22 +1,23 @@
-const NUMERO_WHATS = "5573999144898";
+let produtos = [];
 
-fetch('produtos.json')
-.then(r => r.json())
-.then(produtos => {
-  const grid = document.getElementById('grid');
-  grid.innerHTML = produtos.map(p => {
-    const msg = "Olá! Tenho interesse no " + p.nome;
-    const link = "https://wa.me/" + NUMERO_WHATS + "?text=" + encodeURIComponent(msg);
-    return `
-      <div class="card">
-        <img src="${p.imagem}" alt="${p.nome}">
-        <div class="card-body">
-          <h3>${p.nome}</h3>
-          <p>${p.descricao}</p>
-          <div class="preco">${p.preco}</div>
-          <a href="${link}" target="_blank">Comprar no WhatsApp</a>
-        </div>
+async function carregarProdutos() {
+  const resposta = await fetch('produtos.json');
+  produtos = await resposta.json();
+  mostrarProdutos(produtos);
+}
+
+function mostrarProdutos(lista) {
+  const container = document.getElementById('produtos');
+  container.innerHTML = '';
+  lista.forEach(p => {
+    container.innerHTML += `
+      <div class="produto">
+        <img src="imagens/${p.imagem}" alt="${p.nome}">
+        <h3>${p.nome}</h3>
+        <p>R$ ${p.preco.toFixed(2).replace('.', ',')}</p>
       </div>
     `;
-  }).join('');
-});
+  });
+}
+
+carregarProdutos();
