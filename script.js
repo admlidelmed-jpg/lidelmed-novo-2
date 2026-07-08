@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = `
           <div class="card">
             <img src="${produto.imagem}" alt="${produto.nome}">
-            <h3>${produto.nome}</h3>
+           <p class="preco">${produto.preco ? 'R$ ' + produto.preco : 'Consulte o preço'}</p>
             <p>${produto.descricao}</p>
             <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
           </div>
