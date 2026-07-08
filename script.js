@@ -1,4 +1,4 @@
-rfetch('produtos.json')
+fetch('produtos.json')
   .then(res => res.json())
   .then(produtos => {
     const grid = document.getElementById('grid');
