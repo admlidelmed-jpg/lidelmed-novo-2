@@ -273,19 +273,19 @@
     "categoria": "Acessórios"
   },
 {
-    "nome": "Palmilha de silicone",
-    "preco_cartao": "R$ 80,00",
-    "preco_avista": "R$ 80,00",
-    "imagem": "imagens/palmilha-silicone.jpg",
-    "categoria": "Ortopedia"
-}
+  "nome": "Palmilha de silicone",
+  "preco_cartao": 80.00,
+  "preco_avista": 80.00,
+  "imagem": "imagens/palmilha-silicone.jpg",
+  "categoria": "Ortopedia"
+},
 {
   "id": "cadeira-motorizada-d400",
   "nome": "Cadeira Motorizada D400",
   "categoria": "cadeira-de-rodas-motorizada",
-  "preco_cartao": "R$ 6000,00,
-  "preco_avista": "R$ 5800,00,
+  "preco_cartao": 6000.00,
+  "preco_avista": 5800.00,
   "imagem": "cadeira-motorizada-d400.jpg",
   "descricao": "Cadeira de rodas motorizada D400. Conforto e autonomia para o seu dia a dia.",
-  "destaque": mobilidade
+  "destaque": false
 }
