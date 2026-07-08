@@ -21,10 +21,24 @@
     "categoria": "Cadeiras de Rodas"
   },
   {
-    "nome": "Cadeira de higiênica simples CDS",
+    "nome": "Cadeira de rodas 120KG MM",
+    "preco_cartao": "R$ 900,00",
+    "preco_avista": "R$ 850,00",
+    "imagem": "imagens/cadeira-de-rodas-120KG MM.webp",
+    "categoria": "Cadeiras de Rodas"
+  },
+  {
+    "nome": "Cadeira higiênica simples CDS",
     "preco_cartao": "R$ 450,00",
     "preco_avista": "R$ 420,00",
     "imagem": "imagens/cadeira-higienica-cds.jpg",
+    "categoria": "Cadeiras Higiênicas"
+  },
+  {
+    "nome": "Cadeira higiênica simples para obeso",
+    "preco_cartao": "R$ 500,00",
+    "preco_avista": "R$ 450,00",
+    "imagem": "imagens/cadeira-higienica-MM.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
@@ -49,17 +63,24 @@
     "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Cadeira higiênica CDS 120kg",
-    "preco_cartao": "R$ 530,00",
-    "preco_avista": "R$ 500,00",
-    "imagem": "imagens/cadeira-higienica-cds.jpg",
+    "nome": "Cadeira de Banho Alumínio Dobrável",
+    "preco_cartao": "R$ 600,00",
+    "preco_avista": "R$ 550,00",
+    "imagem": "imagens/Cadeira-de-Banho-em-Aluminio-Dobravel.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
     "nome": "Almofada em gel quadrada",
     "preco_cartao": "R$ 210,00",
     "preco_avista": "R$ 200,00",
-    "imagem": "imagens/almofada-em-gel-quad...jpg",
+    "imagem": "imagens/almofada-em-gel-quadrada.jpg",
+    "categoria": "Almofadas"
+  },
+  {
+    "nome": "Almofada em gel redonda",
+    "preco_cartao": "R$ 210,00",
+    "preco_avista": "R$ 200,00",
+    "imagem": "imagens/almofada-em-gel-redonda.jpg",
     "categoria": "Almofadas"
   },
   {
@@ -68,6 +89,13 @@
     "preco_avista": "R$ 160,00",
     "imagem": "imagens/almofada-meia-lua.jpg",
     "categoria": "Almofadas"
+  },
+  {
+    "nome": "Ante refluxo adulto",
+    "preco_cartao": "R$ 250,00",
+    "preco_avista": "R$ 220,00",
+    "imagem": "imagens/ante-refluxo.jpg",
+    "categoria": "Acessórios"
   },
   {
     "nome": "Ante refluxo infantil",
@@ -91,7 +119,7 @@
     "categoria": "Camas e Móveis"
   },
   {
-    "nome": "Escadinha 2 degraus",
+    "nome": "Escadinha 2 degraus hospitalar",
     "preco_cartao": "R$ 300,00",
     "preco_avista": "R$ 250,00",
     "imagem": "imagens/escadinha-hospitalar.jpg",
@@ -109,6 +137,20 @@
     "preco_cartao": "R$ 230,00",
     "preco_avista": "R$ 200,00",
     "imagem": "imagens/andador-articulado.jpg",
+    "categoria": "Mobilidade"
+  },
+  {
+    "nome": "Muleta axilar",
+    "preco_cartao": "R$ 120,00",
+    "preco_avista": "R$ 110,00",
+    "imagem": "imagens/muleta-axilar.jpg",
+    "categoria": "Mobilidade"
+  },
+  {
+    "nome": "Muleta canadense fixa",
+    "preco_cartao": "R$ 150,00",
+    "preco_avista": "R$ 140,00",
+    "imagem": "imagens/muleta-canadense-fixa.jpg",
     "categoria": "Mobilidade"
   },
   {
@@ -137,6 +179,27 @@
     "preco_cartao": "R$ 120,00",
     "preco_avista": "R$ 110,00",
     "imagem": "imagens/imobilizador-pulso-longa.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "nome": "Tipóia",
+    "preco_cartao": "R$ 120,00",
+    "preco_avista": "R$ 110,00",
+    "imagem": "imagens/tipoia (2).jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "nome": "Tornozeleira",
+    "preco_cartao": "R$ 80,00",
+    "preco_avista": "R$ 80,00",
+    "imagem": "imagens/tornezeleira.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "nome": "Joelheira de neoprene",
+    "preco_cartao": "R$ 250,00",
+    "preco_avista": "R$ 230,00",
+    "imagem": "imagens/joelheira.jpg",
     "categoria": "Ortopedia"
   },
   {
@@ -182,13 +245,6 @@
     "categoria": "Ortopedia"
   },
   {
-    "nome": "Joelheira",
-    "preco_cartao": "R$ 250,00",
-    "preco_avista": "R$ 230,00",
-    "imagem": "imagens/joelheira.jpg",
-    "categoria": "Ortopedia"
-  },
-  {
     "nome": "Placas de curativos variadas",
     "preco_cartao": "Consultar",
     "preco_avista": "Consultar",
@@ -203,10 +259,24 @@
     "categoria": "Curativos"
   },
   {
-    "nome": "Cadeira de Banho Alumínio Dobrável",
-    "preco_cartao": "Consultar",
-    "preco_avista": "Consultar",
-    "imagem": "imagens/Cadeira-de-Banho-em-Aluminio-Dobravel.jpg",
-    "categoria": "Cadeiras Higiênicas"
+    "nome": "Soro fisiológico",
+    "preco_cartao": "R$ 15,00",
+    "preco_avista": "R$ 12,00",
+    "imagem": "imagens/soro-fisiologico.jpg",
+    "categoria": "Acessórios"
+  },
+  {
+    "nome": "Suporte de soro",
+    "preco_cartao": "R$ 250,00",
+    "preco_avista": "R$ 230,00",
+    "imagem": "imagens/suporte-soro.jpg",
+    "categoria": "Acessórios"
+  },
+  {
+    "nome": "Palmilha de silicone",
+    "preco_cartao": "R$ 80,00",
+    "preco_avista": "R$ 80,00",
+    "imagem": "imagens/palmilha-silicone.jpg",
+    "categoria": "Ortopedia"
   }
 ]
