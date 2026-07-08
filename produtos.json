@@ -1,86 +1,306 @@
 [
   {
-    "nome": "Colchão Pneumático",
-    "descricao": "Colchão hospitalar antiescaras com motor",
-    "preco": "R$ 350,00",
-    "imagem": "imagens/colchao-pneumatico.jpg"
+    "id": 1,
+    "nome": "Cadeira de rodas CDS pneu inflável",
+    "preco_cartao": "R$ 800,00",
+    "preco_avista": "R$ 750,00",
+    "imagem": "imagens/cadeira-cds.jpg",
+    "categoria": "Cadeiras de Rodas"
   },
   {
-    "nome": "Aspirador de Secreção Portátil",
-    "descricao": "Aspirador 12V/220V",
-    "preco": "R$ 680,00",
-    "imagem": "imagens/aspirador-secrecao-portatil.jpg"
+    "id": 2,
+    "nome": "Cadeira de rodas Prolife simples pneu maciço",
+    "preco_cartao": "R$ 800,00",
+    "preco_avista": "R$ 700,00",
+    "imagem": "imagens/cadeira-prolife.jpg",
+    "categoria": "Cadeiras de Rodas"
   },
   {
-    "nome": "Andador Articulado",
-    "descricao": "Andador de alumínio com rodas",
-    "preco": "R$ 220,00",
-    "imagem": "imagens/andador-articulado.jpg"
+    "id": 3,
+    "nome": "Cadeira de rodas MM simples pneu maciço",
+    "preco_cartao": "R$ 680,00",
+    "preco_avista": "R$ 600,00",
+    "imagem": "imagens/cadeira-mm.jpg",
+    "categoria": "Cadeiras de Rodas"
   },
   {
-    "nome": "Andador Rodinhas",
-    "descricao": "Andador de alumínio com rodinhas",
-    "preco": "R$ 300,00",
-    "imagem": "imagens/andador-rodinhas.jpg"
+    "id": 4,
+    "nome": "Cadeira de higiênica simples CDS",
+    "preco_cartao": "R$ 450,00",
+    "preco_avista": "R$ 420,00",
+    "imagem": "imagens/cadeira-higienica-cds.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Aparelho de Pressão Digital G-Tech",
-    "descricao": "Aparelho de braço automático",
-    "preco": "R$ 200,00",
-    "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg"
+    "id": 5,
+    "nome": "Cadeira higiênica simples para obeso",
+    "preco_cartao": "R$ 500,00",
+    "preco_avista": "R$ 450,00",
+    "imagem": "imagens/cadeira-higienica-obeso.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Cadeira Higiênica CDS",
-    "descricao": "Cadeira de banho dobrável",
-    "preco": "R$ 450,00",
-    "imagem": "imagens/cadeira-higienica-cds.jpg"
+    "id": 6,
+    "nome": "Cadeira higiênica Mônaco assento almofadado",
+    "preco_cartao": "R$ 1.300,00",
+    "preco_avista": "R$ 1.100,00",
+    "imagem": "imagens/cadeira-monaco.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Cadeira CDS",
-    "descricao": "Cadeira de rodas dobrável",
-    "preco": "R$ 800,00",
-    "imagem": "imagens/cadeira-cds.jpg"
+    "id": 7,
+    "nome": "Cadeira higiênica 3 em 1 Hidroligth",
+    "preco_cartao": "R$ 1.100,00",
+    "preco_avista": "R$ 1.000,00",
+    "imagem": "imagens/cadeira-3em1.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Cama Hospitalar",
-    "descricao": "Cama manual 2 movimentos",
-    "preco": "R$ 3300,00",
-    "imagem": "imagens/cama-hospitalar.jpg"
+    "id": 8,
+    "nome": "Cadeira higiênica 3 em 1 alumínio LONGEVITECH",
+    "preco_cartao": "R$ 1.700,00",
+    "preco_avista": "R$ 1.600,00",
+    "imagem": "imagens/cadeira-longevitech.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Colchão D33",
-    "descricao": "Colchão hospitalar D33",
-    "preco": "R$ 560,00",
-    "imagem": "imagens/colchao-d33.jpg"
+    "id": 9,
+    "nome": "Cadeira higiênica Super Med assento almofadado",
+    "preco_cartao": "R$ 960,00",
+    "preco_avista": "R$ 900,00",
+    "imagem": "imagens/cadeira-supermed.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Escadinha Hospitalar",
-    "descricao": "Escadinha 2 degraus",
-    "preco": "R$ 300,00",
-    "imagem": "imagens/escadinha-hospitalar.jpg"
+    "id": 10,
+    "nome": "Cadeira higiênica Chicago assento almofadado",
+    "preco_cartao": "R$ 980,00",
+    "preco_avista": "R$ 900,00",
+    "imagem": "imagens/cadeira-chicago.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Muleta Axilar",
-    "descricao": "Muleta axilar de alumínio",
-    "preco": "R$ 160,00",
-    "imagem": "imagens/muleta-axilar.jpg"
+    "id": 11,
+    "nome": "Cadeira higiênica CDS 120kg",
+    "preco_cartao": "R$ 530,00",
+    "preco_avista": "R$ 500,00",
+    "imagem": "imagens/cadeira-cds-120.jpg",
+    "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Muleta Canadense Fixa",
-    "descricao": "Muleta canadense fixa",
-    "preco": "R$ 120,00",
-    "imagem": "imagens/muleta-canadense-fixa.jpg"
+    "id": 12,
+    "nome": "Almofada em gel vários modelos",
+    "preco_cartao": "R$ 210,00",
+    "preco_avista": "R$ 200,00",
+    "imagem": "imagens/almofada-gel.jpg",
+    "categoria": "Almofadas"
   },
   {
-    "nome": "Soro Fisiológico",
-    "descricao": "Soro fisiológico 500ml",
-    "preco": "R$ 18,00",
-    "imagem": "imagens/soro-fisiologico.jpg"
+    "id": 13,
+    "nome": "Almofada meia lua para cadeira de banho",
+    "preco_cartao": "R$ 180,00",
+    "preco_avista": "R$ 160,00",
+    "imagem": "imagens/almofada-meialua.jpg",
+    "categoria": "Almofadas"
   },
   {
-    "nome": "Suporte de Soro",
-    "descricao": "Suporte pedestal inox",
-    "preco": "R$ 380,00",
-    "imagem": "imagens/suporte-soro.jpg"
+    "id": 14,
+    "nome": "Almofada rosquinha para alívio do cóccix",
+    "preco_cartao": "R$ 210,00",
+    "preco_avista": "R$ 200,00",
+    "imagem": "imagens/almofada-rosquinha.jpg",
+    "categoria": "Almofadas"
+  },
+  {
+    "id": 15,
+    "nome": "Encosto ante refluxo caixa de ovo",
+    "preco_cartao": "R$ 250,00",
+    "preco_avista": "R$ 220,00",
+    "imagem": "imagens/encosto-refluxo.jpg",
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 16,
+    "nome": "Ante refluxo infantil",
+    "preco_cartao": "R$ 80,00",
+    "preco_avista": "R$ 65,00",
+    "imagem": "imagens/ante-refluxo-infantil.jpg",
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 17,
+    "nome": "Cama hospitalar 2 movimentos",
+    "preco_cartao": "R$ 3.300,00",
+    "preco_avista": "R$ 3.100,00",
+    "imagem": "imagens/cama-hospitalar.jpg",
+    "categoria": "Camas e Móveis"
+  },
+  {
+    "id": 18,
+    "nome": "Maçã clínica em aço carbono",
+    "preco_cartao": "R$ 1.000,00",
+    "preco_avista": "R$ 900,00",
+    "imagem": "imagens/maca-clinica.jpg",
+    "categoria": "Camas e Móveis"
+  },
+  {
+    "id": 19,
+    "nome": "Escadinha 2 degraus",
+    "preco_cartao": "R$ 300,00",
+    "preco_avista": "R$ 250,00",
+    "imagem": "imagens/escadinha.jpg",
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 20,
+    "nome": "Andador com rodinhas",
+    "preco_cartao": "R$ 300,00",
+    "preco_avista": "R$ 280,00",
+    "imagem": "imagens/andador-rodinhas.jpg",
+    "categoria": "Mobilidade"
+  },
+  {
+    "id": 21,
+    "nome": "Andador fixo articulado",
+    "preco_cartao": "R$ 230,00",
+    "preco_avista": "R$ 200,00",
+    "imagem": "imagens/andador-fixo.jpg",
+    "categoria": "Mobilidade"
+  },
+  {
+    "id": 22,
+    "nome": "Colchão pneumático bivolt",
+    "preco_cartao": "R$ 350,00",
+    "preco_avista": "R$ 350,00",
+    "imagem": "imagens/colchao-pneumatico.jpg",
+    "categoria": "Colchões"
+  },
+  {
+    "id": 23,
+    "nome": "Colchão D33 com capa impermeável",
+    "preco_cartao": "R$ 560,00",
+    "preco_avista": "R$ 540,00",
+    "imagem": "imagens/colchao-d33.jpg",
+    "categoria": "Colchões"
+  },
+  {
+    "id": 24,
+    "nome": "Bota ortopédica longa ou curta",
+    "preco_cartao": "R$ 210,00",
+    "preco_avista": "R$ 200,00",
+    "imagem": "imagens/bota-ortopedica.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 25,
+    "nome": "Tipóia ortho pauher bilateral",
+    "preco_cartao": "R$ 130,00",
+    "preco_avista": "R$ 120,00",
+    "imagem": "imagens/tipoia-ortho.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 26,
+    "nome": "Tipóia bilateral",
+    "preco_cartao": "R$ 120,00",
+    "preco_avista": "R$ 110,00",
+    "imagem": "imagens/tipoia-bilateral.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 27,
+    "nome": "Imobilizador de pulso",
+    "preco_cartao": "R$ 40,00",
+    "preco_avista": "R$ 40,00",
+    "imagem": "imagens/imobilizador-pulso.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 28,
+    "nome": "Imobilizador de pulso neoprene",
+    "preco_cartao": "R$ 120,00",
+    "preco_avista": "R$ 110,00",
+    "imagem": "imagens/imobilizador-neoprene.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 29,
+    "nome": "Aparelho de pressão G-Tech",
+    "preco_cartao": "R$ 200,00",
+    "preco_avista": "R$ 185,00",
+    "imagem": "imagens/pressao-gtech.jpg",
+    "categoria": "Monitoramento"
+  },
+  {
+    "id": 30,
+    "nome": "Aspirador aspira med",
+    "preco_cartao": "R$ 690,00",
+    "preco_avista": "R$ 660,00",
+    "imagem": "imagens/aspirador.jpg",
+    "categoria": "Equipamentos"
+  },
+  {
+    "id": 31,
+    "nome": "Banqueta para banho",
+    "preco_cartao": "R$ 200,00",
+    "preco_avista": "R$ 200,00",
+    "imagem": "imagens/banqueta-banho.jpg",
+    "categoria": "Banho"
+  },
+  {
+    "id": 32,
+    "nome": "Meias de compressão Sigvaris",
+    "preco_cartao": "Consultar",
+    "preco_avista": "Consultar",
+    "imagem": "imagens/meias-compressao.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 33,
+    "nome": "Bolas para Pilates tamanhos variados",
+    "preco_cartao": "R$ 230,00",
+    "preco_avista": "R$ 215,00",
+    "imagem": "imagens/bola-pilates.jpg",
+    "categoria": "Fisioterapia"
+  },
+  {
+    "id": 34,
+    "nome": "Cintas pós cirúrgicas variadas",
+    "preco_cartao": "Consultar",
+    "preco_avista": "Consultar",
+    "imagem": "imagens/cinta-pos.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 35,
+    "nome": "Joelheira de neoprene",
+    "preco_cartao": "R$ 250,00",
+    "preco_avista": "R$ 230,00",
+    "imagem": "imagens/joelheira.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 36,
+    "nome": "Tornozeleira",
+    "preco_cartao": "R$ 80,00",
+    "preco_avista": "R$ 80,00",
+    "imagem": "imagens/tornozeleira.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 37,
+    "nome": "Palmilhas em gel PROMOÇÃO",
+    "preco_cartao": "R$ 80,00",
+    "preco_avista": "R$ 80,00",
+    "imagem": "imagens/palmilha-gel.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": 38,
+    "nome": "Placas de curativos variadas",
+    "preco_cartao": "Consultar",
+    "preco_avista": "Consultar",
+    "imagem": "imagens/placas-curativo.jpg",
+    "categoria": "Curativos"
   }
 ]
