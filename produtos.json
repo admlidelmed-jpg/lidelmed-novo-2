@@ -279,4 +279,13 @@
     "imagem": "imagens/palmilha-silicone.jpg",
     "categoria": "Ortopedia"
 }
-]
+{
+  "id": "cadeira-motorizada-d400",
+  "nome": "Cadeira Motorizada D400",
+  "categoria": "cadeira-de-rodas-motorizada",
+  "preco_cartao": "R$ 6000,00,
+  "preco_avista": "R$ 5800,00,
+  "imagem": "cadeira-motorizada-d400.jpg",
+  "descricao": "Cadeira de rodas motorizada D400. Conforto e autonomia para o seu dia a dia.",
+  "destaque": mobilidade
+}
