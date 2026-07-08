@@ -1,225 +1,225 @@
 [
   {
-    "nome": "Cadeira de rodas CDS pneu inflável",
-    "preco_cartao": "R$ 800,00",
-    "preco_avista": "R$ 750,00",
+    "nome": "Cadeira de rodas CDS pneu inflavel",
+    "preco_cartao": 800.00,
+    "preco_avista": 750.00,
     "imagem": "imagens/cadeira-cds.jpg",
     "categoria": "Cadeiras de Rodas"
   },
   {
-    "nome": "Cadeira de rodas Prolife simples pneu maciço",
-    "preco_cartao": "R$ 800,00",
-    "preco_avista": "R$ 700,00",
+    "nome": "Cadeira de rodas Prolife simples pneu macico",
+    "preco_cartao": 800.00,
+    "preco_avista": 700.00,
     "imagem": "imagens/cadeira-de-rodas-simples-inflavel-prolife.jpg",
     "categoria": "Cadeiras de Rodas"
   },
   {
-    "nome": "Cadeira de rodas MM simples pneu maciço",
-    "preco_cartao": "R$ 680,00",
-    "preco_avista": "R$ 600,00",
+    "nome": "Cadeira de rodas MM simples pneu macico",
+    "preco_cartao": 680.00,
+    "preco_avista": 600.00,
     "imagem": "imagens/cadeira-de-rodas-MM.jpg",
     "categoria": "Cadeiras de Rodas"
   },
   {
     "nome": "Cadeira de rodas 120KG MM",
-    "preco_cartao": "R$ 900,00",
-    "preco_avista": "R$ 850,00",
-    "imagem": "imagens/cadeira-de-rodas-120KG MM.webp",
+    "preco_cartao": 900.00,
+    "preco_avista": 850.00,
+    "imagem": "imagens/cadeira-de-rodas-120KG-MM.webp",
     "categoria": "Cadeiras de Rodas"
   },
   {
     "nome": "Cadeira higiênica simples CDS",
-    "preco_cartao": "R$ 450,00",
-    "preco_avista": "R$ 420,00",
+    "preco_cartao": 450.00,
+    "preco_avista": 420.00,
     "imagem": "imagens/cadeira-higienica-cds.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
     "nome": "Cadeira higiênica simples para obeso",
-    "preco_cartao": "R$ 500,00",
-    "preco_avista": "R$ 450,00",
+    "preco_cartao": 500.00,
+    "preco_avista": 450.00,
     "imagem": "imagens/cadeira-higienica-MM.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
     "nome": "Cadeira higiênica Mônaco assento almofadado",
-    "preco_cartao": "R$ 1.300,00",
-    "preco_avista": "R$ 1.100,00",
+    "preco_cartao": 1300.00,
+    "preco_avista": 1100.00,
     "imagem": "imagens/cadeira-higirnica-monaco.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
     "nome": "Cadeira higiênica 3 em 1",
-    "preco_cartao": "R$ 1.100,00",
-    "preco_avista": "R$ 1.000,00",
+    "preco_cartao": 1100.00,
+    "preco_avista": 1000.00,
     "imagem": "imagens/cadeira-higienica-3-em-1.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
     "nome": "Cadeira higiênica Chicago assento almofadado",
-    "preco_cartao": "R$ 980,00",
-    "preco_avista": "R$ 900,00",
+    "preco_cartao": 980.00,
+    "preco_avista": 900.00,
     "imagem": "imagens/cadeira-higienica-chicago.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
-    "nome": "Cadeira de Banho Alumínio Dobrável",
-    "preco_cartao": "R$1.700,00",
-    "preco_avista": "R$1.500,00",
+    "nome": "Cadeira de Banho Aluminio Dobrável",
+    "preco_cartao": 1700.00,
+    "preco_avista": 1500.00,
     "imagem": "imagens/Cadeira-de-Banho-em-Aluminio-Dobravel.jpg",
     "categoria": "Cadeiras Higiênicas"
   },
   {
     "nome": "Almofada em gel quadrada",
-    "preco_cartao": "R$ 210,00",
-    "preco_avista": "R$ 200,00",
+    "preco_cartao": 210.00,
+    "preco_avista": 200.00,
     "imagem": "imagens/almofada-em-gel-quadrada.jpg",
     "categoria": "Almofadas"
   },
   {
     "nome": "Almofada em gel redonda",
-    "preco_cartao": "R$ 210,00",
-    "preco_avista": "R$ 200,00",
+    "preco_cartao": 210.00,
+    "preco_avista": 200.00,
     "imagem": "imagens/almofada-em-gel-redonda.jpg",
     "categoria": "Almofadas"
   },
   {
     "nome": "Almofada meia lua para cadeira de banho",
-    "preco_cartao": "R$ 180,00",
-    "preco_avista": "R$ 165,00",
+    "preco_cartao": 180.00,
+    "preco_avista": 165.00,
     "imagem": "imagens/almofada-meia-lua.jpg",
     "categoria": "Almofadas"
   },
   {
     "nome": "Ante refluxo adulto",
-    "preco_cartao": "R$ 250,00",
-    "preco_avista": "R$ 220,00",
+    "preco_cartao": 250.00,
+    "preco_avista": 220.00,
     "imagem": "imagens/ante-refluxo.jpg",
     "categoria": "Acessórios"
   },
   {
     "nome": "Ante refluxo infantil",
-    "preco_cartao": "R$ 80,00",
-    "preco_avista": "R$ 80,00",
+    "preco_cartao": 80.00,
+    "preco_avista": 80.00,
     "imagem": "imagens/ante-refluxo-infantil.jpg",
     "categoria": "Acessórios"
   },
   {
     "nome": "Cama hospitalar 2 movimentos",
-    "preco_cartao": "R$ 3.300,00",
-    "preco_avista": "R$ 3.150,00",
+    "preco_cartao": 3300.00,
+    "preco_avista": 3150.00,
     "imagem": "imagens/cama-hospitalar.jpg",
     "categoria": "Camas e Móveis"
   },
   {
     "nome": "Maca clínica em aço carbono",
-    "preco_cartao": "R$ 1.000,00",
-    "preco_avista": "R$ 900,00",
+    "preco_cartao": 1000.00,
+    "preco_avista": 900.00,
     "imagem": "imagens/maca-clinica.jpg",
     "categoria": "Camas e Móveis"
   },
   {
     "nome": "Escadinha 2 degraus hospitalar",
-    "preco_cartao": "R$ 300,00",
-    "preco_avista": "R$ 280,00",
+    "preco_cartao": 300.00,
+    "preco_avista": 280.00,
     "imagem": "imagens/escadinha-hospitalar.jpg",
     "categoria": "Acessórios"
   },
   {
     "nome": "Andador com rodinhas",
-    "preco_cartao": "R$ 300,00",
-    "preco_avista": "R$ 280,00",
+    "preco_cartao": 300.00,
+    "preco_avista": 280.00,
     "imagem": "imagens/andador-rodinhas.jpg",
     "categoria": "Mobilidade"
   },
   {
     "nome": "Andador fixo articulado",
-    "preco_cartao": "R$ 230,00",
-    "preco_avista": "R$ 200,00",
+    "preco_cartao": 230.00,
+    "preco_avista": 200.00,
     "imagem": "imagens/andador-articulado.jpg",
     "categoria": "Mobilidade"
   },
   {
     "nome": "Muleta axilar",
-    "preco_cartao": "R$ 120,00",
-    "preco_avista": "R$ 110,00",
+    "preco_cartao": 120.00,
+    "preco_avista": 110.00,
     "imagem": "imagens/muleta-axilar.jpg",
     "categoria": "Mobilidade"
   },
   {
     "nome": "Muleta canadense fixa",
-    "preco_cartao": "R$ 150,00",
-    "preco_avista": "R$ 140,00",
+    "preco_cartao": 150.00,
+    "preco_avista": 140.00,
     "imagem": "imagens/muleta-canadense-fixa.jpg",
     "categoria": "Mobilidade"
   },
   {
     "nome": "Colchão pneumático bivolt",
-    "preco_cartao": "R$ 350,00",
-    "preco_avista": "R$ 330,00",
+    "preco_cartao": 350.00,
+    "preco_avista": 330.00,
     "imagem": "imagens/colchao-pneumatico.jpg",
     "categoria": "Colchões"
   },
   {
     "nome": "Colchão D33 com capa impermeável",
-    "preco_cartao": "R$ 560,00",
-    "preco_avista": "R$ 540,00",
+    "preco_cartao": 560.00,
+    "preco_avista": 540.00,
     "imagem": "imagens/colchao-d33.jpg",
     "categoria": "Colchões"
   },
   {
     "nome": "Imobilizador de pulso curto",
-    "preco_cartao": "R$ 40,00",
-    "preco_avista": "R$ 40,00",
+    "preco_cartao": 40.00,
+    "preco_avista": 40.00,
     "imagem": "imagens/imobilizador-curto.jpg",
     "categoria": "Ortopedia"
   },
   {
     "nome": "Imobilizador de pulso longo",
-    "preco_cartao": "R$ 120,00",
-    "preco_avista": "R$ 110,00",
+    "preco_cartao": 120.00,
+    "preco_avista": 110.00,
     "imagem": "imagens/imobilizador-pulso-longa.jpg",
     "categoria": "Ortopedia"
   },
   {
-    "nome": "Tipóia",
-    "preco_cartao": "R$ 120,00",
-    "preco_avista": "R$ 110,00",
+    "nome": "Tipoia",
+    "preco_cartao": 120.00,
+    "preco_avista": 110.00,
     "imagem": "imagens/tipoia (2).jpg",
     "categoria": "Ortopedia"
   },
   {
     "nome": "Tornozeleira",
-    "preco_cartao": "R$ 80,00",
-    "preco_avista": "R$ 80,00",
+    "preco_cartao": 80.00,
+    "preco_avista": 80.00,
     "imagem": "imagens/tornezeleira.jpg",
     "categoria": "Ortopedia"
   },
   {
     "nome": "Joelheira de neoprene",
-    "preco_cartao": "R$ 250,00",
-    "preco_avista": "R$ 230,00",
+    "preco_cartao": 250.00,
+    "preco_avista": 230.00,
     "imagem": "imagens/joelheira.jpg",
     "categoria": "Ortopedia"
   },
   {
     "nome": "Aparelho de pressão G-Tech",
-    "preco_cartao": "R$ 220,00",
-    "preco_avista": "R$ 200,00",
+    "preco_cartao": 220.00,
+    "preco_avista": 200.00,
     "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg",
     "categoria": "Monitoramento"
   },
   {
     "nome": "Aspirador de secreção portátil",
-    "preco_cartao": "R$ 690,00",
-    "preco_avista": "R$ 660,00",
+    "preco_cartao": 690.00,
+    "preco_avista": 660.00,
     "imagem": "imagens/aspirador-secrecao-portatil.jpg",
     "categoria": "Equipamentos"
   },
   {
     "nome": "Banqueta para banho",
-    "preco_cartao": "R$ 200,00",
-    "preco_avista": "R$ 200,00",
+    "preco_cartao": 200.00,
+    "preco_avista": 200.00,
     "imagem": "imagens/banqueta-banho.jpg",
     "categoria": "Banho"
   },
@@ -232,8 +232,8 @@
   },
   {
     "nome": "Bolas para Pilates tamanhos variados",
-    "preco_cartao": "R$ 230,00",
-    "preco_avista": "R$ 230,00",
+    "preco_cartao": 230.00,
+    "preco_avista": 230.00,
     "imagem": "imagens/bola-para-pilats.jpg",
     "categoria": "Fisioterapia"
   },
@@ -260,32 +260,33 @@
   },
   {
     "nome": "Soro fisiológico",
-    "preco_cartao": "R$ 18,00",
-    "preco_avista": "R$ 18,00",
+    "preco_cartao": 18.00,
+    "preco_avista": 18.00,
     "imagem": "imagens/soro-fisiologico.jpg",
     "categoria": "Acessórios"
   },
   {
     "nome": "Suporte de soro",
-    "preco_cartao": "R$ 380,00",
-    "preco_avista": "R$ 380,00",
+    "preco_cartao": 380.00,
+    "preco_avista": 380.00,
     "imagem": "imagens/suporte-soro.jpg",
     "categoria": "Acessórios"
   },
-{
-  "nome": "Palmilha de silicone",
-  "preco_cartao": 80.00,
-  "preco_avista": 80.00,
-  "imagem": "imagens/palmilha-silicone.jpg",
-  "categoria": "Ortopedia"
-},
-{
-  "id": "cadeira-motorizada-d800",
-  "nome": "Cadeira Motorizada D800",
-  "categoria": "cadeira-de-rodas-motorizada",
-  "preco_cartao": 6000.00,
-  "preco_avista": 5800.00,
-  "imagem": "cadeira-motorizada-D800.jpg",
-  "descricao": "Cadeira de rodas motorizada D800. Conforto e autonomia para o seu dia a dia.",
-  "destaque": false
-}
+  {
+    "nome": "Palmilha de silicone",
+    "preco_cartao": 80.00,
+    "preco_avista": 80.00,
+    "imagem": "imagens/palmilha-silicone.jpg",
+    "categoria": "Ortopedia"
+  },
+  {
+    "id": "cadeira-motorizada-d800",
+    "nome": "Cadeira Motorizada D800",
+    "categoria": "cadeira-de-rodas-motorizada",
+    "preco_cartao": 6000.00,
+    "preco_avista": 5800.00,
+    "imagem": "cadeira-motorizada-D800.jpg",
+    "descricao": "Cadeira de rodas motorizada D800. Conforto e autonomia para o seu dia a dia.",
+    "destaque": false
+  }
+]
