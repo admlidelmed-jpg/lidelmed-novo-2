@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(produtos => {
       grid.innerHTML = '';
       produtos.forEach(produto => {
-        const card = `
-          <div class="card">
-            <img src="${produto.imagem}" alt="${produto.nome}">
-           <p class="preco">${produto.preco ? 'R$ ' + produto.preco : 'Consulte o preço'}</p>
-            <p>${produto.descricao}</p>
-            <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
-          </div>
-        `;
+       const card = `
+  <div class="card">
+    <img src="${produto.imagem}" alt="${produto.nome}">
+    <h3>${produto.nome}</h3>
+    <p class="descricao">${produto.descricao || ''}</p>
+    <p class="preco">R$ ${produto.preco}</p>
+    <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome} por R$ ${produto.preco}" target="_blank">Pedir Orçamento</a>
+  </div>
+`;
         grid.innerHTML += card;
       });
     })
