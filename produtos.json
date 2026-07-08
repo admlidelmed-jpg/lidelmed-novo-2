@@ -112,7 +112,7 @@
     "categoria": "Camas e Móveis"
   },
   {
-    "nome": "Maçã clínica em aço carbono",
+    "nome": "Maca clínica em aço carbono",
     "preco_cartao": "R$ 1.000,00",
     "preco_avista": "R$ 900,00",
     "imagem": "imagens/maca-clinica.jpg",
@@ -272,11 +272,11 @@
     "imagem": "imagens/suporte-soro.jpg",
     "categoria": "Acessórios"
   },
-  {
+{
     "nome": "Palmilha de silicone",
     "preco_cartao": "R$ 80,00",
     "preco_avista": "R$ 80,00",
     "imagem": "imagens/palmilha-silicone.jpg",
     "categoria": "Ortopedia"
-  }
+}
 ]
