@@ -1,15 +1,15 @@
 [
   {
     "nome": "Cadeira de rodas CDS pneu inflavel",
-    "preco_cartao": 800.00,
-    "preco_avista": 750.00,
+    "preco_cartao": R$ 800.00,
+    "preco_avista": R$ 750.00,
     "imagem": "imagens/cadeira-cds.jpg",
     "categoria": "Cadeiras de Rodas"
   },
   {
     "nome": "Cadeira de rodas Prolife simples pneu macico",
-    "preco_cartao": 800.00,
-    "preco_avista": 700.00,
+    "preco_cartao": R$ 800.00,
+    "preco_avista": R$ 700.00,
     "imagem": "imagens/cadeira-de-rodas-simples-inflavel-prolife.jpg",
     "categoria": "Cadeiras de Rodas"
   },
