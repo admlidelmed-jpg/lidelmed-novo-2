@@ -6,7 +6,7 @@
   "preco_avista": 1800.00,
   "preco_cartao": 1850.00,
   "descricao": "Top de linha para máximo conforto. Assento acolchoado, apoio de cabeça e cinto de segurança. Estrutura super resistente. Suporta até 140kg.",
-  "imagem": "imagens/cadeira-d600.jpg",
+  "imagem": "imagens/cadeira-de-roda- D600.jpg",
   "destaque": "Premium",
   "cupom": ["QR5", "QR10"]
 },
@@ -17,7 +17,7 @@
   "preco_avista": 1450.00,
   "preco_cartao": 1500.00,
   "descricao": "Mais conforto e durabilidade. Estrutura reforçada com apoio de braço e apoio de pés removíveis. Rodas com freio bilateral. Suporta até 120kg.",
-  "imagem": "imagens/cadeira-d400.jpg",
+  "imagem": "imagens/cadeira-de-rodas-D400.jpg",
   "destaque": "Conforto",
   "cupom": ["QR5", "QR10"]
 },
@@ -28,7 +28,7 @@
   "preco_avista": 950.00,
   "preco_cartao": 963.00,
   "descricao": "Leve e dobrável. Perfeita para o dia a dia. Estrutura em aço, assento e encosto em nylon. Rodas traseiras grandes. Suporta até 100kg.",
-  "imagem": "imagens/cadeira-d100.jpg",
+  "imagem": "imagens/cadeira-de-roda-D100.jpg",
   "destaque": "Mais Vendida",
   "cupom": ["QR5", "QR10"]
 },
@@ -38,7 +38,7 @@
   "categoria": "Higiene e Banho",
   "preco_avista": 600.00,
   "preco_cartao": 658.00,
-  "descricao": "Conforto e segurança para o banho. Estrutura resistente, assento vazado e encosto ergonômico. Ideal para idosos e pacientes com mobilidade reduzida.",
+  "descricao": "Conforto e segurança para o banho. Estrutura resistente, assento vazado e encosto ergonômico.",
   "imagem": "imagens/cadeira-d55.jpg",
   "destaque": "Em Promoção",
   "cupom": ["QR5", "QR10"]
@@ -61,7 +61,7 @@
   "preco_avista": 700.00,
   "preco_cartao": 880.00,
   "descricao": "Cadeira de rodas Prolife com pneu maciço.",
-  "imagem": "imagens/cadeira-de-rodas-simples-inflavel-prolife.jpg",
+  "imagem": "imagens/cadeira-de-rodas-simples-inflav...jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
@@ -89,17 +89,6 @@
 },
 {
   "sku": "HIG-CLAS",
-  "nome": "Cadeira Higiênica clássica IDB",
-  "categoria": "Cadeiras Higiênicas",
-  "preco_avista": 430.00,
-  "preco_cartao": 450.00,
-  "descricao": "Cadeira higiênica clássica.",
-  "imagem": "imagens/cadeira-higienica-clas-IDB.jpg",
-  "destaque": "",
-  "cupom": ["QR5", "QR10"]
-},
-{
-  "sku": "HIG-INF",
   "nome": "Cadeira Higiênica clássica para menor",
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 450.00,
@@ -149,7 +138,7 @@
   "preco_avista": 1500.00,
   "preco_cartao": 1700.00,
   "descricao": "Cadeira de banho em alumínio dobrável.",
-  "imagem": "imagens/Cadeira-de-Banho-em-Aluminio-Dobravel.jpg",
+  "imagem": "imagens/Cadeira-de-Banho-em-Aluminio...jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
@@ -298,7 +287,7 @@
 },
 {
   "sku": "COL-D33",
-  "nome": "Colchão D33 com capa impermeável",
+  "nome": "Colchão D33 com capa impermeavel",
   "categoria": "Colchões",
   "preco_avista": 540.00,
   "preco_cartao": 560.00,
@@ -325,7 +314,7 @@
   "preco_avista": 110.00,
   "preco_cartao": 120.00,
   "descricao": "Imobilizador de pulso longo.",
-  "imagem": "imagens/imobilizador-pulso-longo.jpg",
+  "imagem": "imagens/imobilizador-pulso-longa.jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
@@ -347,7 +336,7 @@
   "preco_avista": 80.00,
   "preco_cartao": 80.00,
   "descricao": "Tornozeleira.",
-  "imagem": "imagens/tornozeleira.jpg",
+  "imagem": "imagens/tornezeleira.jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
@@ -369,7 +358,7 @@
   "preco_avista": 200.00,
   "preco_cartao": 220.00,
   "descricao": "Aparelho de pressão digital G-Tech.",
-  "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg",
+  "imagem": "imagens/aparelho-pressao-digital-g-tech...jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
@@ -413,13 +402,13 @@
   "preco_avista": 230.00,
   "preco_cartao": 230.00,
   "descricao": "Bola para Pilates tamanhos variados.",
-  "imagem": "imagens/Bola-para-pilats.jpg",
+  "imagem": "imagens/bola-para-pilats.jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
 {
   "sku": "CINTA-POS",
-  "nome": "Cintas pós cirúrgicas variadas",
+  "nome": "Cintas pos cirúrgicas variadas",
   "categoria": "Ortopedia",
   "preco_avista": 0.00,
   "preco_cartao": 0.00,
@@ -479,7 +468,62 @@
   "preco_avista": 80.00,
   "preco_cartao": 80.00,
   "descricao": "Palminha de silicone.",
-  "imagem": "imagens/palminha-silicone.jpg",
+  "imagem": "imagens/palmilha-silicone.jpg",
+  "destaque": "",
+  "cupom": ["QR5", "QR10"]
+},
+{
+  "sku": "NEB-COM",
+  "nome": "Nebolizador compressor compacto",
+  "categoria": "Equipamentos",
+  "preco_avista": 180.00,
+  "preco_cartao": 200.00,
+  "descricao": "Nebolizador compressor compacto.",
+  "imagem": "imagens/Nebolizador compressor compa...jpg",
+  "destaque": "",
+  "cupom": ["QR5", "QR10"]
+},
+{
+  "sku": "ASP-MAX",
+  "nome": "Aspirador de secreção MAXMED",
+  "categoria": "Equipamentos",
+  "preco_avista": 850.00,
+  "preco_cartao": 900.00,
+  "descricao": "Aspirador de secreção MAXMED.",
+  "imagem": "imagens/aspirador de secreção maxmed.j...jpg",
+  "destaque": "",
+  "cupom": ["QR5", "QR10"]
+},
+{
+  "sku": "MON-KF65",
+  "nome": "Monitor de pressão KF65",
+  "categoria": "Monitoramento",
+  "preco_avista": 350.00,
+  "preco_cartao": 380.00,
+  "descricao": "Monitor de pressão arterial digital KF65.",
+  "imagem": "imagens/monitor de pressao KF65.jpg",
+  "destaque": "",
+  "cupom": ["QR5", "QR10"]
+},
+{
+  "sku": "MED-ULTRA",
+  "nome": "Medidor de pressão ultra max",
+  "categoria": "Monitoramento",
+  "preco_avista": 220.00,
+  "preco_cartao": 250.00,
+  "descricao": "Medidor de pressão Ultra Max.",
+  "imagem": "imagens/Medidor de pressao ultra max.jpg",
+  "destaque": "",
+  "cupom": ["QR5", "QR10"]
+},
+{
+  "sku": "FRAC-COMP",
+  "nome": "Fracionador de comprimido",
+  "categoria": "Acessórios",
+  "preco_avista": 25.00,
+  "preco_cartao": 30.00,
+  "descricao": "Fracionador de comprimido.",
+  "imagem": "imagens/Fracionador de comprimido.jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
 },
@@ -489,7 +533,7 @@
   "categoria": "cadeira-de-rodas-motorizada",
   "preco_avista": 5000.00,
   "preco_cartao": 6000.00,
-  "descricao": "Cadeira de rodas motorizada D800. Conforto e autonomia para o seu dia a dia.",
+  "descricao": "Cadeira de rodas motorizada D800.",
   "imagem": "imagens/cadeira-motorizada-D800.jpg",
   "destaque": "",
   "cupom": ["QR5", "QR10"]
