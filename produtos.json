@@ -1,6 +1,6 @@
 [
   {
-  "sku": "D600-CR",
+  "nome": "D600-CR",
   "nome": "Cadeira de Rodas D600",
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 1800.00,
@@ -10,7 +10,7 @@
   "destaque": "Premium",
 },
   {
-  "sku": "D400-CR",
+  "nome": "D400-CR",
   "nome": "Cadeira de Rodas D400",
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 1450.00,
@@ -20,7 +20,7 @@
   "destaque": "Conforto",
 },
   {
-  "sku": "D100-CR",
+  "nome": "D100-CR",
   "nome": "Cadeira de Rodas D100",
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 950.00,
@@ -30,7 +30,7 @@
   "destaque": "Mais Vendida",
 },
  {
-  "sku": "D55-HIG",
+  "nome": "D55-HIG",
   "nome": "Cadeira de Higienização D55",
   "categoria": "Higiene e Banho",
   "preco_avista": 600.00,
