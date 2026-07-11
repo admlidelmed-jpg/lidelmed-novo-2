@@ -8,7 +8,6 @@
   "descricao": "Top de linha para máximo conforto. Assento acolchoado, apoio de cabeça e cinto de segurança. Estrutura super resistente. Suporta até 140kg.",
   "imagem": "imagens/cadeira-d600.jpg",
   "destaque": "Premium",
-  "cupom": ["QR5", "QR10"]
 }
   {
   "sku": "D400-CR",
@@ -19,7 +18,6 @@
   "descricao": "Mais conforto e durabilidade. Estrutura reforçada com apoio de braço e apoio de pés removíveis. Rodas com freio bilateral. Suporta até 120kg.",
   "imagem": "imagens/cadeira-d400.jpg",
   "destaque": "Conforto",
-  "cupom": ["QR5", "QR10"]
 },
   {
   "sku": "D100-CR",
@@ -30,7 +28,6 @@
   "descricao": "Leve e dobrável. Perfeita para o dia a dia. Estrutura em aço, assento e encosto em nylon. Rodas traseiras grandes. Suporta até 100kg.",
   "imagem": "imagens/cadeira-d100.jpg",
   "destaque": "Mais Vendida",
-  "cupom": ["QR5", "QR10"]
 },
  {
   "sku": "D55-HIG",
@@ -41,7 +38,6 @@
   "descricao": "Conforto e segurança para o banho. Estrutura resistente, assento vazado e encosto ergonômico. Ideal para idosos e pacientes com mobilidade reduzida.",
   "imagem": "imagens/cadeira-d55.jpg",
   "destaque": "Em Promoção",
-  "cupom": ["QR5", "QR10"]
 }, 
   {
     "nome": "Cadeira de rodas CDS pneu inflavel",
