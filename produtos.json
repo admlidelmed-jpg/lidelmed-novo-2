@@ -16,14 +16,6 @@
   "imagem": "imagens/cadeira-de-rodas-D400.jpg"
 },
   {
-  "nome": "Palminha de silicone",
-  "categoria": "Ortopedia",
-  "preco_avista": 80.00,
-  "preco_cartao": 80.00,
-  "descricao": "Palminha de silicone.",
-  "imagem": "imagens/palmilha-silicone.jpg"
-},
-  {
   "nome": "Aspirador de secreção portátil",
   "categoria": "Equipamentos",
   "preco_avista": 600.00,
@@ -343,22 +335,30 @@
     "descricao": "Suporte de soro",
     "imagem": "imagens/suporte-soro.jpg"
   },
-  {
-    "nome": "Nebolizador compressor compacto",
-    "categoria": "Equipamentos",
-    "preco_avista": 180.00,
-    "preco_cartao": 200.00,
-    "descricao": "Nebolizador compressor compacto",
-    "imagem": "imagens/Nebolizador-compressor-compacto.jpg"
-  },
-  {
-    "nome": "Aspirador de secreção MAXMED",
-    "categoria": "Equipamentos",
-    "preco_avista": 850.00,
-    "preco_cartao": 900.00,
-    "descricao": "Aspirador de secreção MAXMED",
-    "imagem": "imagens/aspirador de secrecao maxmed.jpg"
-  },
+ {
+  "nome": "Palmilha de silicone",
+  "categoria": "Ortopedia",
+  "preco_avista": 80.00,
+  "preco_cartao": 80.00,
+  "descricao": "Palmilha de silicone",
+  "imagem": "imagens/palmilha-silicone.jpg"
+},
+{
+  "nome": "Nebolizador compressor compacto",
+  "categoria": "Equipamentos",
+  "preco_avista": 180.00,
+  "preco_cartao": 200.00,
+  "descricao": "Nebolizador compressor compacto",
+  "imagem": "imagens/Nebolizador-compressor-compacto.jpg"
+},
+{
+  "nome": "Aspirador de secreção MAXMED",
+  "categoria": "Equipamentos",
+  "preco_avista": 850.00,
+  "preco_cartao": 900.00,
+  "descricao": "Aspirador de secreção MAXMED",
+  "imagem": "imagens/aspirador-de-secrecao-maxmed.jpg"
+},
   {
     "nome": "Monitor de pressão KF65",
     "categoria": "Monitoramento",
