@@ -282,8 +282,8 @@
 {
   "nome": "Meias de compressão Sigvaris",
   "categoria": "Ortopedia",
-  "preco_avista": consultar,
-  "preco_cartao": consultar,
+  "preco_avista": 00,00,
+  "preco_cartao": 00,00,
   "descricao": "Meias de compressão Sigvaris",
   "imagem": "imagens/meias-sigvaris.jpg"
 },
