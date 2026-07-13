@@ -336,12 +336,12 @@
     "imagem": "imagens/suporte-soro.jpg"
   },
   {
-    "nome": "Palminha de silicone",
+    "nome": "Palmilha de silicone",
     "categoria": "Ortopedia",
     "preco_avista": 80.00,
     "preco_cartao": 80.00,
-    "descricao": "Palminha de silicone",
-    "imagem": "imagens/palminha-silicone.jpg"
+    "descricao": "Palmilha de silicone",
+    "imagem": "imagens/palmilha-silicone.jpg"
   },
   {
     "nome": "Nebolizador compressor compacto",
