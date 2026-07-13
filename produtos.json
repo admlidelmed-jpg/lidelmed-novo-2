@@ -18,8 +18,8 @@
   {
   "nome": "Aspirador de secreção portátil",
   "categoria": "Equipamentos",
-  "preco_avista": 600.00,
-  "preco_cartao": 600.00,
+  "preco_avista": 640.00,
+  "preco_cartao": 640.00,
   "descricao": "Aspirador de secreção portátil.",
   "imagem": "imagens/aspirador-secrecao-portatil.jpg"
 },
@@ -282,8 +282,8 @@
 {
   "nome": "Meias de compressão Sigvaris",
   "categoria": "Ortopedia",
-  "preco_avista": 0.00,
-  "preco_cartao": 0.00,
+  "preco_avista": consultar,
+  "preco_cartao": consultar,
   "descricao": "Meias de compressão Sigvaris",
   "imagem": "imagens/meias-sigvaris.jpg"
 },
@@ -298,32 +298,32 @@
 {
   "nome": "Cintas pos cirúrgicas variadas",
   "categoria": "Ortopedia",
-  "preco_avista": 0.00,
-  "preco_cartao": 0.00,
+  "preco_avista": consultar,
+  "preco_cartao": consultar,
   "descricao": "Cintas pos cirúrgicas variadas",
   "imagem": "imagens/cinta-pos-cirurgica.jpg"
 },
 {
   "nome": "Placas de curativos variadas",
   "categoria": "Curativos",
-  "preco_avista": 0.00,
-  "preco_cartao": 0.00,
+  "preco_avista": consultar,
+  "preco_cartao": consultar,
   "descricao": "Placas de curativos variadas",
   "imagem": "imagens/placas-curativos.jpg"
 },
 {
     "nome": "Curativos variados",
     "categoria": "Curativos",
-    "preco_avista": 0.00,
-    "preco_cartao": 0.00,
+    "preco_avista": consultar,
+    "preco_cartao": consultar,
     "descricao": "Curativos variados",
     "imagem": "imagens/curativos.jpg"
   },
   {
     "nome": "Soro fisiológico",
     "categoria": "Acessórios",
-    "preco_avista": 18.00,
-    "preco_cartao": 18.00,
+    "preco_avista": consultar,
+    "preco_cartao": consultar,
     "descricao": "Soro fisiológico",
     "imagem": "imagens/soro-fisiologico.jpg"
   },
@@ -354,8 +354,8 @@
 {
   "nome": "Aspirador de secreção MAXMED",
   "categoria": "Equipamentos",
-  "preco_avista": 850.00,
-  "preco_cartao": 900.00,
+  "preco_avista": 590.00,
+  "preco_cartao": 600.00,
   "descricao": "Aspirador de secreção MAXMED",
   "imagem": "imagens/aspirador-de-secrecao-maxmed.jpg"
 },
