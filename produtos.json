@@ -4,7 +4,7 @@
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 1800.00,
   "preco_cartao": 1850.00,
-  "descricao": "Top de linha para máximo conforto. Assento acolchoado, apoio de cabeça e cinto de segurança. Estrutura super resistente. Suporta até 140kg.",
+  "descricao": "Cadeira de Rodas D600",
   "imagem": "imagens/cadeira-de-roda- D600.jpg"
 },
 {
@@ -12,7 +12,7 @@
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 1450.00,
   "preco_cartao": 1500.00,
-  "descricao": "Mais conforto e durabilidade. Estrutura reforçada com apoio de braço e apoio de pés removíveis. Rodas com freio bilateral. Suporta até 120kg.",
+  "descricao": "Cadeira de Rodas D400",
   "imagem": "imagens/cadeira-de-rodas-D400.jpg"
 },
 {
@@ -20,7 +20,7 @@
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 950.00,
   "preco_cartao": 963.00,
-  "descricao": "Leve e dobrável. Perfeita para o dia a dia. Estrutura em aço, assento e encosto em nylon. Rodas traseiras grandes. Suporta até 100kg.",
+  "descricao": "Cadeira de Rodas D100",
   "imagem": "imagens/cadeira-de-roda-D100.jpg"
 },
 {
@@ -28,7 +28,7 @@
   "categoria": "Higiene e Banho",
   "preco_avista": 600.00,
   "preco_cartao": 658.00,
-  "descricao": "Conforto e segurança para o banho. Estrutura resistente, assento vazado e encosto ergonômico.",
+  "descricao": "Cadeira de Higienização D55",
   "imagem": "imagens/cadeira-d55.jpg"
 },
 {
@@ -36,7 +36,7 @@
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 750.00,
   "preco_cartao": 800.00,
-  "descricao": "Cadeira de rodas com pneu inflável.",
+  "descricao": "Cadeira de rodas CDS pneu inflavel",
   "imagem": "imagens/cadeira-cds.jpg"
 },
 {
@@ -44,15 +44,15 @@
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 700.00,
   "preco_cartao": 880.00,
-  "descricao": "Cadeira de rodas Prolife com pneu maciço.",
-  "imagem": "imagens/cadeira-de-rodas-simples-inflav...jpg"
+  "descricao": "Cadeira de rodas Prolife simples pneu macico",
+  "imagem": "imagens/cadeira-de-rodas-simples-inflavel-prolife.jpg"
 },
 {
   "nome": "Cadeira de rodas MM simples pneu macico",
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 600.00,
   "preco_cartao": 680.00,
-  "descricao": "Cadeira de rodas MM simples.",
+  "descricao": "Cadeira de rodas MM simples pneu macico",
   "imagem": "imagens/cadeira-de-rodas-MM.jpg"
 },
 {
@@ -60,7 +60,7 @@
   "categoria": "Cadeiras de Rodas",
   "preco_avista": 850.00,
   "preco_cartao": 900.00,
-  "descricao": "Cadeira de rodas reforçada. Suporta até 120KG.",
+  "descricao": "Cadeira de rodas 120KG mm",
   "imagem": "imagens/cadeira-de-rodas-120KG-mm.jpg"
 },
 {
@@ -68,7 +68,7 @@
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 450.00,
   "preco_cartao": 500.00,
-  "descricao": "Cadeira higiênica infantil.",
+  "descricao": "Cadeira Higiênica clássica para menor",
   "imagem": "imagens/cadeira-higienica-MM.jpg"
 },
 {
@@ -76,7 +76,7 @@
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 1100.00,
   "preco_cartao": 1300.00,
-  "descricao": "Cadeira higiênica Mônaco com assento almofadado.",
+  "descricao": "Cadeira higiênica Mônaco assento almofadado",
   "imagem": "imagens/cadeira-higirnica-monaco.jpg"
 },
 {
@@ -84,7 +84,7 @@
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 1000.00,
   "preco_cartao": 1100.00,
-  "descricao": "Cadeira higiênica 3 em 1.",
+  "descricao": "Cadeira higiênica 3 em 1",
   "imagem": "imagens/cadeira-higienica-3-em-1.jpg"
 },
 {
@@ -92,7 +92,7 @@
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 900.00,
   "preco_cartao": 980.00,
-  "descricao": "Cadeira higiênica Chicago com assento almofadado.",
+  "descricao": "Cadeira higiênica Chicago assento almofadado",
   "imagem": "imagens/cadeira-higienica-chicago.jpg"
 },
 {
@@ -100,7 +100,7 @@
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 1500.00,
   "preco_cartao": 1700.00,
-  "descricao": "Cadeira de banho em alumínio dobrável.",
+  "descricao": "Cadeira de Banho Aluminio Dobrável",
   "imagem": "imagens/cadeira-de-banho-em-aluminio-dobra vel.jpg"
 },
 {
@@ -108,7 +108,7 @@
   "categoria": "Almofadas",
   "preco_avista": 200.00,
   "preco_cartao": 210.00,
-  "descricao": "Almofada em gel quadrada.",
+  "descricao": "Almofada em gel quadrada",
   "imagem": "imagens/almofada-em-gel-quadrada.jpg"
 },
 {
@@ -116,7 +116,7 @@
   "categoria": "Almofadas",
   "preco_avista": 200.00,
   "preco_cartao": 210.00,
-  "descricao": "Almofada em gel redonda.",
+  "descricao": "Almofada em gel redonda",
   "imagem": "imagens/almofada-em-gel-redonda.jpg"
 },
 {
@@ -124,7 +124,7 @@
   "categoria": "Almofadas",
   "preco_avista": 165.00,
   "preco_cartao": 180.00,
-  "descricao": "Almofada meia lua para cadeira de banho.",
+  "descricao": "Almofada meia lua para cadeira de banho",
   "imagem": "imagens/almofada-meia-lua.jpg"
 },
 {
@@ -132,7 +132,7 @@
   "categoria": "Acessórios",
   "preco_avista": 220.00,
   "preco_cartao": 250.00,
-  "descricao": "Ante refluxo adulto.",
+  "descricao": "Ante refluxo adulto",
   "imagem": "imagens/ante-refluxo.jpg"
 },
 {
@@ -140,7 +140,7 @@
   "categoria": "Acessórios",
   "preco_avista": 80.00,
   "preco_cartao": 80.00,
-  "descricao": "Ante refluxo infantil.",
+  "descricao": "Ante refluxo infantil",
   "imagem": "imagens/ante-refluxo-infantil.jpg"
 },
 {
@@ -148,7 +148,7 @@
   "categoria": "Camas e Móveis",
   "preco_avista": 3150.00,
   "preco_cartao": 3300.00,
-  "descricao": "Cama hospitalar 2 movimentos.",
+  "descricao": "Cama hospitalar 2 movimentos",
   "imagem": "imagens/cama-hospitalar.jpg"
 },
 {
@@ -156,7 +156,7 @@
   "categoria": "Camas e Móveis",
   "preco_avista": 900.00,
   "preco_cartao": 1000.00,
-  "descricao": "Maca clínica em aço carbono.",
+  "descricao": "Maca clinica em aco carbono",
   "imagem": "imagens/maca-clinica.jpg"
 },
 {
@@ -164,7 +164,7 @@
   "categoria": "Acessórios",
   "preco_avista": 260.00,
   "preco_cartao": 300.00,
-  "descricao": "Escadinha 2 degraus hospitalar.",
+  "descricao": "Escadinha 2 degraus hospitalar",
   "imagem": "imagens/escadinha-hospitalar.jpg"
 },
 {
@@ -172,7 +172,7 @@
   "categoria": "Mobilidade",
   "preco_avista": 280.00,
   "preco_cartao": 300.00,
-  "descricao": "Andador com rodinhas.",
+  "descricao": "Andador com rodinhas",
   "imagem": "imagens/andador-rodinhas.jpg"
 },
 {
@@ -180,7 +180,7 @@
   "categoria": "Mobilidade",
   "preco_avista": 200.00,
   "preco_cartao": 230.00,
-  "descricao": "Andador fixo articulado.",
+  "descricao": "Andador fixo articulado",
   "imagem": "imagens/andador-articulado.jpg"
 },
 {
@@ -188,7 +188,7 @@
   "categoria": "Mobilidade",
   "preco_avista": 110.00,
   "preco_cartao": 120.00,
-  "descricao": "Muleta axilar.",
+  "descricao": "Muleta axilar",
   "imagem": "imagens/muleta-axilar.jpg"
 },
 {
@@ -196,7 +196,7 @@
   "categoria": "Mobilidade",
   "preco_avista": 140.00,
   "preco_cartao": 150.00,
-  "descricao": "Muleta canadense fixa.",
+  "descricao": "Muleta canadense fixa",
   "imagem": "imagens/muleta-canadense-fixa.jpg"
 },
 {
@@ -204,7 +204,7 @@
   "categoria": "Colchões",
   "preco_avista": 330.00,
   "preco_cartao": 350.00,
-  "descricao": "Colchão pneumático bivalto.",
+  "descricao": "Colchão pneumático bivalto",
   "imagem": "imagens/colchao-pneumatico.jpg"
 },
 {
@@ -212,7 +212,7 @@
   "categoria": "Colchões",
   "preco_avista": 540.00,
   "preco_cartao": 560.00,
-  "descricao": "Colchão D33 com capa impermeável.",
+  "descricao": "Colchão D33 com capa impermeavel",
   "imagem": "imagens/colchao-d33.jpg"
 },
 {
@@ -220,7 +220,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 40.00,
   "preco_cartao": 40.00,
-  "descricao": "Imobilizador de pulso curto.",
+  "descricao": "Imobilizador de pulso curto",
   "imagem": "imagens/imobilizador-curto.jpg"
 },
 {
@@ -228,7 +228,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 110.00,
   "preco_cartao": 120.00,
-  "descricao": "Imobilizador de pulso longo.",
+  "descricao": "Imobilizador de pulso longo",
   "imagem": "imagens/imobilizador-pulso-longa.jpg"
 },
 {
@@ -236,7 +236,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 110.00,
   "preco_cartao": 120.00,
-  "descricao": "Tipoia.",
+  "descricao": "Tipoia",
   "imagem": "imagens/tipoia (2).jpg"
 },
 {
@@ -244,7 +244,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 80.00,
   "preco_cartao": 80.00,
-  "descricao": "Tornozeleira.",
+  "descricao": "Tornozeleira",
   "imagem": "imagens/tornezeleira.jpg"
 },
 {
@@ -252,7 +252,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 240.00,
   "preco_cartao": 250.00,
-  "descricao": "Joelheira de neoprene.",
+  "descricao": "Joelheira de neoprene",
   "imagem": "imagens/joelheira.jpg"
 },
 {
@@ -260,15 +260,15 @@
   "categoria": "Monitoramento",
   "preco_avista": 200.00,
   "preco_cartao": 220.00,
-  "descricao": "Aparelho de pressão digital G-Tech.",
-  "imagem": "imagens/aparelho-pressao-digital-g-tech...jpg"
+  "descricao": "Aparelho de pressão G-Tech",
+  "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg"
 },
 {
   "nome": "Aspirador de secreção portátil",
   "categoria": "Equipamentos",
   "preco_avista": 600.00,
   "preco_cartao": 600.00,
-  "descricao": "Aspirador de secreção portátil.",
+  "descricao": "Aspirador de secreção portátil",
   "imagem": "imagens/aspirador-secrecao-portatil.jpg"
 },
 {
@@ -276,7 +276,7 @@
   "categoria": "Banho",
   "preco_avista": 200.00,
   "preco_cartao": 200.00,
-  "descricao": "Banqueta para banho.",
+  "descricao": "Banqueta para banho",
   "imagem": "imagens/banqueta-banho.jpg"
 },
 {
@@ -284,7 +284,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 0.00,
   "preco_cartao": 0.00,
-  "descricao": "Meias de compressão Sigvaris. Consultar preço.",
+  "descricao": "Meias de compressão Sigvaris",
   "imagem": "imagens/meias-sigvaris.jpg"
 },
 {
@@ -292,7 +292,7 @@
   "categoria": "Fisioterapia",
   "preco_avista": 230.00,
   "preco_cartao": 230.00,
-  "descricao": "Bola para Pilates tamanhos variados.",
+  "descricao": "Bola para Pilates tamanhos variados",
   "imagem": "imagens/bola-para-pilats.jpg"
 },
 {
@@ -300,7 +300,7 @@
   "categoria": "Ortopedia",
   "preco_avista": 0.00,
   "preco_cartao": 0.00,
-  "descricao": "Cintas pós cirúrgicas variadas. Consultar preço.",
+  "descricao": "Cintas pos cirúrgicas variadas",
   "imagem": "imagens/cinta-pos-cirurgica.jpg"
 },
 {
@@ -308,7 +308,7 @@
   "categoria": "Curativos",
   "preco_avista": 0.00,
   "preco_cartao": 0.00,
-  "descricao": "Placas de curativos variadas. Consultar preço.",
+  "descricao": "Placas de curativos variadas",
   "imagem": "imagens/placas-curativos.jpg"
 },
 {
@@ -316,7 +316,7 @@
   "categoria": "Curativos",
   "preco_avista": 0.00,
   "preco_cartao": 0.00,
-  "descricao": "Curativos variados. Consultar preço.",
+  "descricao": "Curativos variados",
   "imagem": "imagens/curativos.jpg"
 },
 {
@@ -324,7 +324,7 @@
   "categoria": "Acessórios",
   "preco_avista": 18.00,
   "preco_cartao": 18.00,
-  "descricao": "Soro fisiológico.",
+  "descricao": "Soro fisiológico",
   "imagem": "imagens/soro-fisiologico.jpg"
 },
 {
@@ -332,7 +332,7 @@
   "categoria": "Acessórios",
   "preco_avista": 380.00,
   "preco_cartao": 380.00,
-  "descricao": "Suporte de soro.",
+  "descricao": "Suporte de soro",
   "imagem": "imagens/suporte-soro.jpg"
 },
 {
@@ -340,55 +340,55 @@
   "categoria": "Ortopedia",
   "preco_avista": 80.00,
   "preco_cartao": 80.00,
-  "descricao": "Palminha de silicone.",
-  "imagem": "imagens/palmilha-silicone.jpg"
+  "descricao": "Palminha de silicone",
+  "imagem": "imagens/palminha-silicone.jpg"
 },
 {
   "nome": "Nebolizador compressor compacto",
   "categoria": "Equipamentos",
   "preco_avista": 180.00,
   "preco_cartao": 200.00,
-  "descricao": "Nebolizador compressor compacto.",
-  "imagem": "imagens/Nebolizador compressor compa...jpg"
+  "descricao": "Nebolizador compressor compacto",
+  "imagem": "imagens/Nebolizador-compressor-compacto.jpg"
 },
 {
   "nome": "Aspirador de secreção MAXMED",
   "categoria": "Equipamentos",
   "preco_avista": 850.00,
   "preco_cartao": 900.00,
-  "descricao": "Aspirador de secreção MAXMED.",
-  "imagem": "imagens/aspirador de secreção maxmed.j...jpg"
+  "descricao": "Aspirador de secreção MAXMED",
+  "imagem": "imagens/aspirador de secrecao maxmed.jpg"
 },
 {
   "nome": "Monitor de pressão KF65",
   "categoria": "Monitoramento",
   "preco_avista": 350.00,
   "preco_cartao": 380.00,
-  "descricao": "Monitor de pressão arterial digital KF65.",
-  "imagem": "imagens/monitor de pressao KF65.jpg"
+  "descricao": "Monitor de pressão KF65",
+  "imagem": "imagens/monitor-de-pressao-KF65.jpg"
 },
 {
   "nome": "Medidor de pressão ultra max",
   "categoria": "Monitoramento",
   "preco_avista": 220.00,
   "preco_cartao": 250.00,
-  "descricao": "Medidor de pressão Ultra Max.",
-  "imagem": "imagens/Medidor de pressao ultra max.jpg"
+  "descricao": "Medidor de pressão ultra max",
+  "imagem": "imagens/Medidor-de-pressao-ultra max.jpg"
 },
 {
   "nome": "Fracionador de comprimido",
   "categoria": "Acessórios",
   "preco_avista": 25.00,
   "preco_cartao": 30.00,
-  "descricao": "Fracionador de comprimido.",
-  "imagem": "imagens/Fracionador de comprimido.jpg"
+  "descricao": "Fracionador de comprimido",
+  "imagem": "imagens/fracionador- de-comprimido.jpg"
 },
 {
   "nome": "Cadeira motorizada D800",
   "categoria": "cadeira-de-rodas-motorizada",
   "preco_avista": 5000.00,
   "preco_cartao": 6000.00,
-  "descricao": "Cadeira de rodas motorizada D800.",
+  "descricao": "Cadeira motorizada D800",
   "imagem": "imagens/cadeira-motorizada-D800.jpg"
 }
 ]
