@@ -15,6 +15,22 @@
   "descricao": "Cadeira de Rodas D400",
   "imagem": "imagens/cadeira-de-rodas-D400.jpg"
 },
+  {
+  "nome": "Palminha de silicone",
+  "categoria": "Ortopedia",
+  "preco_avista": 80.00,
+  "preco_cartao": 80.00,
+  "descricao": "Palminha de silicone.",
+  "imagem": "imagens/palmilha-silicone.jpg"
+},
+  {
+  "nome": "Aspirador de secreção portátil",
+  "categoria": "Equipamentos",
+  "preco_avista": 600.00,
+  "preco_cartao": 600.00,
+  "descricao": "Aspirador de secreção portátil.",
+  "imagem": "imagens/aspirador-secrecao-portatil.jpg"
+},
 {
   "nome": "Cadeira de Rodas D100",
   "categoria": "Cadeiras de Rodas",
@@ -264,14 +280,6 @@
   "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg"
 },
 {
-  "nome": "Aspirador de secreção portátil",
-  "categoria": "Equipamentos",
-  "preco_avista": 600.00,
-  "preco_cartao": 600.00,
-  "descricao": "Aspirador de secreção portátil",
-  "imagem": "imagens/aspirador-secrecao-portatil.jpg"
-},
-{
   "nome": "Banqueta para banho",
   "categoria": "Banho",
   "preco_avista": 200.00,
@@ -334,14 +342,6 @@
     "preco_cartao": 380.00,
     "descricao": "Suporte de soro",
     "imagem": "imagens/suporte-soro.jpg"
-  },
-  {
-    "nome": "Palmilha de silicone",
-    "categoria": "Ortopedia",
-    "preco_avista": 80.00,
-    "preco_cartao": 80.00,
-    "descricao": "Palmilha de silicone",
-    "imagem": "imagens/palmilha-silicone.jpg"
   },
   {
     "nome": "Nebolizador compressor compacto",
