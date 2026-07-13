@@ -312,83 +312,83 @@
   "imagem": "imagens/placas-curativos.jpg"
 },
 {
-  "nome": "Curativos variados",
-  "categoria": "Curativos",
-  "preco_avista": 0.00,
-  "preco_cartao": 0.00,
-  "descricao": "Curativos variados",
-  "imagem": "imagens/curativos.jpg"
-},
-{
-  "nome": "Soro fisiológico",
-  "categoria": "Acessórios",
-  "preco_avista": 18.00,
-  "preco_cartao": 18.00,
-  "descricao": "Soro fisiológico",
-  "imagem": "imagens/soro-fisiologico.jpg"
-},
-{
-  "nome": "Suporte de soro",
-  "categoria": "Acessórios",
-  "preco_avista": 380.00,
-  "preco_cartao": 380.00,
-  "descricao": "Suporte de soro",
-  "imagem": "imagens/suporte-soro.jpg"
-},
-{
-  "nome": "Palminha de silicone",
-  "categoria": "Ortopedia",
-  "preco_avista": 80.00,
-  "preco_cartao": 80.00,
-  "descricao": "Palminha de silicone",
-  "imagem": "imagens/palminha-silicone.jpg"
-},
-{
-  "nome": "Nebolizador compressor compacto",
-  "categoria": "Equipamentos",
-  "preco_avista": 180.00,
-  "preco_cartao": 200.00,
-  "descricao": "Nebolizador compressor compacto",
-  "imagem": "imagens/Nebolizador-compressor-compacto.jpg"
-},
-{
-  "nome": "Aspirador de secreção MAXMED",
-  "categoria": "Equipamentos",
-  "preco_avista": 850.00,
-  "preco_cartao": 900.00,
-  "descricao": "Aspirador de secreção MAXMED",
-  "imagem": "imagens/aspirador de secrecao maxmed.jpg"
-},
-{
-  "nome": "Monitor de pressão KF65",
-  "categoria": "Monitoramento",
-  "preco_avista": 350.00,
-  "preco_cartao": 380.00,
-  "descricao": "Monitor de pressão KF65",
-  "imagem": "imagens/monitor-de-pressao-KF65.jpg"
-},
-{
-  "nome": "Medidor de pressão ultra max",
-  "categoria": "Monitoramento",
-  "preco_avista": 220.00,
-  "preco_cartao": 250.00,
-  "descricao": "Medidor de pressão ultra max",
-  "imagem": "imagens/Medidor-de-pressao-ultra max.jpg"
-},
-{
-  "nome": "Fracionador de comprimido",
-  "categoria": "Acessórios",
-  "preco_avista": 25.00,
-  "preco_cartao": 30.00,
-  "descricao": "Fracionador de comprimido",
-  "imagem": "imagens/fracionador- de-comprimido.jpg"
-},
-{
-  "nome": "Cadeira motorizada D800",
-  "categoria": "cadeira-de-rodas-motorizada",
-  "preco_avista": 5000.00,
-  "preco_cartao": 6000.00,
-  "descricao": "Cadeira motorizada D800",
-  "imagem": "imagens/cadeira-motorizada-D800.jpg"
-}
+    "nome": "Curativos variados",
+    "categoria": "Curativos",
+    "preco_avista": 0.00,
+    "preco_cartao": 0.00,
+    "descricao": "Curativos variados",
+    "imagem": "imagens/curativos.jpg"
+  },
+  {
+    "nome": "Soro fisiológico",
+    "categoria": "Acessórios",
+    "preco_avista": 18.00,
+    "preco_cartao": 18.00,
+    "descricao": "Soro fisiológico",
+    "imagem": "imagens/soro-fisiologico.jpg"
+  },
+  {
+    "nome": "Suporte de soro",
+    "categoria": "Acessórios",
+    "preco_avista": 380.00,
+    "preco_cartao": 380.00,
+    "descricao": "Suporte de soro",
+    "imagem": "imagens/suporte-soro.jpg"
+  },
+  {
+    "nome": "Palminha de silicone",
+    "categoria": "Ortopedia",
+    "preco_avista": 80.00,
+    "preco_cartao": 80.00,
+    "descricao": "Palminha de silicone",
+    "imagem": "imagens/palminha-silicone.jpg"
+  },
+  {
+    "nome": "Nebolizador compressor compacto",
+    "categoria": "Equipamentos",
+    "preco_avista": 180.00,
+    "preco_cartao": 200.00,
+    "descricao": "Nebolizador compressor compacto",
+    "imagem": "imagens/Nebolizador-compressor-compacto.jpg"
+  },
+  {
+    "nome": "Aspirador de secreção MAXMED",
+    "categoria": "Equipamentos",
+    "preco_avista": 850.00,
+    "preco_cartao": 900.00,
+    "descricao": "Aspirador de secreção MAXMED",
+    "imagem": "imagens/aspirador de secrecao maxmed.jpg"
+  },
+  {
+    "nome": "Monitor de pressão KF65",
+    "categoria": "Monitoramento",
+    "preco_avista": 350.00,
+    "preco_cartao": 380.00,
+    "descricao": "Monitor de pressão KF65",
+    "imagem": "imagens/monitor-de-pressao-KF65.jpg"
+  },
+  {
+    "nome": "Medidor de pressão ultra max",
+    "categoria": "Monitoramento",
+    "preco_avista": 220.00,
+    "preco_cartao": 250.00,
+    "descricao": "Medidor de pressão ultra max",
+    "imagem": "imagens/Medidor-de-pressao-ultra max.jpg"
+  },
+  {
+    "nome": "Fracionador de comprimido",
+    "categoria": "Acessórios",
+    "preco_avista": 25.00,
+    "preco_cartao": 30.00,
+    "descricao": "Fracionador de comprimido",
+    "imagem": "imagens/fracionador- de-comprimido.jpg"
+  },
+  {
+    "nome": "Cadeira motorizada D800",
+    "categoria": "cadeira-de-rodas-motorizada",
+    "preco_avista": 5000.00,
+    "preco_cartao": 6000.00,
+    "descricao": "Cadeira motorizada D800",
+    "imagem": "imagens/cadeira-motorizada-D800.jpg"
+  }
 ]
