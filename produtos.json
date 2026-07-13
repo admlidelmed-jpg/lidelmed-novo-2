@@ -386,8 +386,8 @@
   {
     "nome": "Cadeira motorizada D800",
     "categoria": "cadeira-de-rodas-motorizada",
-    "preco_avista": 5000.00,
-    "preco_cartao": 6000.00,
+    "preco_avista": 6500.00,
+    "preco_cartao": 7000.00,
     "descricao": "Cadeira motorizada D800",
     "imagem": "imagens/cadeira-motorizada-D800.jpg"
   }
