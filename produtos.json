@@ -362,16 +362,16 @@
   {
     "nome": "Monitor de pressão KF65",
     "categoria": "Monitoramento",
-    "preco_avista": 350.00,
-    "preco_cartao": 380.00,
+    "preco_avista": 163.00,
+    "preco_cartao": 180.00,
     "descricao": "Monitor de pressão KF65",
     "imagem": "imagens/monitor-de-pressao-KF65.jpg"
   },
   {
     "nome": "Medidor de pressão ultra max",
     "categoria": "Monitoramento",
-    "preco_avista": 220.00,
-    "preco_cartao": 250.00,
+    "preco_avista": 178.00,
+    "preco_cartao": 180.00,
     "descricao": "Medidor de pressão ultra max",
     "imagem": "imagens/Medidor-de-pressao-ultra max.jpg"
   },
