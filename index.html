@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIDEL MED</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <h1>LIDEL MED</h1>
@@ -22,6 +28,16 @@
     <h2>Catálogo de Produtos</h2>
     <!-- AQUI FICA SEU CATÁLOGO NORMAL -->
   </div>
+  <script>
+  // PEGUE ESSAS CHAVES EM: Firebase > Configurações do projeto > Geral
+  const firebaseConfig = {
+    apiKey: "COLE_AQUI",
+    authDomain: "COLE_AQUI",
+    projectId: "COLE_AQUI",
+    appId: "COLE_AQUI"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 <script type="module" src="script.js"></script>
 </body>
