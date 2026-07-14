@@ -1,20 +1,65 @@
-// Função pra formatar pra R$ 1.000,00
-function formatarPreco(valor) {
-  return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-}
+[17:06, 14/07/2026] LIDEL MED: // 1. COPIA SUAS CHAVES DA FOTO AQUI
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+import { getAuth, signInWithPhoneNumber, RecaptchaVerifier } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
-fetch('produtos.json')
-.then(res => res.json())
-.then(produtos => {
-  const grid = document.getElementById('grid');
-  grid.innerHTML = produtos.map(produto => `
-    <div class="card">
-      <img src="${produto.imagem}" alt="${produto.nome}">
-      <h3>${produto.nome}</h3>
-      <p class="preco" style="color: orange; font-weight: bold;">À vista: ${formatarPreco(produto.preco_avista)}</p>
-      <p class="preco-cartao">Cartão: ${formatarPreco(produto.preco_cartao)}</p>
-      <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
-    </div>
-  `).join('');
-})
-.catch(err => console.error(err));
+const firebaseConfig = {
+  apiKey: "AIzaSyAyigpbQD_5P1g9QZIQzcncKVWQ-NhiSAE",
+  authDomain: "lidel-med-app.firebaseapp.com",
+  projectId: "lidel-med-app",
+  storageBucket: "lidel-med-app.firebasestorage.app",
+  messagingSenderId: "729431686434",
+  appId: "1:729431686434:web:df970d8d88526533b2ef97b"
+};
+
+// 2. INICIALIZA
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db…
+[17:10, 14/07/2026] LIDEL MED: import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+import { getAuth, signInWithPhoneNumber, RecaptchaVerifier, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
+
+// SUAS CHAVES
+const firebaseConfig = {
+  apiKey: "AIzaSyAyigpbQD_5P1g9QZIQzcncKVWQ-NhiSAE",
+  authDomain: "lidel-med-app.firebaseapp.com",
+  projectId: "lidel-med-app",
+  storageBucket: "lidel-med-app.firebasestorage.app",
+  messagingSenderId: "729431686434",
+  appId: "1:729431686434:web:df970d8d88526533b2ef97b"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+const loginBox = document.getElementById('login-box');
+const appContent = document.getElementById('app-content');
+
+onAuthStateChanged(auth, user => {
+  if (user) {
+    loginBox.style.display = 'none';
+    appContent.style.display = 'block';
+    setDoc(doc(db, "clientes", user.uid), { telefone: user.phoneNumber, ultimaVisita: new Date() });
+  } else {
+    loginBox.style.display = 'block';
+    appContent.style.display = 'none';
+  }
+});
+
+document.getElementById('send-code').addEventListener('click', () => {
+  const phoneNumber = document.getElementById('phone-number').value;
+  window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {}, auth);
+  signInWithPhoneNumber(auth, phoneNumber, window.recaptchaVerifier)
+  .then(confirmationResult => {
+    window.confirmationResult = confirmationResult;
+    document.getElementById('code').style.display = 'block';
+    document.getElementById('verify-code').style.display = 'block';
+  }).catch(error => alert(error.message));
+});
+
+document.getElementById('verify-code').addEventListener('click', () => {
+  const code = document.getElementById('code').value;
+  window.confirmationResult.confirm(code).catch(error => alert("Código inválido"));
+});
