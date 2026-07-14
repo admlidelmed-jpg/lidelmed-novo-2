@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>LIDELMED - Catálogo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="imagens/logo-lidelmed.jpg" type="image/jpeg">
-    <link rel="apple-touch-icon" href="imagens/logo-lidelmed.jpg">
-    <meta name="theme-color" content="#FF7000">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIDEL MED</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>LIDEL MED</h1>
-        <p>Material Médico</p>
-    </header>
+  <h1>LIDEL MED</h1>
 
-    <main id="grid"></main>
+  <div id="login-box" style="text-align:center; padding:20px;">
+    <h2>Entre com seu WhatsApp</h2>
+    <div id="recaptcha-container"></div>
+    <input type="tel" id="phone-number" placeholder="+55 73 9xxxx-xxxx">
+    <button id="send-code">Enviar Código</button>
+    <input type="text" id="code" placeholder="Digite o código" style="display:none;">
+    <button id="verify-code" style="display:none;">Verificar</button>
+  </div>
 
-    <script src="script.js?v=4"></script>
+  <div id="app-content" style="display:none;">
+    <h2>Catálogo de Produtos</h2>
+    <!-- AQUI FICA SEU CATÁLOGO NORMAL -->
+  </div>
+
+<script type="module" src="script.js"></script>
 </body>
 </html>
