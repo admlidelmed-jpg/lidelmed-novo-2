@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIDEL MED</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIDEL MED</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
 
-<!-- Google reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <h1>LIDEL MED</h1>
+    <h1>LIDEL MED</h1>
 
-  <div id="login-box" style="text-align:center; padding:20px;">
-    <h2>Entre com seu WhatsApp</h2>
-    <div id="recaptcha-container"></div>
-    <input type="tel" id="phone-number" placeholder="+55 73 9xxxx-xxxx">
-    <button id="send-code">Enviar Código</button>
-    <input type="text" id="code" placeholder="Digite o código" style="display:none;">
-    <button id="verify-code" style="display:none;">Verificar</button>
-  </div>
+    <div id="login-box" style="text-align:center; padding:20px;">
+        <h2>Entre com seu WhatsApp</h2>
+        <div id="recaptcha-container"></div>
+        <input type="tel" id="phone-number" placeholder="+55 73 9xxxx-xxxx">
+        <button id="send-code">Enviar Código</button>
+        <input type="text" id="code" placeholder="Digite o código" style="display:none;">
+        <button id="verify-code" style="display:none;">Verificar</button>
+    </div>
 
-  <div id="app-content" style="display:none;">
-    <h2>Catálogo de Produtos</h2>
-    <!-- AQUI FICA SEU CATÁLOGO NORMAL -->
-  </div>
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyAygpb00_5P1g9QZlQzcncKVWQ-NhiSAE",
-    authDomain: "lidel-med-app.firebaseapp.com",
-    projectId: "lidel-med-app",
-    appId: "1:729431686434:web:df978d880526533b2ef975"
-  };
-  firebase.initializeApp(firebaseConfig);
-</script>
+    <div id="app-content" style="display:none;">
+        <h2>Catálogo de Produtos</h2>
+        <!-- AQUI FICA SEU CATÁLOGO NORMAL -->
+    </div>
 
-<script type="module" src="script.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAygpb00_5P1g9QZlQzcncKVWQ-NhiSAE",
+            authDomain: "lidel-med-app.firebaseapp.com",
+            projectId: "lidel-med-app",
+            appId: "1:729431686434:web:df978d880526533b2ef975"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
