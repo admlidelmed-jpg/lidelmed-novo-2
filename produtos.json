@@ -283,7 +283,7 @@
   "nome": "Meias de compressão Sigvaris",
   "categoria": "Ortopedia",
   "preco_avista": "consultar preco",
-  "preco_cartao": consultar preco",
+  "preco_cartao": "consultar preco",
   "descricao": "Meias de compressão Sigvaris",
   "imagem": "imagens/meias-sigvaris.jpg"
 },
