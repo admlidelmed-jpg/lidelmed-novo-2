@@ -18,7 +18,10 @@
     <div id="login-box" style="text-align:center; padding:20px;">
         <h2>Entre com seu WhatsApp</h2>
         <div id="recaptcha-container"></div>
-        <input type="tel" id="phone-number" placeholder="+55 73 9xxxx-xxxx">
+        <div style="display:flex; justify-content:center; gap:5px; max-width:300px; margin:10px auto;">
+  <span style="padding:10px; background:#eee; border-radius:5px; font-weight:bold;">+55</span>
+  <input type="tel" id="phone-number" placeholder="83 9xxxx-xxxx" style="flex:1; padding:10px;">
+</div>
         <button id="send-code">Enviar Código</button>
         <input type="text" id="code" placeholder="Digite o código" style="display:none;">
         <button id="verify-code" style="display:none;">Verificar</button>
