@@ -298,32 +298,32 @@
 {
   "nome": "Cintas pos cirúrgicas variadas",
   "categoria": "Ortopedia",
-  "preco_avista": 00,00,
-  "preco_cartao": 00,00,
+  "preco_avista": consultar preco",
+  "preco_cartao": consulta preco",
   "descricao": "Cintas pos cirúrgicas variadas",
   "imagem": "imagens/cinta-pos-cirurgica.jpg"
 },
 {
   "nome": "Placas de curativos variadas",
   "categoria": "Curativos",
-  "preco_avista": 00,00,
-  "preco_cartao": 00,00,
+  "preco_avista": consultar preco",
+  "preco_cartao": consultar preco",
   "descricao": "Placas de curativos variadas",
   "imagem": "imagens/placas-curativos.jpg"
 },
 {
     "nome": "Curativos variados",
     "categoria": "Curativos",
-    "preco_avista": 00,00,
-    "preco_cartao": 00,00,
+    "preco_avista": consultar preco",
+    "preco_cartao": consultar preco",
     "descricao": "Curativos variados",
     "imagem": "imagens/curativos.jpg"
   },
   {
     "nome": "Soro fisiológico",
     "categoria": "Acessórios",
-    "preco_avista": 00,00,
-    "preco_cartao": 00,00,
+    "preco_avista": consultar preco",
+    "preco_cartao": consultar preco",
     "descricao": "Soro fisiológico",
     "imagem": "imagens/soro-fisiologico.jpg"
   },
