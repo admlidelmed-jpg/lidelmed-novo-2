@@ -1,22 +1,4 @@
-[17:06, 14/07/2026] LIDEL MED: // 1. COPIA SUAS CHAVES DA FOTO AQUI
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-import { getAuth, signInWithPhoneNumber, RecaptchaVerifier } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
-import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyAyigpbQD_5P1g9QZIQzcncKVWQ-NhiSAE",
-  authDomain: "lidel-med-app.firebaseapp.com",
-  projectId: "lidel-med-app",
-  storageBucket: "lidel-med-app.firebasestorage.app",
-  messagingSenderId: "729431686434",
-  appId: "1:729431686434:web:df970d8d88526533b2ef97b"
-};
-
-// 2. INICIALIZA
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db…
-[17:10, 14/07/2026] LIDEL MED: import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
 import { getAuth, signInWithPhoneNumber, RecaptchaVerifier, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
 import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
@@ -30,6 +12,7 @@ const firebaseConfig = {
   appId: "1:729431686434:web:df970d8d88526533b2ef97b"
 };
 
+// INICIALIZA
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
@@ -56,6 +39,7 @@ document.getElementById('send-code').addEventListener('click', () => {
     window.confirmationResult = confirmationResult;
     document.getElementById('code').style.display = 'block';
     document.getElementById('verify-code').style.display = 'block';
+    alert("Código enviado pro WhatsApp!");
   }).catch(error => alert(error.message));
 });
 
