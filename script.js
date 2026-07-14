@@ -11,7 +11,7 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 });
 
 sendCodeBtn.addEventListener('click', () => {
-  const phoneNumber = phoneInput.value;
+  const phoneNumber = "+55" + phoneInput.value;
   auth.signInWithPhoneNumber(phoneNumber, window.recaptchaVerifier)
     .then((result) => {
       confirmationResult = result;
