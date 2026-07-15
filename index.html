@@ -1,19 +1,131 @@
-    <div id="grid"></div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIDEL MED</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
 
-    <script>
-    fetch('produtos.json')
-      .then(res => res.json())
-      .then(produtos => {
-        const grid = document.getElementById('grid');
-        grid.innerHTML = produtos.map(produto => `
-          <div class="card">
-            <img src="${produto.imagem}" alt="${produto.nome}">
-            <h3>${produto.nome}</h3>
-            <p class="preco">À vista: ${produto.preco_avista}</p>
-            <p class="preco-cartao">Cartão: ${produto.preco_cartao}</p>
-            <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
-          </div>
-        `).join('');
-      })
-      .catch(err => console.error(err));
-    </script>
+  /* BARRA AMARELA CANÁRIO */
+  header {
+    background: #FFD700; /* amarelo canário */
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* NOME LIDEL MED VERMELHO GRANDE ENQUADRADO */
+  header h1 {
+    color: #D00000; /* vermelho forte */
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    border: 4px solid #D00000;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: white;
+    margin: 0;
+  }
+
+  /* GRADE DE PRODUTOS LADO A LADO */
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha no celular */
+    gap: 15px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  /* NO PC FICA 3 OU 4 POR LINHA */
+  @media (min-width: 768px) {
+    #grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    #grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .card h3 {
+    font-size: 15px;
+    margin: 10px 0 5px;
+    color: #333;
+    min-height: 40px;
+  }
+  .preco {
+    color: #0077b6;
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  .preco-cartao {
+    color: #666;
+    font-size: 13px;
+    margin: 5px 0 10px;
+  }
+  .card a {
+    display: block;
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .card a:hover {
+    background: #128C7E;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>LIDEL MED</h1>
+</header>
+
+<div id="grid"></div>
+
+<script>
+fetch('produtos.json')
+  .then(res => res.json())
+  .then(produtos => {
+    const grid = document.getElementById('grid');
+    grid.innerHTML = produtos.map(produto => `
+      <div class="card">
+        <img src="${produto.imagem}" alt="${produto.nome}">
+        <h3>${produto.nome}</h3>
+        <p class="preco">À vista: R$ ${produto.preco_avista}</p>
+        <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
+        <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
+      </div>
+    `).join('');
+  })
+  .catch(err => console.error(err));
+</script>
+
+</body>
+</html>
