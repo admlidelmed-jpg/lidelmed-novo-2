@@ -14,7 +14,7 @@
 
   /* BARRA AMARELA CANÁRIO */
   header {
-    background: #FFD700; /* amarelo canário */
+    background: #FFD700;
     padding: 20px 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -22,7 +22,7 @@
 
   /* NOME LIDEL MED VERMELHO GRANDE ENQUADRADO */
   header h1 {
-    color: #D00000; /* vermelho forte */
+    color: #D00000;
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 3px;
@@ -34,10 +34,10 @@
     margin: 0;
   }
 
-  /* GRADE DE PRODUTOS LADO A LADO */
+  /* GRADE DE PRODUTOS 2 POR LINHA */
   #grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 por linha no celular */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     max-width: 1200px;
     margin: 20px auto;
@@ -63,29 +63,35 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
   }
+  
+  /* FOTOS MENORES */
   .card img {
     width: 100%;
-    height: 180px;
+    height: 140px;
     object-fit: cover;
     border-radius: 8px;
   }
+  
   .card h3 {
     font-size: 15px;
     margin: 10px 0 5px;
     color: #333;
     min-height: 40px;
   }
+  
   .preco {
     color: #0077b6;
     font-weight: bold;
     margin: 5px 0;
     font-size: 15px;
   }
+  
   .preco-cartao {
     color: #666;
     font-size: 13px;
     margin: 5px 0 10px;
   }
+  
   .card a {
     display: block;
     background: #25D366;
@@ -96,6 +102,7 @@
     font-weight: bold;
     font-size: 14px;
   }
+  
   .card a:hover {
     background: #128C7E;
   }
