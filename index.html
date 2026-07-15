@@ -4,75 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIDEL MED</title>
-  <style>
-    body { font-family: Arial; background: #f5f5f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-    .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; }
-    h1 { color: #333; }
-    input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; box-sizing: border-box; }
-    button { width: 100%; padding: 12px; background: #25D366; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 10px; }
-    button:hover { background: #20b858; }
-    #recaptcha-container { margin: 10px 0; }
-  </style>
+  <style>body{font-family:Arial;background:#f5f5f5;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}.container{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);width:90%;max-width:400px;text-align:center}h1{color:#333}input{width:100%;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:8px;font-size:16px;box-sizing:border-box}button{width:100%;padding:12px;background:#25D366;color:white;border:none;border-radius:8px;font-size:16px;cursor:pointer;margin-top:10px}button:hover{background:#20b858}#recaptcha-container{margin:10px 0}</style>
 </head>
 <body>
   <div class="container">
     <h1>LIDEL MED</h1>
     <h3>Entre com seu WhatsApp</h3>
-    
     <input type="tel" id="phone" placeholder="83 99698-3899">
     <div id="recaptcha-container"></div>
     <button onclick="sendCode()">Enviar Código</button>
-    
     <input type="text" id="code" placeholder="Digite o código" style="display:none;">
     <button id="verifyBtn" onclick="verifyCode()" style="display:none;">Verificar</button>
   </div>
-
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCKu1JzT5x1R3eK4Q5W6E7R8T9Y0U1I2O3P",
-      authDomain: "lidelmed-novo-2.firebaseapp.com",
-      projectId: "lidelmed-novo-2",
-      storageBucket: "lidelmed-novo-2.appspot.com",
-      messagingSenderId: "729431686434",
-      appId: "1:729431686434:web:df970d880526533b2ef97b"
-    };
-
+    const firebaseConfig = {apiKey:"AIzaSyCKu1JzT5x1R3eK4Q5W6E7R8T9Y0U1I2O3P",authDomain:"lidelmed-novo-2.firebaseapp.com",projectId:"lidelmed-novo-2",storageBucket:"lidelmed-novo-2.appspot.com",messagingSenderId:"729431686434",appId:"1:729431686434:web:df970d880526533b2ef97b"};
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
-
-    window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {
-      'size': 'normal',
-      'callback': () => {}
-    });
-
+    window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {'size': 'normal','callback': () => {}});
     let confirmationResult;
-
-    window.sendCode = () => {
-      const phoneInput = document.getElementById('phone').value;
-      const phoneNumber = "+55" + phoneInput.replace(/\D/g, '');
-      
-      signInWithPhoneNumber(auth, phoneNumber, window.recaptchaVerifier)
-        .then((result) => {
-          confirmationResult = result;
-          document.getElementById('code').style.display = 'block';
-          document.getElementById('verifyBtn').style.display = 'block';
-          alert("Código enviado! Olha o SMS");
-        }).catch((error) => {
-          alert("Erro: " + error.message);
-        });
-    }
-
-    window.verifyCode = () => {
-      const code = document.getElementById('code').value;
-      confirmationResult.confirm(code).then((result) => {
-        alert("Login feito com sucesso!");
-      }).catch((error) => {
-        alert("Código inválido");
-      });
-    }
+    window.sendCode = () => {const phoneInput = document.getElementById('phone').value;const phoneNumber = "+55" + phoneInput.replace(/\D/g, '');signInWithPhoneNumber(auth, phoneNumber, window.recaptchaVerifier).then((result) => {confirmationResult = result;document.getElementById('code').style.display = 'block';document.getElementById('verifyBtn').style.display = 'block';alert("Código enviado! Olha o SMS");}).catch((error) => {alert("Erro: " + error.message);});}
+    window.verifyCode = () => {const code = document.getElementById('code').value;confirmationResult.confirm(code).then((result) => {alert("Login feito com sucesso!");}).catch((error) => {alert("Código inválido");});}
   </script>
 </body>
 </html>
