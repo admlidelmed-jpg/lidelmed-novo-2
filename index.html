@@ -34,7 +34,7 @@
     margin: 0;
   }
 
-  /* GRADE DE PRODUTOS 2 POR LINHA */
+  /* GRADE DE PRODUTOS 2 POR LINHA NO CELULAR */
   #grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -44,7 +44,7 @@
     padding: 0 10px;
   }
 
-  /* NO PC FICA 3 OU 4 POR LINHA */
+  /* NO PC FICA 4 POR LINHA */
   @media (min-width: 768px) {
     #grid {
       grid-template-columns: repeat(3, 1fr);
@@ -64,12 +64,20 @@
     text-align: center;
   }
   
-  /* FOTOS MENORES */
+  /* FOTOS MENORES NO PC */
   .card img {
     width: 100%;
-    height: 140px;
-    object-fit: cover;
+    height: 140px; /* celular */
+    object-fit: contain; /* não estica a imagem */
     border-radius: 8px;
+    background: #fff;
+  }
+
+  /* NO PC DIMINUI MAIS */
+  @media (min-width: 1024px) {
+    .card img {
+      height: 120px; /* foto menor no pc */
+    }
   }
   
   .card h3 {
