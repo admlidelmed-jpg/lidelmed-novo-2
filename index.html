@@ -160,23 +160,25 @@ fetch('produtos.json')
   .then(res => res.json())
   .then(produtos => {
     const grid = document.getElementById('grid');
-     grid.innerHTML = produtos.map(produto => `
+ grid.innerHTML = produtos.map(produto => `
 <div class="card">
-<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img"
+<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img">
 <h3>${produto.nome}</h3>
-        <p class="preco">À vista: R$ ${produto.preco_avista}</p>
-        <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
-        <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
-      </div>
-      
-    `).join('');
-  .catch(err => console.error(err));
-</script>
-<div id="modal" class="modal">
-  <span class="fechar">&times;</span>
-  <img class="modal-conteudo" id="img01">
-  <div id="legenda"></div>
+<p class="preco">À vista: R$ ${produto.preco_avista}</p>
+<p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
+<a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir no WhatsApp</a>
 </div>
-  
+`).join('');
+})
+.catch(err => console.error(err));
+</script>
+ 
+<!-- MODAL PARA FOTO GRANDE -->
+<div id="modal" class="modal">
+<span class="fechar">&times;</span>
+<img class="modal-conteudo" id="img01">
+<div id="legenda"></div>
+</div>
+
 </body>
-</html>
+ </html>    
