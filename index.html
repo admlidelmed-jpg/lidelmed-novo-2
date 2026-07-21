@@ -114,6 +114,37 @@
   .card a:hover {
     background: #128C7E;
   }
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  padding-top: 50px;
+}
+.modal-conteudo { 
+  max-width: 80%; 
+  max-height: 80%; 
+}
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.fechar:hover { color: #bbb; }
+#legenda { 
+  color: white; 
+  font-size: 20px; 
+  margin-top: 15px; 
+}
 </style>
 </head>
 <body>
@@ -137,23 +168,8 @@ fetch('produtos.json')
         <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
         <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
       </div>
+      
     `).join('');
-    var modal = document.getElementById("modal");
-var modalImg = document.getElementById("img01");
-var legenda = document.getElementById("legenda");
-
-document.querySelectorAll('.zoom-img').forEach(img => {
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    legenda.innerHTML = this.alt;
-  }
-})
-
-document.querySelector(".fechar").onclick = function() { 
-  modal.style.display = "none";
-}
-  })
   .catch(err => console.error(err));
 </script>
 <div id="modal" class="modal">
