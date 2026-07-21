@@ -399,12 +399,12 @@
   "descricao": "Cadeira Higiênica S50 Supermedy",
   "imagem": "imagens/cadeira-higienica-S50-supermedy.jpg"
 },
- {
+{
   "nome": "Bota Ortopédica Cano Longo e Curto",
   "categoria": "Botas Ortopédicas",
   "preco_avista": 200.00,
   "preco_cartao": 200.00,
   "descricao": "Bota Ortopédica Cano Longo e Curto",
   "imagem": "imagens/bota-ortopedica-longa-e-curta.jpg"
-} 
+},
 ]
