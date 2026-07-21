@@ -31,7 +31,8 @@ verifyCodeBtn.addEventListener('click', () => {
   }).catch(() => {
     alert("Código inválido");
   });
-});
+ });
+
 // Código para abrir a foto grande
 var modal = document.getElementById("modal");
 var modalImg = document.getElementById("img01");
@@ -39,21 +40,21 @@ var legenda = document.getElementById("legenda");
 
 // Quando clicar em qualquer foto com class="zoom-img"
 document.querySelectorAll('.zoom-img').forEach(img => {
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    legenda.innerHTML = this.alt;
-  }
+img.onclick = function(){
+modal.style.display = "block";
+modalImg.src = this.src;
+legenda.innerHTML = this.alt;
+}
 })
 
 // Quando clicar no X pra fechar
 document.querySelector(".fechar").onclick = function() { 
-  modal.style.display = "none";
+modal.style.display = "none";
 }
-
+ 
 // Fechar clicando fora da imagem também
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+if (event.target == modal) {
+modal.style.display = "none";
 }
+});
