@@ -407,4 +407,14 @@
   "descricao": "Bota Ortopédica Cano Longo e Curto",
   "imagem": "imagens/bota-ortopedica-longa-e-curta.jpg"
 },
+  {
+  "id": 15,
+  "nome": "Guincho de Transferência para Acamado",
+  "categoria": "Mobilidade",
+  "preco_cartao": 2800.00,
+  "preco_avista": 2500.00,
+  "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade de até 150kg. Acompanha cinta de elevação. Ideal para cuidadores e clínicas.",
+  "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
+  "estoque": 1
+}
 ]
