@@ -391,12 +391,12 @@
     "descricao": "Cadeira motorizada D800",
     "imagem": "imagens/cadeira-motorizada-D800.jpg"
   }
-  {
+ {
   "nome": "Cadeira Higiênica S50 Supermedy",
   "categoria": "Cadeiras Higiênicas",
   "preco_avista": 765.00,
   "preco_cartao": 800.00,
   "descricao": "Cadeira Higiênica S50 Supermedy",
-  "imagem": "imagens/cadeira-higienica-s50-supermedy.jpg"
+  "imagem": "imagens/cadeira-higienica-S50-supermedy.jpg"
 }
 ]
