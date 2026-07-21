@@ -52,3 +52,11 @@ header p { margin: 5px 0 0; color: #FF0000; }
   text-decoration: none;
   margin-top: 10px;
 }
+.zoom-img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.zoom-img:hover {
+  transform: scale(1.2);
+}
