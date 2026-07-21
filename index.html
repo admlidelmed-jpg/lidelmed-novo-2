@@ -131,16 +131,36 @@ fetch('produtos.json')
     const grid = document.getElementById('grid');
      grid.innerHTML = produtos.map(produto => `
 <div class="card">
-<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img">
+<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img"
 <h3>${produto.nome}</h3>
         <p class="preco">À vista: R$ ${produto.preco_avista}</p>
         <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
         <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir Orçamento</a>
       </div>
     `).join('');
+    var modal = document.getElementById("modal");
+var modalImg = document.getElementById("img01");
+var legenda = document.getElementById("legenda");
+
+document.querySelectorAll('.zoom-img').forEach(img => {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    legenda.innerHTML = this.alt;
+  }
+})
+
+document.querySelector(".fechar").onclick = function() { 
+  modal.style.display = "none";
+}
   })
   .catch(err => console.error(err));
 </script>
-
+<div id="modal" class="modal">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="img01">
+  <div id="legenda"></div>
+</div>
+  
 </body>
 </html>
