@@ -228,8 +228,27 @@ function mudarFoto(n) {
 document.querySelector('.fechar').onclick = function() {
   document.getElementById('lightbox').style.display = 'none';
 }
-  
-</script>
+
+<button id="btnInstalar">📱 BAIXAR APLICATIVO</button>
+
+<script>
+let deferredPrompt;
+const btnInstalar = document.getElementById('btnInstalar');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  btnInstalar.style.display = 'block';
+});
+
+btnInstalar.addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt = null;
+    btnInstalar.style.display = 'none';
+  }
+});
+</script> 
  </body>
 </html>    
 
