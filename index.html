@@ -140,6 +140,19 @@
   cursor: pointer;
 }
 .fechar:hover { color: #bbb; }
+  .seta {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px;
+  user-select: none;
+}
+.seta:hover { color: #ccc; }
+.esq { left: 20px; }
+.dir { right: 20px; }
 #legenda { 
   color: white; 
   font-size: 20px; 
@@ -157,30 +170,40 @@
 <!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
   <span class="fechar">&times;</span>
+  <span class="seta esq" onclick="mudarFoto(-1)">&#10094;</span>
   <img class="lightbox-conteudo" id="imgGrande">
+  <span class="seta dir" onclick="mudarFoto(1)">&#10095;</span>
   <div id="legenda"></div>
 </div>
 <script>
 fetch('produtos.json')
   .then(res => res.json())
-  .then(produtos => {
-    const grid = document.getElementById('grid');
- grid.innerHTML = produtos.map(produto => `
-<div class="card">
-<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img" onclick="abrirLightbox(this)">
-<h3>${produto.nome}</h3>
-<p class="preco">À vista: R$ ${produto.preco_avista}</p>
-<p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
-<a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir no WhatsApp</a>
-</div>
-`).join('');
-})
-.catch(err => console.error(err));
-  function abrirLightbox(img) {
+  let fotos = [];
+let indiceAtual = 0;
+
+function abrirLightbox(img) {
+  fotos = Array.from(document.querySelectorAll('.zoom-img'));
+  indiceAtual = fotos.indexOf(img);
   document.getElementById('lightbox').style.display = 'block';
-  document.getElementById('imgGrande').src = img.src;
+  atualizarFoto();
 }
+
+function atualizarFoto() {
+  const img = fotos[indiceAtual];
+  document.getElementById('imgGrande').src = img.src;
+  document.getElementById('legenda').innerHTML = img.alt;
+}
+
+function mudarFoto(n) {
+  indiceAtual += n;
+  if (indiceAtual >= fotos.length) indiceAtual = 0;
+  if (indiceAtual < 0) indiceAtual = fotos.length - 1;
+  atualizarFoto();
+}
+
 document.querySelector('.fechar').onclick = function() {
+  document.getElementById('lightbox').style.display = 'none';
+}
   document.getElementById('lightbox').style.display = 'none';
 }
 </script>
