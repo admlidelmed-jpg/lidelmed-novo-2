@@ -109,12 +109,12 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-  }
+  } 
   
   .card a:hover {
     background: #128C7E;
   }
-  .modal {
+  .lightbox {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -126,7 +126,7 @@
   text-align: center;
   padding-top: 50px;
 }
-.modal-conteudo { 
+.lightbox-conteudo { 
   max-width: 80%; 
   max-height: 80%; 
 }
@@ -154,7 +154,12 @@
 </header>
 
 <div id="grid"></div>
-
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="fechar">&times;</span>
+  <img class="lightbox-conteudo" id="imgGrande">
+  <div id="legenda"></div>
+</div>
 <script>
 fetch('produtos.json')
   .then(res => res.json())
@@ -162,7 +167,7 @@ fetch('produtos.json')
     const grid = document.getElementById('grid');
  grid.innerHTML = produtos.map(produto => `
 <div class="card">
-<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img">
+<img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img" onclick="abrirLightbox(this)">
 <h3>${produto.nome}</h3>
 <p class="preco">À vista: R$ ${produto.preco_avista}</p>
 <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
@@ -171,12 +176,14 @@ fetch('produtos.json')
 `).join('');
 })
 .catch(err => console.error(err));
+  function abrirLightbox(img) {
+  document.getElementById('lightbox').style.display = 'block';
+  document.getElementById('imgGrande').src = img.src;
+}
+document.querySelector('.fechar').onclick = function() {
+  document.getElementById('lightbox').style.display = 'none';
+}
 </script>
-<!-- COPIA E COLA AQUI EM CIMA DO </html> -->
-<div id="lightbox" class="lightbox">
-  <span class="fechar">&times;</span>
-  <img class="lightbox-conteudo" id="imgGrande">
-</div>
 
 </body>
 </html>    
