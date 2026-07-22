@@ -14,8 +14,8 @@ header h1{margin:0;color:#c00;border:2px solid #c00;display:inline-block;padding
 .produto{background:white;border-radius:10px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.1);text-align:center;cursor:pointer}
 .produto img{max-width:100%;height:120px;object-fit:contain}
 .produto h3{font-size:13px;margin:8px 0;color:#333;min-height:32px}
-.preco{font-weight:bold;color:#c00;font-size:14px;margin:3px 0}
-.cartao{font-size:12px;color:#666;margin:3px 0}
+.preco{font-weight:bold;color:#c00;font-size:15px;margin:5px 0}
+.cartao{font-size:13px;color:#444;margin:3px 0}
 #btnInstalar{display:none;position:fixed;bottom:20px;right:20px;z-index:999;padding:14px 20px;font-size:16px;background:#25D366;color:white;border:none;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
 .modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;flex-direction:column}
 .modal-content{background:white;padding:20px;border-radius:10px;width:90%;max-width:400px;text-align:center;position:relative}
@@ -56,15 +56,22 @@ fetch('produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
 const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
-// PEGA O PREÇO DE QUALQUER JEITO
-let avista = p.precoAVista || p.preco_a_vista || p.avista || p.preco || 'Consulte';
-let cartao = p.precoCartao || p.preco_cartao || p.cartao || 'Consulte';
+// PEGA QUALQUER NOME DE PREÇO QUE TIVER
+let avista = p.precoAVista || p.preco_a_vista || p.avista || p.precoAV || '';
+let cartao = p.precoCartao || p.preco_cartao || p.cartao || p.preco || '';
+
+// SE NÃO TIVER À VISTA, MOSTRA SÓ O CARTÃO
+let htmlPreco = '';
+if(avista && cartao) htmlPreco = `<p class="preco">À vista: R$ ${avista}</p><p class="cartao">Cartão: R$ ${cartao}</p>`;
+else if(cartao) htmlPreco = `<p class="preco">R$ ${cartao}</p>`;
+else if(avista) htmlPreco = `<p class="preco">R$ ${avista}</p>`;
+else htmlPreco = `<p class="preco">Consulte</p>`;
+
 return`
 <div class="produto" onclick="abrirModal(${i})">
 <img src="${p.imagem}">
 <h3>${p.nome}</h3>
-<p class="preco">À vista: ${avista}</p>
-<p class="cartao">Cartão: ${cartao}</p>
+${htmlPreco}
 </div>`}).join('')
 });
 
@@ -73,18 +80,17 @@ function fecharModal(){document.getElementById('modal').style.display='none'}
 function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;atualizarModal()}
 function atualizarModal(){
 let p=produtos[produtoAtual];
-let avista = p.precoAVista || p.preco_a_vista || p.avista || p.preco || 'Consulte';
-let cartao = p.precoCartao || p.preco_cartao || p.cartao || 'Consulte';
+let avista = p.precoAVista || p.preco_a_vista || p.avista || p.precoAV || '';
+let cartao = p.precoCartao || p.preco_cartao || p.cartao || p.preco || '';
 document.getElementById('modalImg').src=p.imagem;
 document.getElementById('modalNome').innerText=p.nome;
-document.getElementById('modalAVista').innerText='À vista: '+avista;
-document.getElementById('modalCartao').innerText='Cartão: '+cartao;
+document.getElementById('modalAVista').innerText=avista ? 'À vista: R$ '+avista : '';
+document.getElementById('modalCartao').innerText=cartao ? 'Cartão: R$ '+cartao : '';
 }
 window.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
 </script>
 
 </body>
 </html>
-  
     
 
