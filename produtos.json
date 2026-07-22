@@ -85,7 +85,7 @@
   "preco_avista": 1100.00,
   "preco_cartao": 1300.00,
   "descricao": "Cadeira higiênica Mônaco assento almofadado",
-  "imagem": "imagens/cadeira-higirnica-monaco.jpg"
+  "imagem": "imagens/cadeira-higienica-monaco.jpg"
 },
 {
   "nome": "Cadeira higiênica 3 em 1",
@@ -381,7 +381,7 @@
     "preco_avista": 25.00,
     "preco_cartao": 30.00,
     "descricao": "Fracionador de comprimido",
-    "imagem": "imagens/fracionador- de-comprimido.jpg"
+    "imagem": "imagens/fracionador-de-comprimido.jpg"
   },
   {
     "nome": "Cadeira motorizada D800",
