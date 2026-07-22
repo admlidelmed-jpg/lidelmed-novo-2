@@ -33,22 +33,3 @@ verifyCodeBtn.addEventListener('click', () => {
   });
  });
 
-// LIGHTBOX NOVO - Abrir foto grande ao clicar
-const lightbox = document.getElementById("lightbox");
-const imgGrande = document.getElementById("imgGrande");
-
-// Quando clicar em qualquer foto do produto
-document.addEventListener('click', function(e){
-  if(e.target.tagName === 'IMG' && e.target.closest('.card')){
-    lightbox.style.display = "block";
-    imgGrande.src = e.target.src;
-  }
-});
-
-// Fechar quando clicar no X ou fora da foto
-lightbox.addEventListener('click', function(e){
- if(e.target === lightbox || e.target.classList.contains('fechar')){
-    lightbox.style.display = "none";
-  }
-});
-});
