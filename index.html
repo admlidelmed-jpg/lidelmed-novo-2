@@ -178,9 +178,22 @@
 <script>
 fetch('produtos.json')
   .then(res => res.json())
-  let fotos = [];
-let indiceAtual = 0;
+  .then(produtos => {
+    const grid = document.getElementById('grid');
+    grid.innerHTML = produtos.map(produto => `
+      <div class="card">
+        <img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img" onclick="abrirLightbox(this)">
+        <h3>${produto.nome}</h3>
+        <p class="preco">à vista: R$ ${produto.preco_avista}</p>
+        <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
+        <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir no WhatsApp</a>
+      </div>
+    `).join('');
+  })
+  .catch(err => console.error(err));
 
+let fotos = [];
+let indiceAtual = 0;
 function abrirLightbox(img) {
   fotos = Array.from(document.querySelectorAll('.zoom-img'));
   indiceAtual = fotos.indexOf(img);
@@ -197,6 +210,16 @@ function atualizarFoto() {
 function mudarFoto(n) {
   indiceAtual += n;
   if (indiceAtual >= fotos.length) indiceAtual = 0;
+  if (indiceAtual < 0) indiceAtual = fotos.length - 1;
+  atualizarFoto();
+}
+
+document.querySelector('.fechar').onclick = function() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+</body>
+</html>
   if (indiceAtual < 0) indiceAtual = fotos.length - 1;
   atualizarFoto();
 }
