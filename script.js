@@ -33,28 +33,22 @@ verifyCodeBtn.addEventListener('click', () => {
   });
  });
 
-// Código para abrir a foto grande
-var modal = document.getElementById("modal");
-var modalImg = document.getElementById("img01");
-var legenda = document.getElementById("legenda");
+// LIGHTBOX NOVO - Abrir foto grande ao clicar
+const lightbox = document.getElementById("lightbox");
+const imgGrande = document.getElementById("imgGrande");
 
-// Quando clicar em qualquer foto com class="zoom-img"
-document.querySelectorAll('.zoom-img').forEach(img => {
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = this.src;
-legenda.innerHTML = this.alt;
-}
-})
+// Quando clicar em qualquer foto do produto
+document.addEventListener('click', function(e){
+  if(e.target.tagName === 'IMG' && e.target.closest('.card')){
+    lightbox.style.display = "block";
+    imgGrande.src = e.target.src;
+  }
+});
 
-// Quando clicar no X pra fechar
-document.querySelector(".fechar").onclick = function() { 
-modal.style.display = "none";
-}
- 
-// Fechar clicando fora da imagem também
-window.onclick = function(event) {
-if (event.target == modal) {
-modal.style.display = "none";
-}
+// Fechar quando clicar no X ou fora da foto
+lightbox.addEventListener('click', function(e){
+ if(e.target === lightbox || e.target.classList.contains('fechar')){
+    lightbox.style.display = "none";
+  }
+});
 });
