@@ -94,3 +94,28 @@ header p { margin: 5px 0 0; color: #FF0000; }
   font-size: 20px; 
   margin-top: 15px; 
 }
+/* LIGHTBOX NOVO - Foto grande ao clicar */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+  padding-top: 50px;
+}
+
+.lightbox-conteudo {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 95%;
+  max-height: 85vh;
+}
+
+/* Deixa o cursor de mãozinha nas fotos dos produtos */
+.card img {
+  cursor: pointer;
+}
