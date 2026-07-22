@@ -95,7 +95,7 @@ header p { margin: 5px 0 0; color: #FF0000; }
   margin-top: 15px; 
 }
 /* LIGHTBOX NOVO - Foto grande ao clicar */
-.lightbox {
+#lightbox {
   display: none;
   position: fixed;
   z-index: 9999;
