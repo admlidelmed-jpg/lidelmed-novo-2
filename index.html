@@ -1,269 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LIDEL MED</title>
+<link rel="manifest" href="manifest.json">
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    margin: 0;
-    padding: 0;
-  }
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5}
+header{background:#FFD700;padding:15px;text-align:center}
+header h1{margin:0;color:#c00;border:2px solid #c00;display:inline-block;padding:5px 15px;border-radius:5px;background:white;font-size:18px}
+#grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px}
+@media (min-width:768px){#grid{grid-template-columns:repeat(4,1fr);gap:20px;padding:20px}}
+.produto{background:white;border-radius:10px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.1);text-align:center;cursor:pointer}
+.produto img{max-width:100%;height:120px;object-fit:contain}
+.produto h3{font-size:13px;margin:8px 0;color:#333}
+.produto.preco{font-weight:bold;color:#c00;font-size:14px;margin:3px 0}
+.produto.cartao{font-size:12px;color:#666;margin:3px 0}
+#btnInstalar{display:none;position:fixed;bottom:20px;right:20px;z-index:999;padding:14px 20px;font-size:16px;background:#25D366;color:white;border:none;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
 
-  /* BARRA AMARELA CANÁRIO */
-  header {
-    background: #FFD700;
-    padding: 20px 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-
-  /* NOME LIDEL MED VERMELHO GRANDE ENQUADRADO */
-  header h1 {
-    color: #D00000;
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    border: 4px solid #D00000;
-    display: inline-block;
-    padding: 10px 25px;
-    border-radius: 8px;
-    background: white;
-    /* BOTÃO BAIXAR APP */
-#btnInstalar {
-  display: none;
-  background: #25D366;
-  color: white;
-  border: none;
-  padding: 14px;
-  width: 90%;
-  margin: 15px auto;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-
-  /* GRADE DE PRODUTOS 2 POR LINHA NO CELULAR */
-  #grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 10px;
-  }
-
-  /* NO PC FICA 4 POR LINHA */
-  @media (min-width: 768px) {
-    #grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  @media (min-width: 1024px) {
-    #grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  .card {
-    background: white;
-    border-radius: 12px;
-    padding: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  /* FOTOS MENORES NO PC */
-  .card img {
-    width: 100%;
-    height: 140px; /* celular */
-    object-fit: contain; /* não estica a imagem */
-    border-radius: 8px;
-    background: #fff;
-  }
-
-  /* NO PC DIMINUI MAIS */
-  @media (min-width: 1024px) {
-    .card img {
-      height: 120px; /* foto menor no pc */
-    }
-  }
-  
-  .card h3 {
-    font-size: 15px;
-    margin: 10px 0 5px;
-    color: #333;
-    min-height: 40px;
-  }
-  
-  .preco {
-    color: #0077b6;
-    font-weight: bold;
-    margin: 5px 0;
-    font-size: 15px;
-  }
-  
-  .preco-cartao {
-    color: #666;
-    font-size: 13px;
-    margin: 5px 0 10px;
-  }
-  
-  .card a {
-    display: block;
-    background: #25D366;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-  } 
-  
-  .card a:hover {
-    background: #128C7E;
-  }
-  .lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.9);
-  text-align: center;
-  padding-top: 50px;
-}
-.lightbox-conteudo { 
-  max-width: 80%; 
-  max-height: 80%; 
-}
-.fechar {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.fechar:hover { color: #bbb; }
-  .seta {
-  position: absolute;
-  top: 50%;
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 16px;
-  user-select: none;
-}
-.seta:hover { color: #ccc; }
-.esq { left: 20px; }
-.dir { right: 20px; }
-#legenda { 
-  color: white; 
-  font-size: 20px; 
-  margin-top: 15px; 
-}
-  #btnInstalar {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  padding: 14px 20px;
-  font-size: 16px;
-  background: #25D366;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  cursor: pointer;
-}
-#btnInstalar:hover {
-  background: #1ebe5b;
-}
+/* TELA PRETA DO PRODUTO */
+.modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;flex-direction:column}
+.modal-content{background:white;padding:20px;border-radius:10px;width:90%;max-width:400px;text-align:center;position:relative}
+.modal img{max-width:100%;height:250px;object-fit:contain}
+.fechar{position:absolute;top:10px;right:15px;font-size:28px;color:#c00;cursor:pointer;font-weight:bold}
+.seta{position:absolute;top:50%;transform:translateY(-50%);font-size:40px;color:#333;background:rgba(255,255,255,0.8);border:none;border-radius:50%;width:40px;height:40px;cursor:pointer}
+.anterior{left:-20px}
+.proximo{right:-20px}
 </style>
 </head>
 <body>
 
-<header>
-  <h1>LIDEL MED</h1>
-</header>
-  <button id="btnInstalar">📱 BAIXAR APLICATIVO</button>
-
+<header><h1>LIDEL MED</h1></header>
+<button id="btnInstalar">📱 BAIXAR APLICATIVO</button>
 <div id="grid"></div>
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox">
-  <span class="fechar">&times;</span>
-  <span class="seta esq" onclick="mudarFoto(-1)">&#10094;</span>
-  <img class="lightbox-conteudo" id="imgGrande">
-  <span class="seta dir" onclick="mudarFoto(1)">&#10095;</span>
-  <div id="legenda"></div>
+
+<!-- TELA PRETA -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
+    <img id="modalImg">
+    <h3 id="modalNome"></h3>
+    <p class="preco" id="modalAVista"></p>
+    <p class="cartao" id="modalCartao"></p>
+    <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
+  </div>
 </div>
+
 <script>
-fetch('produtos.json')
-  .then(res => res.json())
-  .then(produtos => {
-    const grid = document.getElementById('grid');
-    grid.innerHTML = produtos.map(produto => `
-      <div class="card">
-        <img src="${produto.imagem}" alt="${produto.nome}" class="zoom-img" onclick="abrirLightbox(this)">
-        <h3>${produto.nome}</h3>
-        <p class="preco">à vista: R$ ${produto.preco_avista}</p>
-        <p class="preco-cartao">Cartão: R$ ${produto.preco_cartao}</p>
-        <a href="https://wa.me/557399144898?text=Oi, quero orçamento do ${produto.nome}" target="_blank">Pedir no WhatsApp</a>
-      </div>
-    `).join('');
-  })
-  .catch(err => console.error(err));
-
-let fotos = [];
-let indiceAtual = 0;
-function abrirLightbox(img) {
-  fotos = Array.from(document.querySelectorAll('.zoom-img'));
-  indiceAtual = fotos.indexOf(img);
-  document.getElementById('lightbox').style.display = 'block';
-  atualizarFoto();
-}
-
-function atualizarFoto() {
-  const img = fotos[indiceAtual];
-  document.getElementById('imgGrande').src = img.src;
-  document.getElementById('legenda').innerHTML = img.alt;
-}
-
-function mudarFoto(n) {
-  indiceAtual += n;
-  if (indiceAtual >= fotos.length) indiceAtual = 0;
-  if (indiceAtual < 0) indiceAtual = fotos.length - 1;
-  atualizarFoto();
-}
-
-document.querySelector('.fechar').onclick = function() {
-  document.getElementById('lightbox').style.display = 'none';
-}
 let deferredPrompt;
-const btnInstalar = document.getElementById('btnInstalar');
+let produtos = [];
+let produtoAtual = 0;
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  btnInstalar.style.display = 'block';
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block'});
+document.getElementById('btnInstalar').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null}};
+
+// PUXA PRODUTOS
+fetch('produtos.json').then(r=>r.json()).then(d=>{
+produtos = d;
+const grid = document.getElementById('grid');
+grid.innerHTML = produtos.map((p,i)=>`
+<div class="produto" onclick="abrirModal(${i})">
+<img src="${p.imagem}">
+<h3>${p.nome}</h3>
+<p class="preco">À vista: ${p.precoAVista}</p>
+<p class="cartao">Cartão: ${p.precoCartao}</p>
+</div>`).join('')
 });
 
-btnInstalar.addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    deferredPrompt = null;
-    btnInstalar.style.display = 'none';
+// ABRIR MODAL
+function abrirModal(indice){
+produtoAtual = indice;
+document.getElementById('modal').style.display = 'flex';
+atualizarModal();
+}
+
+// FECHAR MODAL
+function fecharModal(){
+document.getElementById('modal').style.display = 'none';
+}
+
+// PASSAR PRODUTO COM SETA
+function trocarProduto(direcao){
+produtoAtual = produtoAtual + direcao;
+if(produtoAtual < 0) produtoAtual = produtos.length - 1;
+if(produtoAtual >= produtos.length) produtoAtual = 0;
+atualizarModal();
+}
+
+function atualizarModal(){
+let p = produtos[produtoAtual];
+document.getElementById('modalImg').src = p.imagem;
+document.getElementById('modalNome').innerText = p.nome;
+document.getElementById('modalAVista').innerText = 'À vista: ' + p.precoAVista;
+document.getElementById('modalCartao').innerText = 'Cartão: ' + p.precoCartao;
+}
+
+// Fechar clicando fora
+window.onclick = function(event){
+  if(event.target == document.getElementById('modal')){
+    fecharModal();
   }
-});
-</script> 
- </body>
-</html>    
+}
+</script>
+
+</body>
+</html>
+  
+    
 
