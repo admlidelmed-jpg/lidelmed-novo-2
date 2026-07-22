@@ -56,22 +56,16 @@ fetch('produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
 const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
-// PEGA QUALQUER NOME DE PREÇO QUE TIVER
-let avista = p.precoAVista || p.preco_a_vista || p.avista || p.precoAV || '';
-let cartao = p.precoCartao || p.preco_cartao || p.cartao || p.preco || '';
-
-// SE NÃO TIVER À VISTA, MOSTRA SÓ O CARTÃO
-let htmlPreco = '';
-if(avista && cartao) htmlPreco = `<p class="preco">À vista: R$ ${avista}</p><p class="cartao">Cartão: R$ ${cartao}</p>`;
-else if(cartao) htmlPreco = `<p class="preco">R$ ${cartao}</p>`;
-else if(avista) htmlPreco = `<p class="preco">R$ ${avista}</p>`;
-else htmlPreco = `<p class="preco">Consulte</p>`;
+// AGORA LÊ IGUAL AO SEU JSON: preco_avista e preco_cartao
+let avista = p.preco_avista;
+let cartao = p.preco_cartao;
 
 return`
 <div class="produto" onclick="abrirModal(${i})">
 <img src="${p.imagem}">
 <h3>${p.nome}</h3>
-${htmlPreco}
+<p class="preco">À vista: R$ ${avista}</p>
+<p class="cartao">Cartão: R$ ${cartao}</p>
 </div>`}).join('')
 });
 
@@ -80,17 +74,14 @@ function fecharModal(){document.getElementById('modal').style.display='none'}
 function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;atualizarModal()}
 function atualizarModal(){
 let p=produtos[produtoAtual];
-let avista = p.precoAVista || p.preco_a_vista || p.avista || p.precoAV || '';
-let cartao = p.precoCartao || p.preco_cartao || p.cartao || p.preco || '';
 document.getElementById('modalImg').src=p.imagem;
 document.getElementById('modalNome').innerText=p.nome;
-document.getElementById('modalAVista').innerText=avista ? 'À vista: R$ '+avista : '';
-document.getElementById('modalCartao').innerText=cartao ? 'Cartão: R$ '+cartao : '';
+document.getElementById('modalAVista').innerText='À vista: R$ '+p.preco_avista;
+document.getElementById('modalCartao').innerText='Cartão: R$ '+p.preco_cartao;
 }
 window.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
 </script>
 
 </body>
 </html>
-    
 
