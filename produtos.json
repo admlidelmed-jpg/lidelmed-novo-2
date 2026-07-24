@@ -323,8 +323,8 @@
     "id": 33,
     "nome": "Guincho de Transferência para Acamado",
     "categoria": "Mobilidade",
-    "preco_avista": 2800.00,
-    "preco_cartao": 2500.00,
+    "preco_avista": 2500.00,
+    "preco_cartao": 2800.00,
     "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade 150kg",
     "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
     "estoque": 1
