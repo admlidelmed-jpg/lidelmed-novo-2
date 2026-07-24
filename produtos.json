@@ -82,8 +82,8 @@
 {
   "nome": "Cadeira higiênica Mônaco assento almofadado",
   "categoria": "Cadeiras Higiênicas",
-  "preco_avista": 1100.00,
-  "preco_cartao": 1300.00,
+  "preco_avista": 950.00,
+  "preco_cartao": 1000.00,
   "descricao": "Cadeira higiênica Mônaco assento almofadado",
   "imagem": "imagens/cadeira-higienica-monaco.jpg"
 },
@@ -327,6 +327,38 @@
     "descricao": "Soro fisiológico",
     "imagem": "imagens/soro-fisiologico.jpg"
   },
+   {
+    "nome": "Soro gicosado",
+    "categoria": "Acessórios",
+    "preco_avista": "consultar preco",
+    "preco_cartao": "consultar preco",
+    "descricao": "Soro glicosado",
+    "imagem": "imagens/soro-glicosado.jpg"
+  },
+   {
+    "nome": "Soro glicofisiológico",
+    "categoria": "Acessórios",
+    "preco_avista": "consultar preco",
+    "preco_cartao": "consultar preco",
+    "descricao": "Soro glicofisiológico",
+    "imagem": "imagens/soro-glicofisiologico.jpg"
+  },
+   {
+    "nome": "Soro ringer com lactato",
+    "categoria": "Acessórios",
+    "preco_avista": "consultar preco",
+    "preco_cartao": "consultar preco",
+    "descricao": "Soro ringer com lactato",
+    "imagem": "imagens/soro-ringer-com-lactato.jpg"
+  },
+   {
+    "nome": "Monitol",
+    "categoria": "Acessórios",
+    "preco_avista": "consultar preco",
+    "preco_cartao": "consultar preco",
+    "descricao": "Monitol",
+    "imagem": "imagens/monitol.jpg"
+  },
   {
     "nome": "Suporte de soro",
     "categoria": "Acessórios",
@@ -407,6 +439,22 @@
   "descricao": "Bota Ortopédica Cano Longo e Curto",
   "imagem": "imagens/bota-ortopedica-longa-e-curta.jpg"
 },
+   {
+    "nome": "Luva latex de procedimento",
+    "categoria": "Acessórios",
+    "preco_avista": 30,00,
+    "preco_cartao": 30,00,
+    "descricao": "Luva latex de procedimento",
+    "imagem": "imagens/luva-latex-de-procedimento.jpg"
+  },
+   {
+    "nome": "Luva nitrilica",
+    "categoria": "Acessórios",
+    "preco_avista": 35,00,
+    "preco_cartao": 35,00,
+    "descricao": "Luva nitrilica",
+    "imagem": "imagens/luva-nitrilica.jpg"
+  },
   {
   "id": 15,
   "nome": "Guincho de Transferência para Acamado",
