@@ -46,7 +46,7 @@
     "preco_avista": 600.00,
     "preco_cartao": 650.00,
     "descricao": "Cadeira de Higienização D55",
-    "imagem": "imagens/cadeira-de-higienizacao-D55.jpg",
+    "imagem": "imagens/cadeira-de-higienizacao-d55.jpg",
     "estoque": 10
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "nome": "Cadeira de rodas Prolife simples pneu macico",
+    "nome": "Cadeira de rodas Prolife simples",
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 700.00,
     "preco_cartao": 880.00,
@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "nome": "Cadeira de rodas MM simples pneu macico",
+    "nome": "Cadeira de rodas MM simples",
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 600.00,
     "preco_cartao": 680.00,
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "nome": "Cadeira Higiênica clássica para menor",
+    "nome": "Cadeira Higiênica MM",
     "categoria": "Cadeiras Higiênicas",
     "preco_avista": 450.00,
     "preco_cartao": 500.00,
@@ -111,7 +111,7 @@
   },
   {
     "id": 12,
-    "nome": "Bola para Pilates tamanhos variados",
+    "nome": "Bola para Pilates",
     "categoria": "Fisioterapia",
     "preco_avista": 230.00,
     "preco_cartao": 230.00,
@@ -121,7 +121,7 @@
   },
   {
     "id": 13,
-    "nome": "Cintas pos cirúrgicas variadas",
+    "nome": "Cinta pós cirúrgica",
     "categoria": "Ortopedia",
     "preco_avista": 0.00,
     "preco_cartao": 0.00,
@@ -131,7 +131,7 @@
   },
   {
     "id": 14,
-    "nome": "Placas de curativos variadas",
+    "nome": "Placas de curativos",
     "categoria": "Curativos",
     "preco_avista": 0.00,
     "preco_cartao": 0.00,
@@ -141,7 +141,7 @@
   },
   {
     "id": 15,
-    "nome": "Curativos variados",
+    "nome": "Curativos",
     "categoria": "Curativos",
     "preco_avista": 0.00,
     "preco_cartao": 0.00,
@@ -161,12 +161,12 @@
   },
   {
     "id": 17,
-    "nome": "Soro gicosado",
+    "nome": "Soro glicosado",
     "categoria": "Acessórios",
     "preco_avista": 0.00,
     "preco_cartao": 0.00,
     "descricao": "Soro glicosado",
-    "imagem": "imagens/soro-glicosado.jpg",
+    "imagem": "imagens/soro-clicosado.jpg",
     "estoque": 0
   },
   {
@@ -246,7 +246,7 @@
     "preco_avista": 163.00,
     "preco_cartao": 180.00,
     "descricao": "Monitor de pressão KF65",
-    "imagem": "imagens/monitor-de-pressao-KF65.jpg",
+    "imagem": "imagens/Monitor-de-pressao-KF65.jpg",
     "estoque": 10
   },
   {
@@ -276,7 +276,7 @@
     "preco_avista": 6500.00,
     "preco_cartao": 7000.00,
     "descricao": "Cadeira de rodas motorizada D800",
-    "imagem": "imagens/cadeira-de-rodas-motorizada-D800.jpg",
+    "imagem": "imagens/cadeira-de-rodas-motorizada-d800.jpg",
     "estoque": 10
   },
   {
@@ -306,7 +306,7 @@
     "preco_avista": 30.00,
     "preco_cartao": 30.00,
     "descricao": "Luva latex de procedimento",
-    "imagem": "imagens/luva-latex-de-procedimento.jpg",
+    "imagem": "imagens/luva-latex-para-procedimento.jpg",
     "estoque": 100
   },
   {
@@ -327,6 +327,6 @@
     "preco_cartao": 2500.00,
     "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade 150kg",
     "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
-    "estoque": 1,
+    "estoque": 1
   }
 ]
