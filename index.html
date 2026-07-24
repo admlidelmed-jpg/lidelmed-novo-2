@@ -33,11 +33,18 @@ header h1{margin:0;color:#c00;border:2px solid #c00;display:inline-block;padding
 .proximo{right:-20px}
 </style>
 </head>
-<body>
 <header style="background: #FFEA00; padding: 15px 0; overflow: hidden;">
-  <marquee behavior="scroll" direction="left" scrollamount="6" style="color: #d32f2f; font-size: 28px; font-weight: bold; font-family: Arial; margin: 0;">
-    LIDEL MED - Produtos Hospitalares e Ortopédicos
-  </marquee>
+  <div style="white-space: nowrap; color: #d32f2f; font-size: 28px; font-weight: bold; font-family: Arial; animation: passar 12s linear infinite;">
+    LIDEL MED - Produtos Hospitalares e Ortopédicos &nbsp;&nbsp;&nbsp; LIDEL MED - Produtos Hospitalares e Ortopédicos
+  </div>
+</header>
+
+<style>
+@keyframes passar {
+ 0% { transform: translateX(0%); }
+ 100% { transform: translateX(-50%); }
+}
+</style>
 </header>
 
 <button id="btnInstalar">📱 BAIXAR APLICATIVO</button>
