@@ -37,7 +37,7 @@
   "preco_avista": 600.00,
   "preco_cartao": 658.00,
   "descricao": "Cadeira de Higienização D55",
-  "imagem": "imagens/cadeira-de-higienizacao-d55.jpg"
+  "imagem": "imagens/cadeira-de-higienizacao-D55.jpg"
 },
 {
   "nome": "Cadeira de rodas CDS pneu inflavel",
@@ -421,7 +421,7 @@
     "preco_avista": 6500.00,
     "preco_cartao": 7000.00,
     "descricao": "Cadeira de rodas motorizada D800",
-    "imagem": "imagens/cadeira-de-rodas-motorizada-d800.jpg"
+    "imagem": "imagens/cadeira-de-rodas-motorizada-D800.jpg"
   },
  {
   "nome": "Cadeira Higiênica S50 Supermedy",
