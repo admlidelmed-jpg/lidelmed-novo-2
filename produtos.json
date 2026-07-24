@@ -405,7 +405,7 @@
     "preco_avista": 178.00,
     "preco_cartao": 180.00,
     "descricao": "Medidor de pressão ultra max",
-    "imagem": "imagens/Medidor-de-pressao-ultra max.jpg"
+    "imagem": "imagens/Medidor-de-pressao-ultra-max.jpg"
   },
   {
     "nome": "Fracionador de comprimido",
@@ -459,10 +459,10 @@
   "id": 15,
   "nome": "Guincho de Transferência para Acamado",
   "categoria": "Mobilidade",
-  "preco_cartao": 2800.00,
-  "preco_avista": 2500.00,
+  "preco_avista": 2800.00,
+  "preco_cartao": 2500.00,
   "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade de até 150kg. Acompanha cinta de elevação. Ideal para cuidadores e clínicas.",
   "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
-  "estoque": 1
+  "estoque": 1,
 }
 ]
