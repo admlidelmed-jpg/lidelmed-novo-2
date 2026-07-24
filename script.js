@@ -33,23 +33,6 @@ verifyCodeBtn.addEventListener('click', () => {
   });
  });
 // CÓDIGO DO BOTÃO BAIXAR APP
-let btnInstalar = document.getElementById('btnInstalar');
-let promptInstalacao = null;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  promptInstalacao = e;
-  btnInstalar.style.display = 'block';
+document.getElementById('btnInstalar').addEventListener('click', () => {
+    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto! Vai aparecer na sua tela");
 });
-
-btnInstalar.addEventListener('click', () => {
-  if (promptInstalacao) {
-    promptInstalacao.prompt();
-    promptInstalacao.userChoice.then(() => {
-      promptInstalacao = null;
-    });
-  } else {
-    alert("Para instalar: Menu do Chrome > 'Adicionar à tela inicial'");
-  }
-});
-
