@@ -7,14 +7,15 @@
 <link rel="manifest" href="manifest.json">
 <style>
 body{font-family:Arial,sans-serif;margin:0;padding:0;background:#FFE4B0;padding-bottom:80px}
-header{background:#FFD700;padding:15px;text-align:center;color:#B22222;font-weight:bold;font-size:20px}
+header{background:#FFD700;padding:15px;text-align:center}
+header h1{margin:0;color:#B22222;font-size:18px}
 
 #grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;padding:15px}
 @media (min-width:768px){#grid{grid-template-columns:repeat(4,1fr);gap:20px;padding:20px}}
 
 .produto{background:white;border-radius:10px;padding:15px;box-shadow:0 2px 8px rgba(0,0,0,.1);text-align:center;cursor:pointer}
 .produto img{max-width:100%;height:140px;object-fit:contain;margin-bottom:10px}
-.produto h3{font-size:14px;margin:8px 0;color:#333;min-height:36px;font-weight:normal}
+.produto h3{font-size:14px;margin:8px 0;color:#333;min-height:36px}
 .preco{font-weight:bold;color:#B22222;font-size:16px;margin:5px 0}
 .cartao{font-size:12px;color:#555;margin:3px 0 10px 0}
 
@@ -35,7 +36,7 @@ header{background:#FFD700;padding:15px;text-align:center;color:#B22222;font-weig
 </style>
 </head>
 <body>
-<header>LIDEL MED - Produtos Hospitalares e Ortopédicos</header>
+<header><h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1></header>
 
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
 <div id="grid"></div>
@@ -57,7 +58,7 @@ header{background:#FFD700;padding:15px;text-align:center;color:#B22222;font-weig
 let deferredPrompt;
 let produtos = [];
 let produtoAtual = 0;
-const numeroZap = "+5573999144898"; // SEU NUMERO
+const numeroZap = "+5573999144898";
 
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
@@ -71,12 +72,16 @@ document.getElementById('btnInstalar').addEventListener('click', async () => {
     await deferredPrompt.userChoice;
     deferredPrompt = null;
   } else {
-    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto! Vai aparecer na sua tela");
+    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto!");
   }
 });
 
-fetch('produtos.json').then(r=>r.json()).then(d=>{
-produtos = d;
+// PRODUTOS DE TESTE - SE APARECER ESSES 2, SEU produtos.json SUMIU
+produtos = [
+  {nome: "Cadeira de Rodas D800", imagem: "https://via.placeholder.com/200x200", preco_avista: "1800", preco_cartao: "1850"},
+  {nome: "Cadeira de Rodas D400", imagem: "https://via.placeholder.com/200x200", preco_avista: "1450", preco_cartao: "1500"}
+];
+
 const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
 let avista = p.preco_avista;
@@ -90,7 +95,23 @@ return `
 <p class="cartao">Cartão: R$ ${cartao}</p>
 <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
 </div>`}).join('');
-});
+
+// TENTA CARREGAR SEU produtos.json DE VERDADE
+fetch('produtos.json').then(r=>r.json()).then(d=>{
+produtos = d;
+grid.innerHTML = produtos.map((p,i)=>{
+let avista = p.preco_avista;
+let cartao = p.preco_cartao;
+let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista});
+return `
+<div class="produto" onclick="abrirModal(${i})">
+<img src="${p.imagem}">
+<h3>${p.nome}</h3>
+<p class="preco">À vista: R$ ${avista}</p>
+<p class="cartao">Cartão: R$ ${cartao}</p>
+<a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
+</div>`}).join('');
+}).catch(err => console.log("produtos.json não encontrado"));
 
 function abrirModal(index){
 produtoAtual=index;
