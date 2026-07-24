@@ -447,22 +447,22 @@
     "descricao": "Luva latex de procedimento",
     "imagem": "imagens/luva-latex-de-procedimento.jpg"
   },
-   {
-    "nome": "Luva nitrilica",
-    "categoria": "curativo",
-    "preco_avista": 35,
-    "preco_cartao": 35,
-    "descricao": "Luva nitrilica",
-    "imagem": "imagens/luva-nitrilica.jpg"
-  },
-  {
+ {
+  "nome": "Luva nitrilica",
+  "categoria": "curativo",
+  "preco_avista": 35,
+  "preco_cartao": 35,
+  "descricao": "Luva nitrilica",
+  "imagem": "imagens/luva-nitrilica.jpg"
+},
+{
   "id": 15,
   "nome": "Guincho de Transferência para Acamado",
   "categoria": "Mobilidade",
   "preco_avista": 2800.00,
   "preco_cartao": 2500.00,
-"descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade 150kg",
-"imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
+  "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade 150kg",
+  "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
   "estoque": 1,
 }
 ]
