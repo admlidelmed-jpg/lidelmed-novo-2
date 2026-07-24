@@ -35,7 +35,7 @@ header h1{margin:0;color:#B22222;font-size:18px}
 <header><h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1></header>
 
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
-<div id="grid">Carregando produtos...</div>
+<div id="grid"></div>
 
 <div id="modal" class="modal">
 <span class="fechar" onclick="fecharModal()">&times;</span>
@@ -72,14 +72,9 @@ document.getElementById('btnInstalar').addEventListener('click', async () => {
   }
 });
 
-// FORÇA LIMPAR CACHE E CARREGAR
-fetch('produtos.json?v=' + new Date().getTime()).then(r=>r.json()).then(d=>{
+fetch('produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
 const grid = document.getElementById('grid');
-if(produtos.length === 0){
-grid.innerHTML = "Nenhum produto encontrado no produtos.json";
-return;
-}
 grid.innerHTML = produtos.map((p,i)=>{
 let avista = parseFloat(p.preco_avista).toFixed(2).replace('.',',');
 let cartao = parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
@@ -92,9 +87,6 @@ return `
 <p class="cartao">Cartão: R$ ${cartao}</p>
 <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
 </div>`}).join('');
-}).catch(err => {
-document.getElementById('grid').innerHTML = "Erro ao carregar produtos.json. Verifique se o arquivo existe.";
-console.log(err)
 });
 
 function abrirModal(index){
