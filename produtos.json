@@ -417,11 +417,11 @@
   },
   {
     "nome": "Cadeira de rodas motorizada D800",
-    "categoria": "cadeira de Rodas Motorizada",
+    "categoria": "Cadeira de Rodas Motorizada",
     "preco_avista": 6500.00,
     "preco_cartao": 7000.00,
     "descricao": "Cadeira de rodas motorizada D800",
-    "imagem": "imagens/cadeira-motorizada-d800.jpg"
+    "imagem": "imagens/cadeira-de-rodas-motorizada-d800.jpg"
   },
  {
   "nome": "Cadeira Higiênica S50 Supermedy",
