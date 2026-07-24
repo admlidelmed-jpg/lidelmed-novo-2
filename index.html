@@ -19,13 +19,9 @@ header h1{margin:0;color:#B22222;font-size:18px}
 .preco{font-weight:bold;color:#B22222;font-size:16px;margin:5px 0}
 .cartao{font-size:12px;color:#555;margin:3px 0 10px 0}
 
-/* BOTÃO WHATSAPP VERDE */
 .btnZapProduto{display:block;margin-top:8px;padding:10px;font-size:15px;background:#25D366;color:white;border:none;border-radius:8px;text-decoration:none;font-weight:bold}
-
-/* BOTÃO FIXO AZUL DO APP */
 #btnInstalar{display:block;position:fixed;bottom:20px;right:20px;z-index:999;padding:14px 20px;font-size:16px;background:#007bff;color:white;border:none;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
 
-/* TELA PRETA */
 .modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;flex-direction:column}
 .modal-content{background:white;padding:20px;border-radius:10px;width:90%;max-width:400px;text-align:center;position:relative}
 .modal img{max-width:100%;height:250px;object-fit:contain}
@@ -72,16 +68,12 @@ document.getElementById('btnInstalar').addEventListener('click', async () => {
     await deferredPrompt.userChoice;
     deferredPrompt = null;
   } else {
-    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto!");
+    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'");
   }
 });
 
-// PRODUTOS DE TESTE - SE APARECER ESSES 2, SEU produtos.json SUMIU
-produtos = [
-  {nome: "Cadeira de Rodas D800", imagem: "https://via.placeholder.com/200x200", preco_avista: "1800", preco_cartao: "1850"},
-  {nome: "Cadeira de Rodas D400", imagem: "https://via.placeholder.com/200x200", preco_avista: "1450", preco_cartao: "1500"}
-];
-
+fetch('produtos.json').then(r=>r.json()).then(d=>{
+produtos = d;
 const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
 let avista = p.preco_avista;
@@ -95,23 +87,7 @@ return `
 <p class="cartao">Cartão: R$ ${cartao}</p>
 <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
 </div>`}).join('');
-
-// TENTA CARREGAR SEU produtos.json DE VERDADE
-fetch('produtos.json').then(r=>r.json()).then(d=>{
-produtos = d;
-grid.innerHTML = produtos.map((p,i)=>{
-let avista = p.preco_avista;
-let cartao = p.preco_cartao;
-let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista});
-return `
-<div class="produto" onclick="abrirModal(${i})">
-<img src="${p.imagem}">
-<h3>${p.nome}</h3>
-<p class="preco">À vista: R$ ${avista}</p>
-<p class="cartao">Cartão: R$ ${cartao}</p>
-<a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
-</div>`}).join('');
-}).catch(err => console.log("produtos.json não encontrado"));
+}).catch(err => console.log("Erro ao carregar produtos:", err));
 
 function abrirModal(index){
 produtoAtual=index;
