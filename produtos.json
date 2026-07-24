@@ -5,7 +5,7 @@
   "preco_avista": 1800.00,
   "preco_cartao": 1850.00,
   "descricao": "Cadeira de Rodas D600",
-  "imagem": "imagens/cadeira-de-roda- D600.jpg"
+  "imagem": "imagens/cadeira-de-roda-D600.jpg"
 },
 {
   "nome": "Cadeira de Rodas D400",
@@ -461,8 +461,8 @@
   "categoria": "Mobilidade",
   "preco_avista": 2800.00,
   "preco_cartao": 2500.00,
-  "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade de até 150kg. Acompanha cinta de elevação. Ideal para cuidadores e clínicas.",
-  "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
+"descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade 150kg",
+"imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
   "estoque": 1,
 }
 ]
