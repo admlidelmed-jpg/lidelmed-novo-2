@@ -6,9 +6,10 @@
 <title>LIDEL MED</title>
 <link rel="manifest" href="manifest.json">
 <style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#F5F5F5;padding-bottom:80px}
-header{background:#FFD700;padding:15px;text-align:center}
-header h1{margin:0;color:#000;border:2px solid #000;display:inline-block;padding:5px 15px;border-radius:5px;background:white;font-size:18px}
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#FFE4B0;padding-bottom:80px}
+header{background:#FFD700;padding:15px;text-align:center;overflow:hidden}
+header div{white-space: nowrap; color: #252525; font-size: 20px; font-weight: bold; font-family: Arial; animation: passar 12s linear infinite;}
+
 #grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px}
 @media (min-width:768px){#grid{grid-template-columns:repeat(4,1fr);gap:20px;padding:20px}}
 .produto{background:white;border-radius:10px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.1);text-align:center;cursor:pointer}
@@ -33,16 +34,14 @@ header h1{margin:0;color:#000;border:2px solid #000;display:inline-block;padding
 .proximo{right:20px}
 
 @keyframes passar {
-0% { transform: translateX(0%); }
-100% { transform: translateX(-50%); }
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
 }
 </style>
 </head>
-<body style="background: #FFE4B0; padding: 15px 0; overflow-x: hidden;">
+<body>
 <header>
-<div style="white-space: nowrap; color: #252525; font-size: 20px; font-weight: bold; font-family: Arial; animation: passar 12s linear infinite;">
-LIDEL MED - Produtos Hospitalares e Ortopédicos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIDEL MED - Produtos Hospitalares e Ortopédicos
-</div>
+<div>LIDEL MED - Produtos Hospitalares e Ortopédicos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIDEL MED - Produtos Hospitalares e Ortopédicos</div>
 </header>
 
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
@@ -53,7 +52,7 @@ LIDEL MED - Produtos Hospitalares e Ortopédicos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 <div class="modal-content">
 <img id="imgModal" src="">
 <h3 id="modalNome"></h3>
-<p id="modalAVista" class="preco"></p>
+<p id="modalAVista" class="preo"></p>
 <p id="modalCartao" class="cartao"></p>
 <a id="modalZap" class="btnZapProduto" target="_blank">💬 PEDIR NO WHATSAPP</a>
 </div>
