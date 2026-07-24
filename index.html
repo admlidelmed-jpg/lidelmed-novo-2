@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIDEL MED</title>
+<link rel="manifest" href="manifest.json">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFE4B0;
+  padding-bottom: 80px;
+}
+header {
+  background: #FFD700;
+  padding: 15px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  color: #B22222;
+  font-size: 18px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  #grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+}
+.produto {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  text-align: center;
+  cursor: pointer;
+}
+.produto img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.produto h3 {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #333;
+  min-height: 36px;
+}
+.preco {
+  font-weight: bold;
+  color: #B22222;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.cartao {
+  font-size: 12px;
+  color: #555;
+  margin: 3px 0 10px 0;
+}
+.btnZapProduto {
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 15px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#btnInstalar {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 14px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+.modal img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #333;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.anterior { left: 20px; }
+.proximo { right: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1>
+</header>
+
+<button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
+<div id="grid">Carregando produtos...</div>
+
+<div id="modal" class="modal">
+  <span class="fechar" onclick="fecharModal()">&times;</span>
+  <div class="modal-content">
+    <img id="imgModal" src="">
+    <h3 id="modalNome"></h3>
+    <p id="modalAVista" class="preco"></p>
+    <p id="modalCartao" class="cartao"></p>
+    <a id="modalZap" class="btnZapProduto" target="_blank">💬 PEDIR NO WHATSAPP</a>
+  </div>
+  <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
+  <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
+</div>
+
+<script>
+let deferredPrompt;
+let produtos = [];
+let produtoAtual = 0;
+const numeroZap = "+5573999144898";
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('btnInstalar').style.display = 'block';
+});
+
+document.getElementById('btnInstalar').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  } else {
+    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'");
+  }
+});
+
+fetch('produtos.json')
+.then(r => r.json())
+.then(d => {
+  produtos = d;
+  const grid = document.getElementById('grid');
+  grid.innerHTML = produtos.map((p, i) => {
+    let avista = parseFloat(p.preco_avista).toFixed(2).replace('.',',');
+    let cartao = parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
+    let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
+    return `
+    <div class="produto" onclick="abrirModal(${i})">
+      <img src="${p.imagem}" alt="${p.nome}">
+      <h3>${p.nome}</h3>
+      <p class="preco">À vista: R$ ${avista}</p>
+      <p class="cartao">Cartão: R$ ${cartao}</p>
+      <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
+    </div>`
+  }).join('');
+});
+
+function abrirModal(index) {
+  produtoAtual = index;
+  let p = produtos[produtoAtual];
+  let avista = parseFloat(p.preco_avista).toFixed(2).replace('.',',');
+  let cartao = parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
+  let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
+  document.getElementById('imgModal').src = p.imagem;
+  document.getElementById('modalNome').innerText = p.nome;
+  document.getElementById('modalAVista').innerText = 'À vista: R$ ' + avista;
+  document.getElementById('modalCartao').innerText = 'Cartão: R$ ' + cartao;
+  document.getElementById('modalZap').href = `https://wa.me/${numeroZap}?text=${msg}`;
+  document.getElementById('modal').style.display = 'flex';
+}
+
+function fecharModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+
+function trocarProduto(direcao) {
+  produtoAtual = (produtoAtual + direcao + produtos.length) % produtos.length;
+  abrirModal(produtoAtual);
+}
+
+document.onclick = function(event) {
+  if (event.target == document.getElementById('modal')) {
+    fecharModal();
+  }
+}
+</script>
+
+</body>
+</html>
