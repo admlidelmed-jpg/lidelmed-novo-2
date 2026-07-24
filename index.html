@@ -6,70 +6,82 @@
 <title>LIDEL MED</title>
 <link rel="manifest" href="manifest.json">
 <style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5;padding-bottom:80px}
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#F5F5F5;padding-bottom:80px}
 header{background:#FFD700;padding:15px;text-align:center}
-header h1{margin:0;color:#c00;border:2px solid #c00;display:inline-block;padding:5px 15px;border-radius:5px;background:white;font-size:18px}
+header h1{margin:0;color:#000;border:2px solid #000;display:inline-block;padding:5px 15px;border-radius:5px;background:white;font-size:18px}
 #grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px}
 @media (min-width:768px){#grid{grid-template-columns:repeat(4,1fr);gap:20px;padding:20px}}
-.produto{background:white;border-radius:10px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.1);text-align:center}
+.produto{background:white;border-radius:10px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.1);text-align:center;cursor:pointer}
 .produto img{max-width:100%;height:120px;object-fit:contain}
 .produto h3{font-size:13px;margin:8px 0;color:#333;min-height:32px}
-.preco{font-weight:bold;color:#c00;font-size:15px;margin:5px 0}
-.cartao{font-size:13px;color:#444;margin:3px 0}
+.preco{font-weight:bold;color:#000;font-size:15px;margin:5px 0}
+.cartao{font-size:11px;color:#444;margin:3px 0}
 
 /* BOTÃO WHATSAPP DO PRODUTO */
 .btnZapProduto{display:block;margin-top:8px;padding:8px;font-size:14px;background:#25D366;color:white;border:none;border-radius:8px;text-decoration:none;font-weight:bold}
 
 /* BOTÃO FIXO DO APP */
-#btnInstalar{display:none;position:fixed;bottom:20px;right:20px;z-index:999;padding:14px 20px;font-size:16px;background:#25D366;color:white;border:none;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
+#btnInstalar{display:block;position:fixed;bottom:20px;right:20px;z-index:999;padding:14px 20px;font-size:16px;background:#250366;color:white;border:none;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
 
 /* TELA PRETA */
 .modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;flex-direction:column}
 .modal-content{background:white;padding:20px;border-radius:10px;width:90%;max-width:400px;text-align:center;position:relative}
 .modal img{max-width:100%;height:250px;object-fit:contain}
-.fechar{position:absolute;top:10px;right:15px;font-size:28px;color:#c00;cursor:pointer;font-weight:bold}
+.fechar{position:absolute;top:10px;right:15px;font-size:28px;color:#000;cursor:pointer;font-weight:bold}
 .seta{position:absolute;top:50%;transform:translateY(-50%);font-size:40px;color:#333;background:rgba(255,255,255,0.8);border:none;border-radius:50%;width:40px;height:40px;cursor:pointer}
-.anterior{left:-20px}
-.proximo{right:-20px}
-</style>
-</head>
-<header style="background: #FFEA00; padding: 15px 0; overflow: hidden;">
-  <div style="white-space: nowrap; color: #d32f2f; font-size: 28px; font-weight: bold; font-family: Arial; animation: passar 12s linear infinite;">
-  LIDEL MED - Produtos Hospitalares e Ortopédicos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIDEL MED - Produtos Hospitalares e Ortopédicos
-  </div>
-</header>
+.anterior{left:20px}
+.proximo{right:20px}
 
-<style>
 @keyframes passar {
- 0% { transform: translateX(0%); }
- 100% { transform: translateX(-50%); }
+0% { transform: translateX(0%); }
+100% { transform: translateX(-50%); }
 }
 </style>
+</head>
+<body style="background: #FFE4B0; padding: 15px 0; overflow-x: hidden;">
+<header>
+<div style="white-space: nowrap; color: #252525; font-size: 20px; font-weight: bold; font-family: Arial; animation: passar 12s linear infinite;">
+LIDEL MED - Produtos Hospitalares e Ortopédicos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIDEL MED - Produtos Hospitalares e Ortopédicos
+</div>
+</header>
 
-<button id="btnInstalar" style="display:block; margin: 20px auto; padding: 15px 30px; background: #007bff; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer;">📲 BAIXAR APLICATIVO</button>
+<button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
 <div id="grid"></div>
 
 <div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="fechar" onclick="fecharModal()">&times;</span>
-    <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
-    <img id="modalImg">
-    <h3 id="modalNome"></h3>
-    <p class="preco" id="modalAVista"></p>
-    <p class="cartao" id="modalCartao"></p>
-    <a id="modalZap" href="#" target="_blank" class="btnZapProduto">💬 PEDIR NO WHATSAPP</a>
-    <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
-  </div>
+<span class="fechar" onclick="fecharModal()">&times;</span>
+<div class="modal-content">
+<img id="imgModal" src="">
+<h3 id="modalNome"></h3>
+<p id="modalAVista" class="preco"></p>
+<p id="modalCartao" class="cartao"></p>
+<a id="modalZap" class="btnZapProduto" target="_blank">💬 PEDIR NO WHATSAPP</a>
+</div>
+<button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
+<button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
 </div>
 
 <script>
 let deferredPrompt;
 let produtos = [];
 let produtoAtual = 0;
-const numeroZap = "5573999144898"; // SEU NUMERO
+const numeroZap = "+5573999144898"; // SEU NUMERO
 
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block'});
-document.getElementById('btnInstalar').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null}};
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('btnInstalar').style.display = 'block';
+});
+
+document.getElementById('btnInstalar').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  } else {
+    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto! Vai aparecer na sua tela");
+  }
+});
 
 fetch('produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
@@ -77,33 +89,32 @@ const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
 let avista = p.preco_avista;
 let cartao = p.preco_cartao;
-let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
-
-return`
+let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista});
+return `
 <div class="produto" onclick="abrirModal(${i})">
 <img src="${p.imagem}">
 <h3>${p.nome}</h3>
 <p class="preco">À vista: R$ ${avista}</p>
 <p class="cartao">Cartão: R$ ${cartao}</p>
 <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
-</div>`}).join('')
+</div>`}).join('');
 });
 
-function abrirModal(indice){
-produtoAtual=indice;
+function abrirModal(index){
+produtoAtual=index;
 let p=produtos[produtoAtual];
-let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista}`);
-document.getElementById('modalImg').src=p.imagem;
+let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista});
+document.getElementById('imgModal').src=p.imagem;
 document.getElementById('modalNome').innerText=p.nome;
 document.getElementById('modalAVista').innerText='À vista: R$ '+p.preco_avista;
 document.getElementById('modalCartao').innerText='Cartão: R$ '+p.preco_cartao;
-document.getElementById('modalZap').href=`https://wa.me/${numeroZap}?text=${msg}`;
+document.getElementById('modalZap').href=https://wa.me/${numeroZap}?text=${msg};
 document.getElementById('modal').style.display='flex';
 }
-function fecharModal(){document.getElementById('modal').style.display='none'}
-function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;abrirModal(produtoAtual)}
-window.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
-</script>
 
+function fecharModal(){document.getElementById('modal').style.display='none'}
+function trocarProduto(direcao){produtoAtual=(produtoAtual+direcao+produtos.length)%produtos.length;abrirModal(produtoAtual)}
+document.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
+</script>
 </body>
 </html>
