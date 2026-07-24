@@ -380,8 +380,8 @@
   "categoria": "Equipamentos",
   "preco_avista": 180.00,
   "preco_cartao": 200.00,
-  "descricao": "Nebolizador compressor compacto",
-  "imagem": "imagens/Nebolizador-compressor-compacto.jpg"
+  "descricao": "nebolizador compressor compacto",
+  "imagem": "imagens/nebolizador-compressor-compacto.jpg"
 },
 {
   "nome": "Aspirador de secreção MAXMED",
@@ -397,15 +397,15 @@
     "preco_avista": 163.00,
     "preco_cartao": 180.00,
     "descricao": "Monitor de pressão KF65",
-    "imagem": "imagens/monitor-de-pressao-KF65.jpg"
+    "imagem": "imagens/monitor-de-pressao-kf65.jpg"
   },
   {
     "nome": "Medidor de pressão ultra max",
     "categoria": "Monitoramento",
     "preco_avista": 178.00,
     "preco_cartao": 180.00,
-    "descricao": "Medidor de pressão ultra max",
-    "imagem": "imagens/Medidor-de-pressao-ultra-max.jpg"
+    "descricao": "medidor de pressão ultra max",
+    "imagem": "imagens/medidor-de-pressao-ultra-max.jpg"
   },
   {
     "nome": "Fracionador de comprimido",
@@ -416,12 +416,12 @@
     "imagem": "imagens/fracionador-de-comprimido.jpg"
   },
   {
-    "nome": "Cadeira motorizada D800",
-    "categoria": "cadeira-de-rodas-motorizada",
+    "nome": "Cadeira de rodas motorizada D800",
+    "categoria": "cadeira de Rodas Motorizada",
     "preco_avista": 6500.00,
     "preco_cartao": 7000.00,
-    "descricao": "Cadeira motorizada D800",
-    "imagem": "imagens/cadeira-motorizada-D800.jpg"
+    "descricao": "Cadeira de rodas motorizada D800",
+    "imagem": "imagens/cadeira-motorizada-d800.jpg"
   },
  {
   "nome": "Cadeira Higiênica S50 Supermedy",
