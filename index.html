@@ -43,7 +43,7 @@ header h1 {
 }
 .marquee-item {
   display: inline-block;
-  padding-right: 100px; /* ESPAÇO ENTRE AS REPETIÇÕES */
+  padding-right: 100px;
 }
 @keyframes marquee {
  0% { transform: translateX(0); }
@@ -61,7 +61,7 @@ header h1 {
 }
 @media (min-width: 768px) {
   #grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 COLUNAS NO PC */
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     padding: 25px;
   }
@@ -254,12 +254,12 @@ document.getElementById('btnInstalar').addEventListener('click', async () => {
 // CARREGAR PRODUTOS
 fetch('produtos.json?v=' + new Date().getTime())
 .then(r => {
-  if(!r.ok) throw new Error('Arquivo produtos.json não encontrado');
+  if(!r.ok) throw new Error('Arquivo produtos.json NÃO ENCONTRADO');
   return r.json()
 })
 .then(d => {
   produtos = d;
-  if(produtos.length === 0) throw new Error('O produtos.json está vazio');
+  if(produtos.length === 0) throw new Error('O produtos.json está VAZIO');
   const grid = document.getElementById('grid');
   grid.innerHTML = produtos.map((p, i) => {
     let avista = parseFloat(p.preco_avista).toFixed(2).replace('.',',');
@@ -276,7 +276,7 @@ fetch('produtos.json?v=' + new Date().getTime())
   }).join('');
 })
 .catch(error => {
-  document.getElementById('grid').innerHTML = <div class="erro">ERRO: ${error.message}<br>Verifica se o produtos.json está com vírgula ou aspas errada</div>;
+  document.getElementById('grid').innerHTML = <div class="erro">ERRO: ${error.message}<br><br>Verifica 2 coisas:<br>1. O arquivo se chama produtos.json<br>2. Não tem vírgula no último produto</div>;
 });
 
 // FUNÇÕES DO MODAL
