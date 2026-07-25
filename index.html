@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LIDEL MED</title>
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.json?v=2">
+<meta name="theme-color" content="#B22222">
 <style>
+* { box-sizing: border-box; }
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -17,23 +19,51 @@ header {
   background: #FFD700;
   padding: 15px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 header h1 {
   margin: 0;
   color: #B22222;
   font-size: 18px;
 }
+
+/* LETREIRO CORRENDO COM ESPAÇO */
+.marquee {
+  background: #B22222;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+.marquee-item {
+  display: inline-block;
+  padding-right: 100px; /* ESPAÇO ENTRE AS REPETIÇÕES */
+}
+@keyframes marquee {
+ 0% { transform: translateX(0); }
+ 100% { transform: translateX(-50%); }
+}
+
+/* GRID DE PRODUTOS */
 #grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  padding: 15px;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   #grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(4, 1fr); /* 4 COLUNAS NO PC */
+    gap: 25px;
+    padding: 25px;
   }
 }
 .produto {
@@ -43,6 +73,10 @@ header h1 {
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
   text-align: center;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.produto:hover {
+  transform: translateY(-5px);
 }
 .produto img {
   max-width: 100%;
@@ -79,8 +113,10 @@ header h1 {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* BOTÃO INSTALAR APP */
 #btnInstalar {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -94,6 +130,19 @@ header h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,.3);
   cursor: pointer;
 }
+
+/* ERRO */
+.erro {
+  background: #B22222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  grid-column: 1 / -1;
+}
+
+/* MODAL */
 .modal {
   display: none;
   position: fixed;
@@ -142,6 +191,7 @@ header h1 {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  z-index: 1001;
 }
 .anterior { left: 20px; }
 .proximo { right: 20px; }
@@ -153,9 +203,18 @@ header h1 {
   <h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1>
 </header>
 
+<!-- LETREIRO DUPLICADO -->
+<div class="marquee">
+  <div class="marquee-content">
+    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 PRODUTOS HOSPITALARES E ORTOPÉDICOS COM OS MELHORES PREÇOS!</span>
+    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 PRODUTOS HOSPITALARES E ORTOPÉDICOS COM OS MELHORES PREÇOS!</span>
+  </div>
+</div>
+
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
 <div id="grid">Carregando produtos...</div>
 
+<!-- MODAL -->
 <div id="modal" class="modal">
   <span class="fechar" onclick="fecharModal()">&times;</span>
   <div class="modal-content">
@@ -175,6 +234,7 @@ let produtos = [];
 let produtoAtual = 0;
 const numeroZap = "+5573999144898";
 
+// BOTÃO INSTALAR APP
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
@@ -191,15 +251,20 @@ document.getElementById('btnInstalar').addEventListener('click', async () => {
   }
 });
 
-fetch('produtos.json')
-.then(r => r.json())
+// CARREGAR PRODUTOS
+fetch('produtos.json?v=' + new Date().getTime())
+.then(r => {
+  if(!r.ok) throw new Error('Arquivo produtos.json não encontrado');
+  return r.json()
+})
 .then(d => {
   produtos = d;
+  if(produtos.length === 0) throw new Error('O produtos.json está vazio');
   const grid = document.getElementById('grid');
   grid.innerHTML = produtos.map((p, i) => {
     let avista = parseFloat(p.preco_avista).toFixed(2).replace('.',',');
     let cartao = parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
-    let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
+    let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista});
     return `
     <div class="produto" onclick="abrirModal(${i})">
       <img src="${p.imagem}" alt="${p.nome}">
@@ -209,19 +274,23 @@ fetch('produtos.json')
       <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
     </div>`
   }).join('');
+})
+.catch(error => {
+  document.getElementById('grid').innerHTML = <div class="erro">ERRO: ${error.message}<br>Verifica se o produtos.json está com vírgula ou aspas errada</div>;
 });
 
+// FUNÇÕES DO MODAL
 function abrirModal(index) {
   produtoAtual = index;
   let p = produtos[produtoAtual];
   let avista = parseFloat(p.preco_avista).toFixed(2).replace('.',',');
   let cartao = parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
-  let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
+  let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista});
   document.getElementById('imgModal').src = p.imagem;
   document.getElementById('modalNome').innerText = p.nome;
   document.getElementById('modalAVista').innerText = 'À vista: R$ ' + avista;
   document.getElementById('modalCartao').innerText = 'Cartão: R$ ' + cartao;
-  document.getElementById('modalZap').href = `https://wa.me/${numeroZap}?text=${msg}`;
+  document.getElementById('modalZap').href = https://wa.me/${numeroZap}?text=${msg};
   document.getElementById('modal').style.display = 'flex';
 }
 
@@ -234,6 +303,7 @@ function trocarProduto(direcao) {
   abrirModal(produtoAtual);
 }
 
+// FECHAR MODAL CLICANDO FORA
 document.onclick = function(event) {
   if (event.target == document.getElementById('modal')) {
     fecharModal();
