@@ -1,111 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LIDEL MED - Produtos Hospitalares e Ortopédicos</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#B22222">
-<link rel="icon" href="icon-192.png">
-<style>
-* {box-sizing: border-box; margin: 0; padding: 0;}
-body {font-family: Arial, sans-serif; background: #FFE4B0; color: #333; padding-bottom: 100px;}
-header {background: linear-gradient(135deg, #FFD700, #FFA500); padding: 15px 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
-header h1 {margin: 0; color: #B22222; font-size: 20px; font-weight: bold;}
-.marquee {background: #B22222; color: white; padding: 12px 0; font-weight: bold; overflow: hidden; white-space: nowrap;}
-.marquee-content {display: inline-block; animation: marquee 25s linear infinite;}
-.marquee-item {display: inline-block; padding-right: 100px; font-size: 15px;}
-@keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
-.container {max-width: 1400px; margin: 0 auto; padding: 20px;}
-#grid {display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;}
-@media (min-width: 768px) {#grid {grid-template-columns: repeat(4, 1fr);}}
-.produto {background: white; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s;}
-.produto:hover {transform: translateY(-5px);}
-.produto img {max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 10px;}
-.produto h3 {font-size: 15px; min-height: 40px; color: #B22222; margin-bottom: 8px;}
-.preco {font-weight: bold; color: #B22222; font-size: 17px; margin: 5px 0;}
-.cartao {font-size: 13px; color: #555; margin-bottom: 10px;}
-.btnZap {display:block; margin-top:8px; padding:12px; background:#25D366; color:white; border-radius:8px; text-decoration:none; font-weight:bold; font-size:14px;}
-.btnZap:hover {background:#1ebe5a;}
-#btnInstalar {display:none; position: fixed; bottom: 20px; right: 20px; padding: 15px 25px; background: #007bff; color: white; border: none; border-radius: 15px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(0,123,255,0.4); z-index: 999;}
-.loading {text-align: center; padding: 50px; font-size: 18px; color: #B22222;}
+ 100% { transform: translateX(-50%); }
+}
 </style>
-</head>
-<body>
-<header>
-  <h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1>
 </header>
 
-<div class="marquee">
-  <div class="marquee-content">
-    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-  </div>
-</div>
-
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
+<button id="btnInstalar" style="display:block; margin: 20px auto; padding: 15px 30px; background: #007bff; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer;">📲 BAIXAR APLICATIVO</button>
+<div id="grid"></div>
 
-<div class="container">
-  <div id="grid">
-    <div class="loading">Carregando produtos...</div>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
+    <img id="modalImg">
+    <h3 id="modalNome"></h3>
+    <p class="preco" id="modalAVista"></p>
+    <p class="cartao" id="modalCartao"></p>
+    <a id="modalZap" href="#" target="_blank" class="btnZapProduto">💬 PEDIR NO WHATSAPP</a>
+    <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
   </div>
 </div>
 
 <script>
-const numeroZap = "+5573999144898";
-
-// PWA Instalar
 let deferredPrompt;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  document.getElementById('btnInstalar').style.display = 'block';
-});
-document.getElementById('btnInstalar').addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    deferredPrompt = null;
-    document.getElementById('btnInstalar').style.display = 'none';
-  }
+let produtos = [];
+let produtoAtual = 0;
+const numeroZap = "5573999144898"; // SEU NUMERO
+
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block'});
+document.getElementById('btnInstalar').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null}};
+
+fetch('produtos.json').then(r=>r.json()).then(d=>{
+produtos = d;
+const grid = document.getElementById('grid');
+grid.innerHTML = produtos.map((p,i)=>{
+let avista = p.preco_avista;
+let cartao = p.preco_cartao;
+let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
+
+return`
+<div class="produto" onclick="abrirModal(${i})">
+<img src="${p.imagem}">
+<h3>${p.nome}</h3>
+<p class="preco">À vista: R$ ${avista}</p>
+<p class="cartao">Cartão: R$ ${cartao}</p>
+<a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
+</div>`}).join('')
 });
 
-// Carregar Produtos
-fetch('produtos.json')
-.then(r => {
-  if(!r.ok) throw new Error('Arquivo não encontrado');
-  return r.json();
-})
-.then(d => {
-  const grid = document.getElementById('grid');
-  if(!d || d.length === 0){
-    grid.innerHTML = '<div class="loading">Nenhum produto encontrado</div>'; 
-    return;
-  }
-  grid.innerHTML = d.map(p => {
-    let avista = p.preco_avista == 0 ? 'Consultar' : 'R$ ' + parseFloat(p.preco_avista).toFixed(2).replace('.',',');
-    let cartao = p.preco_cartao == 0 ? 'Consultar' : 'R$ ' + parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
-    let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: ${avista});
-    let img = p.imagem || 'https://via.placeholder.com/150';
-    return `
-      <div class="produto">
-        <img src="${img}" onerror="this.src='https://via.placeholder.com/150'">
-        <h3>${p.nome}</h3>
-        <p class="preco">À vista: ${avista}</p>
-        <p class="cartao">Cartão: ${cartao}</p>
-        <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZap">💬 WHATSAPP</a>
-      </div>
-    `
-  }).join('');
-})
-.catch(err => {
-  console.error(err);
-  document.getElementById('grid').innerHTML = '<div class="loading">Erro ao carregar produtos. Verifique o produtos.json</div>';
-});
-
-// Registrar Service Worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+function abrirModal(indice){
+produtoAtual=indice;
+let p=produtos[produtoAtual];
+let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista}`);
+document.getElementById('modalImg').src=p.imagem;
+document.getElementById('modalNome').innerText=p.nome;
+document.getElementById('modalAVista').innerText='À vista: R$ '+p.preco_avista;
+document.getElementById('modalCartao').innerText='Cartão: R$ '+p.preco_cartao;
+document.getElementById('modalZap').href=`https://wa.me/${numeroZap}?text=${msg}`;
+document.getElementById('modal').style.display='flex';
 }
+function fecharModal(){document.getElementById('modal').style.display='none'}
+function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;abrirModal(produtoAtual)}
+window.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
 </script>
+
 </body>
 </html>
