@@ -27,16 +27,25 @@ header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: cente
 @keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
 #btnInstalar {display: block; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #007bff; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999;}
 
-#grid {
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; 
-  padding: 20px; 
-  max-width: 1200px; 
-  margin: 0 auto;
 }
+    /* MOBILE: 2 colunas */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+   max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TABLET: 3 colunas */
+@media (min-width: 600px) {
+    #grid {grid-template-columns: repeat(3, 1fr);}
+}
+
+/* DESKTOP: 4 colunas */
 @media (min-width: 768px) {
-  #grid {grid-template-columns: repeat(4, 1fr);}
+    #grid {grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px;}
 }
 
 .produto {
