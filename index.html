@@ -87,9 +87,20 @@ let deferredPrompt;
 let produtos = [];
 let produtoAtual = 0;
 const numeroZap = "5573999144898"; // SEU NUMERO
-
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block'});
-document.getElementById('btnInstalar').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null}};
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('btnInstalar').style.display = 'block';
+});
+document.getElementById('btnInstalar').onclick = async () => {
+  if(deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  } else {
+    alert('Para instalar: toque nos 3 pontinhos > Instalar app');
+  }
+};
 
 fetch('produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
