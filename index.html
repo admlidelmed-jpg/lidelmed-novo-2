@@ -3,41 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LIDEL MED</title>
+<title>LIDEL MED - Produtos Hospitalares e Ortopédicos</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#B22222">
+<link rel="icon" href="icon-192.png">
 <style>
-body {font-family: Arial; margin: 0; background: #FFE4B0;}
-header {background: #FFD700; padding: 15px; text-align: center;}
-header h1 {margin: 0; color: #B22222; font-size: 18px;}
-.marquee {background: #B22222; color: white; padding: 10px; font-weight: bold; overflow: hidden;}
-.marquee span {display: inline-block; padding-left: 100%; animation: marquee 15s linear infinite;}
-@keyframes marquee {0% {transform: translateX(0);} 100% {transform: translateX(-100%);}}
-#grid {display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 15px;}
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: Arial, sans-serif; background: #FFE4B0; color: #333; padding-bottom: 100px;}
+header {background: linear-gradient(135deg, #FFD700, #FFA500); padding: 15px 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+header h1 {margin: 0; color: #B22222; font-size: 20px; font-weight: bold;}
+.marquee {background: #B22222; color: white; padding: 12px 0; font-weight: bold; overflow: hidden; white-space: nowrap;}
+.marquee-content {display: inline-block; animation: marquee 25s linear infinite;}
+.marquee-item {display: inline-block; padding-right: 100px; font-size: 15px;}
+@keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
+.container {max-width: 1400px; margin: 0 auto; padding: 20px;}
+#grid {display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;}
 @media (min-width: 768px) {#grid {grid-template-columns: repeat(4, 1fr);}}
-.produto {background: white; border-radius: 10px; padding: 15px; text-align: center;}
-.produto img {max-width: 100%; height: 140px; object-fit: contain;}
-.preco {font-weight: bold; color: #B22222;}
-.btnZap {display:block; background:#25D366; color:white; padding:10px; border-radius:8px; text-decoration:none; margin-top:5px;}
+.produto {background: white; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s;}
+.produto:hover {transform: translateY(-5px);}
+.produto img {max-width: 100%; height: 150px; object-fit: contain; margin-bottom: 10px;}
+.produto h3 {font-size: 15px; min-height: 40px; color: #B22222; margin-bottom: 8px;}
+.preco {font-weight: bold; color: #B22222; font-size: 17px; margin: 5px 0;}
+.cartao {font-size: 13px; color: #555; margin-bottom: 10px;}
+.btnZap {display:block; margin-top:8px; padding:12px; background:#25D366; color:white; border-radius:8px; text-decoration:none; font-weight:bold; font-size:14px;}
+.btnZap:hover {background:#1ebe5a;}
+#btnInstalar {display:none; position: fixed; bottom: 20px; right: 20px; padding: 15px 25px; background: #007bff; color: white; border: none; border-radius: 15px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(0,123,255,0.4); z-index: 999;}
+.loading {text-align: center; padding: 50px; font-size: 18px; color: #B22222;}
 </style>
 </head>
 <body>
-<header><h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1></header>
-<div class="marquee"><span>🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span></div>
-<div id="grid">Carregando produtos...</div>
+<header>
+  <h1>LIDEL MED - Produtos Hospitalares e Ortopédicos</h1>
+</header>
+
+<div class="marquee">
+  <div class="marquee-content">
+    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
+    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
+  </div>
+</div>
+
+<button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
+
+<div class="container">
+  <div id="grid">
+    <div class="loading">Carregando produtos...</div>
+  </div>
+</div>
 
 <script>
 const numeroZap = "+5573999144898";
+
+// PWA Instalar
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('btnInstalar').style.display = 'block';
+});
+document.getElementById('btnInstalar').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt = null;
+    document.getElementById('btnInstalar').style.display = 'none';
+  }
+});
+
+// Carregar Produtos
 fetch('produtos.json')
-.then(r => r.json())
+.then(r => {
+  if(!r.ok) throw new Error('Arquivo não encontrado');
+  return r.json();
+})
 .then(d => {
   const grid = document.getElementById('grid');
+  if(!d || d.length === 0){
+    grid.innerHTML = '<div class="loading">Nenhum produto encontrado</div>'; 
+    return;
+  }
   grid.innerHTML = d.map(p => {
     let avista = p.preco_avista == 0 ? 'Consultar' : 'R$ ' + parseFloat(p.preco_avista).toFixed(2).replace('.',',');
     let cartao = p.preco_cartao == 0 ? 'Consultar' : 'R$ ' + parseFloat(p.preco_cartao).toFixed(2).replace('.',',');
-    let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome});
-    return <div class="produto"><img src="${p.imagem}"><h3>${p.nome}</h3><p class="preco">À vista: ${avista}</p><p>Cartão: ${cartao}</p><a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZap">💬 WHATSAPP</a></div>
+    let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: ${avista});
+    let img = p.imagem || 'https://via.placeholder.com/150';
+    return `
+      <div class="produto">
+        <img src="${img}" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>${p.nome}</h3>
+        <p class="preco">À vista: ${avista}</p>
+        <p class="cartao">Cartão: ${cartao}</p>
+        <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZap">💬 WHATSAPP</a>
+      </div>
+    `
   }).join('');
 })
-.catch(() => {document.getElementById('grid').innerHTML = 'Erro ao carregar produtos'});
+.catch(err => {
+  console.error(err);
+  document.getElementById('grid').innerHTML = '<div class="loading">Erro ao carregar produtos. Verifique o produtos.json</div>';
+});
+
+// Registrar Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
 </script>
 </body>
 </html>
