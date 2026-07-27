@@ -8,14 +8,6 @@
 </head>
 <body>
 
-<header>
-    <h1>Lidelmed</h1>
-    <div class="marquee">
-        <div class="marquee-content">
-            <span class="marquee-item">FRETE GRÁTIS PARA ITABUNA E ILHÉUS</span>
-        </div>
-    </div>
-</header>
 <style>
 .grid {
     display: grid;
@@ -39,6 +31,48 @@
     height: 200px;
     object-fit: contain;
     margin-bottom: 10px;
+header {
+    background: red;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+}
+.app-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+}    
 }
 </style> 
     
@@ -52,7 +86,6 @@
         <a class="app-btn" href="#" target="_blank">Baixar Aplicativo</a>
     </div>
 </header>
-    
 <main>
     <input type="text" id="searchInput" placeholder="Pesquisar produto...">
     <div id="grid" class="grid"></div>
