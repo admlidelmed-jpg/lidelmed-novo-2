@@ -58,8 +58,8 @@ function mostrarProdutos(){
         card.innerHTML = `
             <img src="${p.imagem}" alt="${p.nome}">
             <h3>${p.nome}</h3>
-            <p class="preco">${p.avista}</p>
-            <p class="cartao">${p.aprazo}</p>
+         <p class="preco">${p.avista}</p>
+         <p class="cartao">${p.aprazo}</p> 
         `;
         card.onclick = () => abrirModal(i);
         grid.appendChild(card);
