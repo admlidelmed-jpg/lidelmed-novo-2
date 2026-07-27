@@ -58,8 +58,8 @@ function mostrarProdutos(){
         card.innerHTML = `
             <img src="${p.imagem}" alt="${p.nome}">
             <h3>${p.nome}</h3>
-         <p class="preco">${p.avista}</p>
-         <p class="cartao">${p.aprazo}</p> 
+   <p class="preco">R$ ${p.preco_avista}</p>
+            <p class="cartao">R$ ${p.preco_cartao} no cartão</p>
         `;
         card.onclick = () => abrirModal(i);
         grid.appendChild(card);
@@ -71,8 +71,8 @@ function abrirModal(i){
     const p = produtos[i];
     document.getElementById('modalImg').src = p.imagem;
     document.getElementById('modalNome').innerText = p.nome;
-    document.getElementById('modalAVista').innerText = p.avista;
-    document.getElementById('modalAp').innerText = p.aprazo;
+document.getElementById('modalAVista').innerText = "R$ " + p.preco_avista;
+        document.getElementById('modalAp').innerText = "R$ " + p.preco_cartao + " no cartão";
     document.getElementById('modalZap').href = https://wa.me/5573999999?text=Olá, quero o produto: ${p.nome};
     modal.style.display = 'block';
 }
