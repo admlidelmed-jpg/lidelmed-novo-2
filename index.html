@@ -69,15 +69,14 @@ function mostrarProdutos(){
 
 function abrirModal(i){
     produtoAtual = i;
-    const p = produtos[i];
-    document.getElementById('modalImg').src = ${p.imagem};
-    document.getElementById('modalNome').innerText = p.nome;
-    document.getElementById('modalAVista').innerText = R$ ${p.preco_avista};
-    document.getElementById('modalAP').innerText = R$ ${p.preco_cartao} no cartão;
-    document.getElementById('modalZap').href = https://wa.me/557399144898?text=Olá, quero o produto: ${p.nome};
+    const p = produtos[produtoAtual]; // <-- MUDOU SÓ AQUI
+document.getElementById('modalImg').src = `${p.imagem}`;
+document.getElementById('modalNome').innerText = p.nome;
+document.getElementById('modalAVista').innerText = `R$ ${p.preco_avista}`;
+document.getElementById('modalAP').innerText = `R$ ${p.preco_cartao} no cartão`;
+document.getElementById('modalZap').href = `https://wa.me/557399144898?text=Olá, quero o produto: ${p.nome}`;
     modal.style.display = 'block';
 }
-
 document.querySelector('.close').onclick = () => modal.style.display = 'none';
 document.getElementById('prevBtn').onclick = () => { if(produtoAtual > 0) abrirModal(produtoAtual - 1); }
 document.getElementById('nextBtn').onclick = () => { if(produtoAtual < produtos.length - 1) abrirModal(produtoAtual + 1); }
