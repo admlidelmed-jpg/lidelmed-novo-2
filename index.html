@@ -43,7 +43,7 @@ let produtoAtual = 0;
 const grid = document.getElementById('grid');
 const modal = document.getElementById('modal');
 
-fetch('./produtos.json')
+fetch('produtos.json')
 .then(res => res.json())
 .then(data => {
     produtos = data;
