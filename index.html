@@ -57,7 +57,7 @@ function mostrarProdutos(){
         const card = document.createElement('div');
         card.className = 'product';
         card.innerHTML = `
-            <img src="/${p.imagem}" alt="${p.nome}">
+            <img src="${p.imagem}" alt="${p.nome}">
             <h3>${p.nome}</h3>
             <p class="preco">R$ ${p.preco_avista}</p>
             <p class="cartao">R$ ${p.preco_cartao} no cartão</p>
@@ -70,7 +70,7 @@ function mostrarProdutos(){
 function abrirModal(i){
     produtoAtual = i;
     const p = produtos[i];
-    document.getElementById('modalImg').src = /${p.imagem};
+    document.getElementById('modalImg').src = ${p.imagem};
     document.getElementById('modalNome').innerText = p.nome;
     document.getElementById('modalAVista').innerText = R$ ${p.preco_avista};
     document.getElementById('modalAP').innerText = R$ ${p.preco_cartao} no cartão;
