@@ -1,147 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>LIDEL MED</title>
-    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidelmed</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <div class="marquee">
-  <div class="marquee-content">
-    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-     <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-     <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-  </div>
+<body>
+
 <header>
     <h1>LIDEL MED</h1>
 </header>
-<button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
-<!-- COPIA E COLA O CSS TODO AQUI -->
-<style>
-* {box-sizing: border-box; margin: 0; padding: 0;}
-body {font-family: Arial, sans-serif; background: #FFF8DC; padding-bottom: 80px;}
-header {background: #FFD700; padding: 15px; text-align: center;}
-header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: center;}
-/* LETREIRO VERMELHO PASSANDO */
-.marquee {background: #B22222; color: white; padding: 12px 0; font-weight: bold; overflow: hidden; white-space: nowrap;}
-.marquee-content {display: inline-block; animation: marquee 25s linear infinite;}
-.marquee-item {display: inline-block; padding-right: 100px; font-size: 15px;}
-@keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
-#btnInstalar {display: block; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #007bff; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999;}
 
-}
-    /* MOBILE: 2 colunas */
-#grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
-   max-width: 1200px;
-    margin: 0 auto;
-}
+<div class="marquee">
+    <div class="marquee-content">
+        <span class="marquee-item">FRETE GRÁTIS PARA ITABUNA E ILHÉUS</span>
+    </div>
+</div>
 
-/* TABLET: 3 colunas */
-@media (min-width: 600px) {
-    #grid {grid-template-columns: repeat(3, 1fr);}
-}
-
-/* DESKTOP: 2 colunas */
-@media (min-width: 768px) {
-    #grid {grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 20px;}
-}
-.product {
-    background: #FFF8DC;
-    border-radius: 10px;
-    padding: 8px; /* menor */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    cursor: pointer;
-}
-.product img {
-    max-width: 100%;
-    height: 130px; /* menor */
-    object-fit: contain;
-    margin-bottom: 8px;
-}
-.product h3 {font-size: 14px; min-height: 40px; color: #B22222; margin-bottom: 5px;}
-.preco {font-weight: bold; color: #B22222; font-size: 16px;}
-.cartao {font-size: 13px; color: #555; margin-bottom: 8px;}
-}
-
-.modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
-.modal-content {background: white; margin: 5% auto; padding: 20px; border-radius: 12px; width: 90%; max-width: 500px; text-align: center;}
-.fechar {float: right; font-size: 28px; cursor: pointer;}
-.seta {background: #B22222; color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; margin: 0 10px;}
-#modalImg {max-width: 100%; height: 200px; object-fit: contain;}
-</style>
-
-<button id="btnInstalar">📲 BAIXAR APLICATIVO</button>  <!-- linha 5 -->
+<button id="btnInstalar">BAIXAR APLICATIVO</button>
 
 <div id="grid"></div>
 
 <div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="fechar" onclick="fecharModal()">&times;</span>
-    <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
-    <img id="modalImg">
-    <h3 id="modalNome"></h3>
-    <p class="preco" id="modalAVista"></p>
-    <p class="cartao" id="modalCartao"></p>
-    <a id="modalZap" href="#" target="_blank" class="btnZapProduto">💬 PEDIR NO WHATSAPP</a>
-    <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
-  </div>
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
+        <img id="modalImg" src="" alt="">
+        <h3 id="modalNome"></h3>
+        <p class="preco" id="modalAVista"></p>
+        <p class="cartao" id="modalAp"></p>
+        <a id="modalZap" href="#" target="_blank" class="btnZapProduto">PEDIR NO WHATSAPP</a>
+        <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
+    </div>
 </div>
 
 <script>
 let deferredPrompt;
 let produtos = [];
 let produtoAtual = 0;
-const numeroZap = "5573999144898"; // SEU NUMERO
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredPrompt = e;
-  document.getElementById('btnInstalar').style.display = 'block';
-});
-document.getElementById('btnInstalar').onclick = async () => {
-  if(deferredPrompt) {
-    deferredPrompt.prompt();
-    await deferredPrompt.userChoice;
-    deferredPrompt = null;
-  } else {
-    alert('Para instalar: toque nos 3 pontinhos > Instalar app');
-  }
-};
 
-fetch('produtos.json').then(r=>r.json()).then(d=>{
-produtos = d;
 const grid = document.getElementById('grid');
-grid.innerHTML = produtos.map((p,i)=>{
-let avista = p.preco_avista;
-let cartao = p.preco_cartao;
-let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
+const modal = document.getElementById('modal');
 
-return`
-<div class="produto" onclick="abrirModal(${i})">
-<img src="${p.imagem}">
-<h3>${p.nome}</h3>
-<p class="preco">À vista: R$ ${avista}</p>
-<p class="cartao">Cartão: R$ ${cartao}</p>
-<a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">💬 WHATSAPP</a>
-</div>`}).join('')
+fetch('produtos.json')
+.then(res => res.json())
+.then(data => {
+    produtos = data;
+    mostrarProdutos();
 });
 
-function abrirModal(indice){
-produtoAtual=indice;
-let p=produtos[produtoAtual];
-let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista}`);
-document.getElementById('modalImg').src=p.imagem;
-document.getElementById('modalNome').innerText=p.nome;
-document.getElementById('modalAVista').innerText='À vista: R$ '+p.preco_avista;
-document.getElementById('modalCartao').innerText='Cartão: R$ '+p.preco_cartao;
-document.getElementById('modalZap').href=`https://wa.me/${numeroZap}?text=${msg}`;
-document.getElementById('modal').style.display='flex';
+function mostrarProdutos(){
+    grid.innerHTML = '';
+    produtos.forEach((p, i) => {
+        const card = document.createElement('div');
+        card.className = 'product';
+        card.innerHTML = `
+            <img src="${p.imagem}" alt="${p.nome}">
+            <h3>${p.nome}</h3>
+            <p class="preco">${p.avista}</p>
+            <p class="cartao">${p.aprazo}</p>
+        `;
+        card.onclick = () => abrirModal(i);
+        grid.appendChild(card);
+    });
 }
-function fecharModal(){document.getElementById('modal').style.display='none'}
-function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;abrirModal(produtoAtual)}
-window.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
+
+function abrirModal(i){
+    produtoAtual = i;
+    const p = produtos[i];
+    document.getElementById('modalImg').src = p.imagem;
+    document.getElementById('modalNome').innerText = p.nome;
+    document.getElementById('modalAVista').innerText = p.avista;
+    document.getElementById('modalAp').innerText = p.aprazo;
+    document.getElementById('modalZap').href = https://wa.me/5573999999?text=Olá, quero o produto: ${p.nome};
+    modal.style.display = 'block';
+}
+
+function fecharModal(){
+    modal.style.display = 'none';
+}
+
+function trocarProduto(d){
+    produtoAtual = (produtoAtual + d + produtos.length) % produtos.length;
+    abrirModal(produtoAtual);
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        fecharModal();
+    }
+}
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('btnInstalar').style.display = 'block';
+});
+
+document.getElementById('btnInstalar').addEventListener('click', () => {
+    deferredPrompt.prompt();
+});
 </script>
 
 </body>
