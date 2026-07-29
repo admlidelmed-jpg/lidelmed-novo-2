@@ -27,8 +27,7 @@ header h1 { margin: 0; font-size: 28px; font-weight: bold; }
 .whatsapp-btn, .app-btn { display: inline-block; padding: 10px 15px; margin: 5px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; }
 .whatsapp-btn { background: #25D366; }
 .app-btn { background: #007bff; }
-#searchInput { width: 90%; max-width: 500px; padding: 10px; margin: 15px auto; display: block; border: 1px solid #ccc; border-radius: 5px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+ card.onclick = () => abrirModal(produtos.indexOf(p));       
 .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); }
 .modal-content { background: white; margin: 5% auto; padding: 20px; border-radius: 10px; width: 90%; max-width: 600px; position: relative; }
 .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
@@ -45,7 +44,6 @@ header h1 { margin: 0; font-size: 28px; font-weight: bold; }
     </div>
 </header>
 <main>
-    <input type="text" id="searchInput" placeholder="Pesquisar produto...">
     <div id="grid" class="grid"></div>
 </main>
 
@@ -108,23 +106,6 @@ document.querySelector('.close').onclick = () => modal.style.display = 'none';
 document.getElementById('prevBtn').onclick = () => { if(produtoAtual > 0) abrirModal(produtoAtual - 1); }
 document.getElementById('nextBtn').onclick = () => { if(produtoAtual < produtos.length - 1) abrirModal(produtoAtual + 1); }
 
-document.getElementById('searchInput').addEventListener('input', (e) => {
-    const termo = e.target.value.toLowerCase();
-    const filtrados = produtos.filter(p => p.nome.toLowerCase().includes(termo));
-    grid.innerHTML = '';
-    filtrados.forEach((p, i) => {
-        const card = document.createElement('div');
-        card.className = 'product';
-        card.innerHTML = `
-            <img src="/${p.imagem}" alt="${p.nome}">
-            <h3>${p.nome}</h3>
-            <p class="preco">R$ ${p.preco_avista}</p>
-            <p class="cartao">R$ ${p.preco_cartao} no cartão</p>
-        `;
-       card.onclick = () => abrirModal(produtos.indexOf(p));
-        grid.appendChild(card);
-    });
-});
 </script>
 
 </body>
