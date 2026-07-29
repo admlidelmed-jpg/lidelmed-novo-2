@@ -111,7 +111,7 @@
     "nome": "Cadeira de Roda D600",
     "imagem": "imagens/cadeira-de-roda-D600.jpg",
     "preco_avista": 1800,
-    "preco_cartao": 1850,
+    "preco_cartao": 1850
   },
   {
     "nome": "Cadeira de Rodas 120KG MM",
@@ -122,8 +122,8 @@
   {
     "nome": "Cadeira de Rodas D400",
     "imagem": "imagens/cadeira-de-rodas-D400.jpg",
-    "preco_avista": 0,
-    "preco_cartao": 0
+    "preco_avista": 1680,
+    "preco_cartao": 1500,
   },
   {
     "nome": "Cadeira de Rodas MM",
