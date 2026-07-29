@@ -2,122 +2,122 @@
   {
     "nome": "Monitor de pressão KF65",
     "imagem": "imagens/Monitor-de-pressao-KF65.jpg",
-    "preco_avista": 163,00
-    "preco_cartao": 200,00
+    "preco_avista": 163,
+    "preco_cartao": 200,
   },
   {
     "nome": "Almofada em Gel Quadrada",
     "imagem": "imagens/almofada-em-gel-quadrada.jpg",
-    "preco_avista": 200,00
-    "preco_cartao": 200,00
+    "preco_avista": 200,
+    "preco_cartao": 200,
   },
   {
     "nome": "Almofada em Gel Redonda",
     "imagem": "imagens/almofada-em-gel-redonda.jpg",
-    "preco_avista": 200,00
-    "preco_cartao": 200,00
+    "preco_avista": 200,
+    "preco_cartao": 200,
   },
   {
     "nome": "Almofada Meia Lua",
     "imagem": "imagens/almofada-meia-lua.jpg",
-    "preco_avista": 165,00,
-    "preco_cartao": 180,00
+    "preco_avista": 165,
+    "preco_cartao": 180,
   },
   {
     "nome": "Andador Articulado",
     "imagem": "imagens/andador-articulado.jpg",
-    "preco_avista": 230,00
-    "preco_cartao": 220,00
+    "preco_avista": 230,
+    "preco_cartao": 220,
   },
   {
     "nome": "Andador Rodinhas",
     "imagem": "imagens/andador-rodinhas.jpg",
-    "preco_avista": 285,00
-    "preco_cartao": 300,99
+    "preco_avista": 285,
+    "preco_cartao": 300,
   },
   {
     "nome": "Ante Refluxo Infantil",
     "imagem": "imagens/ante-refluxo-infantil.jpg",
-    "preco_avista": 50,00
-    "preco_cartao": 50,00
+    "preco_avista": 50,
+    "preco_cartao": 50,
   },
   {
     "nome": "Ante Refluxo",
     "imagem": "imagens/ante-refluxo.jpg",
-    "preco_avista": 230,00,
-    "preco_cartao": 210,00
+    "preco_avista": 230,
+    "preco_cartao": 210,
   },
   {
     "nome": "Aparelho Pressão Digital G-Tech",
     "imagem": "imagens/aparelho-pressao-digital-g-tech.jpg",
-    "preco_avista": 200,00
-    "preco_cartao": 185,00
+    "preco_avista": 200,
+    "preco_cartao": 185,
   },
   {
     "nome": "Aspirador de Secreção Maxmed",
     "imagem": "imagens/aspirador-de-secrecao-maxmed.jpg",
-    "preco_avista": 560,00
-    "preco_cartao": 598,00
+    "preco_avista": 560,
+    "preco_cartao": 598,
   },
   {
     "nome": "Aspirador Secreção Portátil",
     "imagem": "imagens/aspirador-secrecao-portatil.jpg",
-    "preco_avista": 620,00
-    "preco_cartao": 640,00
+    "preco_avista": 620,
+    "preco_cartao": 640,
   },
   {
     "nome": "Banqueta Banho",
     "imagem": "imagens/banqueta-banho.jpg",
-    "preco_avista": 200,00
-    "preco_cartao": 200,00
+    "preco_avista": 200,
+    "preco_cartao": 200,
   },
   {
     "nome": "Bola para Pilates",
     "imagem": "imagens/bola-para-pilats.jpg",
-    "preco_avista": 130,00
-    "preco_cartao": 130,00
+    "preco_avista": 130,
+    "preco_cartao": 130,
   },
   {
     "nome": "Bota Ortopédica Longa e Curta",
     "imagem": "imagens/bota-ortopedica-longa-e-curta.jpg",
-    "preco_avista": 200,00
-    "preco_cartao": 200,00
+    "preco_avista": 200,
+    "preco_cartao": 200,
   },
   {
     "nome": "Cadeira CDS",
     "imagem": "imagens/cadeira-cds.jpg",
-    "preco_avista": 850,00
-    "preco_cartao": 900,00
+    "preco_avista": 850,
+    "preco_cartao": 900,
   },
   {
     "nome": "Cadeira de Banho Alumínio Dobrável",
     "imagem": "imagens/cadeira-de-banho-aluminio-dobraveI.jpg",
-    "preco_avista": 1500,00
-    "preco_cartao": 1700,00
+    "preco_avista": 1500,
+    "preco_cartao": 1700,
   },
   {
     "nome": "Cadeira de Higienização D55",
     "imagem": "imagens/cadeira-de-higienizacao-d55.jpg",
-    "preco_avista": 650,00
-    "preco_cartao": 600,00
+    "preco_avista": 650,
+    "preco_cartao": 600,
   },
   {
     "nome": "Cadeira de Roda D100",
     "imagem": "imagens/cadeira-de-roda-D100.jpg",
-    "preco_avista": 900,00
-    "preco_cartao": 980,00
+    "preco_avista": 900,
+    "preco_cartao": 980,
   },
   {
     "nome": "Cadeira de Roda D600",
     "imagem": "imagens/cadeira-de-roda-D600.jpg",
-    "preco_avista": 1800,00
-    "preco_cartao": 1850,00
+    "preco_avista": 1800,
+    "preco_cartao": 1850,
   },
   {
     "nome": "Cadeira de Rodas 120KG MM",
     "imagem": "imagens/cadeira-de-rodas-120KG-mm.jpg",
-    "preco_avista": 500,00
-    "preco_cartao": 530,00
+    "preco_avista": 500,
+    "preco_cartao": 530,
   },
   {
     "nome": "Cadeira de Rodas D400",
@@ -128,62 +128,62 @@
   {
     "nome": "Cadeira de Rodas MM",
     "imagem": "imagens/cadeira-de-rodas-MM.jpg",
-    "preco_avista": 600,00
-    "preco_cartao": 630,00
+    "preco_avista": 600,
+    "preco_cartao": 630,
   },
   {
     "nome": "Cadeira de Rodas Motorizada D800",
     "imagem": "imagens/cadeira-de-rodas-motorizada-d800.jpg",
-    "preco_avista": 6800,00
-    "preco_cartao": 7112,00
+    "preco_avista": 6800,
+    "preco_cartao": 7112,
   },
   {
     "nome": "Cadeira de Rodas Simples Inflável Prolife",
     "imagem": "imagens/cadeira-de-rodas-simples-inflavel-prolife.jpg",
-    "preco_avista": 850,00
-    "preco_cartao": 900,00
+    "preco_avista": 850,
+    "preco_cartao": 900,
   },
   {
     "nome": "Cadeira Higiênica 3 em 1",
     "imagem": "imagens/cadeira-higienica-3-em-1.jpg",
-    "preco_avista": 1000,00
-    "preco_cartao": 1100,00
+    "preco_avista": 1000,
+    "preco_cartao": 1100,
   },
   {
     "nome": "Cadeira Higiênica MM",
     "imagem": "imagens/cadeira-higienica-MM.jpg",
-    "preco_avista": 400,00
-    "preco_cartao": 450,00
+    "preco_avista": 400,
+    "preco_cartao": 450,
   },
   {
     "nome": "Cadeira Higiênica S50 Supermedy",
     "imagem": "imagens/cadeira-higienica-S50-supermedy.jpg",
-    "preco_avista": 930,00
-    "preco_cartao": 960,00
+    "preco_avista": 930,
+    "preco_cartao": 960,
   },
   {
     "nome": "Cadeira Higiênica CDS",
     "imagem": "imagens/cadeira-higienica-cds.jpg",
-    "preco_avista": 420,00
-    "preco_cartao": 450,00
+    "preco_avista": 420,
+    "preco_cartao": 450,
   },
   {
     "nome": "Cadeira Higiênica Chicago",
     "imagem": "imagens/cadeira-higienica-chicago.jpg",
-    "preco_avista": 900,00
-    "preco_cartao": 800,00
+    "preco_avista": 900,
+    "preco_cartao": 800,
   },
   {
     "nome": "Cadeira Higiênica Mônaco",
     "imagem": "imagens/cadeira-higienica-monaco.jpg",
-    "preco_avista":  980,00
-    "preco_cartao": 1000,00
+    "preco_avista":  980,
+    "preco_cartao": 1000,
   },
   {
     "nome": "Cama Hospitalar",
     "imagem": "imagens/cama-hospitalar.jpg",
-    "preco_avista": 3150,00
-    "preco_cartao": 3000,00 
+    "preco_avista": 3150,
+    "preco_cartao": 3000,
   },
   {
     "nome": "Cinta Pós-Cirúrgica",
@@ -194,14 +194,14 @@
   {
     "nome": "Colchão D33",
     "imagem": "imagens/colchao-d33.jpg",
-    "preco_avista": 535,00
-    "preco_cartao": 560,00
+    "preco_avista": 535,
+    "preco_cartao": 560,
   },
   {
     "nome": "Colchão Pneumático",
     "imagem": "imagens/colchao-pneumatico.jpg",
-    "preco_avista": 320,00
-    "preco_cartao": 350,00
+    "preco_avista": 320,
+    "preco_cartao": 350,
   },
   {
     "nome": "Curativos",
@@ -212,32 +212,32 @@
   {
     "nome": "Escadinha Hospitalar",
     "imagem": "imagens/escadinha-hospitalar.jpg",
-    "preco_avista": 300,00
-    "preco_cartao": 350,00
+    "preco_avista": 300,
+    "preco_cartao": 350,
   },
   {
     "nome": "Fracionador de Comprimido",
     "imagem": "imagens/fracionador-de-comprimido.jpg",
-    "preco_avista": 40,00
-    "preco_cartao": 40,00
+    "preco_avista": 40,
+    "preco_cartao": 40,
   },
   {
     "nome": "Guincho de Transferência para Acamado",
     "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
-    "preco_avista": 2800,00
-    "preco_cartao": 2500,00
+    "preco_avista": 2800,
+    "preco_cartao": 2500,
   },
   {
     "nome": "Imobilizador Curto",
     "imagem": "imagens/imobilizador-curto.jpg",
-    "preco_avista": 110,00
-    "preco_cartao": 120,00
+    "preco_avista": 110,
+    "preco_cartao": 120,
   },
   {
     "nome": "Imobilizador Pulso Longa",
     "imagem": "imagens/imobilizador-pulso-longa.jpg",
-    "preco_avista": 150,00
-    "preco_cartao": 125,00
+    "preco_avista": 150,
+    "preco_cartao": 125,
   },
   {
     "nome": "Joelheira",
@@ -248,26 +248,26 @@
   {
     "nome": "Luva Látex para Procedimento",
     "imagem": "imagens/luva-latex-para-procedimento.jpg",
-    "preco_avista": 30,00
-    "preco_cartao": 30,00
+    "preco_avista": 30,
+    "preco_cartao": 30,
   },
   {
     "nome": "Luva Nitrílica",
     "imagem": "imagens/luva-nitrilica.jpg",
-    "preco_avista": 35,00
-    "preco_cartao": 35,00
+    "preco_avista": 35,
+    "preco_cartao": 35,
   },
   {
     "nome": "Maca Clínica",
     "imagem": "imagens/maca-clinica.jpg",
-    "preco_avista": 1000,00
-    "preco_cartao": 900,00
+    "preco_avista": 1000,
+    "preco_cartao": 900,
   },
   {
     "nome": "Medidor de Pressão Ultra Max",
     "imagem": "imagens/medidor-de-pressao-ultra-max.jpg",
-    "preco_avista": 178,00
-    "preco_cartao": 200,00
+    "preco_avista": 178,
+    "preco_cartao": 200,
   },
   {
     "nome": "Meias Sigvaris",
@@ -278,32 +278,32 @@
   {
     "nome": "Monitol",
     "imagem": "imagens/monitol.jpg",
-    "preco_avista": 26,00
-    "preco_cartao": 26,00
+    "preco_avista": 26,
+    "preco_cartao": 26,
   },
   {
     "nome": "Muleta Axilar Par",
     "imagem": "imagens/muleta-axilar.jpg",
-    "preco_avista": 160,00
-    "preco_cartao": 165,00
+    "preco_avista": 160,
+    "preco_cartao": 165,
   },
   {
     "nome": "Muleta Canadense Fixa Par",
     "imagem": "imagens/muleta-canadense-fixa.jpg",
-    "preco_avista": 120,00
-    "preco_cartao": 120,00
+    "preco_avista": 120,
+    "preco_cartao": 120,
   },
   {
     "nome": "Nebulizador Compressor Compacto",
     "imagem": "imagens/nebolizador-compressor-compacto.jpg",
-    "preco_avista": 196,00
-    "preco_cartao": 200,00
+    "preco_avista": 196,
+    "preco_cartao": 200,
   },
   {
     "nome": "Palmilha de Silicone",
     "imagem": "imagens/palmilha-de-silicone.jpg",
-    "preco_avista": 65,00
-    "preco_cartao": 80,00
+    "preco_avista": 65,
+    "preco_cartao": 80,
   },
   {
     "nome": "Placas Curativos",
@@ -326,31 +326,31 @@
   {
     "nome": "Soro Glicofisiológico",
     "imagem": "imagens/soro-glicofisiologico.jpg",
-    "preco_avista": 18,00
-    "preco_cartao": 20,00
+    "preco_avista": 18,
+    "preco_cartao": 20,
   },
   {
     "nome": "Soro Ringer com Lactato",
     "imagem": "imagens/soro-ringer-com-lactato.jpg",
-    "preco_avista": 20,00
-    "preco_cartao": 20,00
+    "preco_avista": 20,
+    "preco_cartao": 20,
   },
   {
     "nome": "Suporte Soro",
     "imagem": "imagens/suporte-soro.jpg",
-    "preco_avista": 380,00
-    "preco_cartao": 350,00
+    "preco_avista": 380,
+    "preco_cartao": 350,
   },
   {
     "nome": "Tipoia",
     "imagem": "imagens/tipoia(2).jpg",
-    "preco_avista": 110,00
-    "preco_cartao": 120,00
+    "preco_avista": 110,
+    "preco_cartao": 120,
   },
   {
     "nome": "Tornozeleira",
     "imagem": "imagens/tornezeleira.jpg",
-    "preco_avista": 50,00
-    "preco_cartao": 45,00
+    "preco_avista": 50,
+    "preco_cartao": 45,
   }
 ]
