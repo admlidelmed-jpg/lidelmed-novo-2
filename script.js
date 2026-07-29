@@ -1,38 +1,40 @@
-const auth = firebase.auth();
-let confirmationResult;
+let produtos = [];
+const grid = document.getElementById('grid');
 
-const sendCodeBtn = document.getElementById('send-code');
-const verifyCodeBtn = document.getElementById('verify-code');
-const phoneInput = document.getElementById('phone-number');
-const codeInput = document.getElementById('code');
-
-window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
-  'size': 'invisible'
+// Carrega os produtos
+fetch('produtos.json')
+.then(res => res.json())
+.then(data => {
+    produtos = data;
+    mostrarProdutos(produtos);
+})
+.catch(error => {
+    alert("ERRO AO CARREGAR PRODUTOS: " + error);
 });
 
-sendCodeBtn.addEventListener('click', () => {
-  const phoneNumber = "+55" + phoneInput.value;
-  auth.signInWithPhoneNumber(phoneNumber, window.recaptchaVerifier)
-    .then((result) => {
-      confirmationResult = result;
-      codeInput.style.display = 'block';
-      verifyCodeBtn.style.display = 'block';
-      alert("Código enviado! Olha o SMS");
-    }).catch((error) => {
-      alert("Erro: " + error.message);
+// Mostra os produtos na tela
+function mostrarProdutos(lista) {
+    grid.innerHTML = '';
+    lista.forEach((p) => {
+        const card = document.createElement('div');
+        card.className = 'product';
+        card.onclick = () => abrirWhatsApp(p);
+        
+        card.innerHTML = `
+            <img src="${p.imagem}" alt="${p.nome}">
+            <h3>${p.nome}</h3>
+            <p class="preco">À vista: R$ ${p.preco_avista.toFixed(2)}</p>
+            <p class="cartao">Cartão: R$ ${p.preco_cartao.toFixed(2)}</p>
+            <button class="btn-whats">Comprar no WhatsApp</button>
+        `;
+        grid.appendChild(card);
     });
-});
+}
 
-verifyCodeBtn.addEventListener('click', () => {
-  const code = codeInput.value;
-  confirmationResult.confirm(code).then(() => {
-    document.getElementById('login-box').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
-  }).catch(() => {
-    alert("Código inválido");
-  });
- });
-// CÓDIGO DO BOTÃO BAIXAR APP
-document.getElementById('btnInstalar').addEventListener('click', () => {
-    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto! Vai aparecer na sua tela");
-});
+// Botão do WhatsApp
+function abrirWhatsApp(produto) {
+    const numero = "5573999144898"; // COLOCA SEU NUMERO AQUI COM DDD
+    const msg = Olá! Tenho interesse no produto: ${produto.nome} - R$ ${produto.preco_avista.toFixed(2)};
+    const link = https://wa.me/${numero}?text=${encodeURIComponent(msg)};
+    window.open(link, '_blank');
+}
