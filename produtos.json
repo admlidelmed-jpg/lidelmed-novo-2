@@ -328,5 +328,15 @@
     "descricao": "Guincho hidráulico para transferência segura de pacientes acamados. Estrutura em aço resistente, capacidade 150kg",
     "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
     "estoque": 1
+      },
+  {
+     "id": 34,
+    "nome": "Cadeira Higirnica Monaco ",
+    "categoria": "Cadeiras Higiênicas",
+    "preco_avista": 900,00
+    "preco_cartao": 850.00,
+    "descricao": "Cadeira Higiênica Monaco",
+    "imagem": "cadeira-higirnica-monaco.jpg",
+    "estoque": 10
   }
 ]
