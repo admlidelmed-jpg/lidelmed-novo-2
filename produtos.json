@@ -331,12 +331,12 @@
       },
   {
      "id": 34,
-    "nome": "Cadeira Higirnica Monaco ",
+    "nome": "Cadeira Higienica Monaco ",
     "categoria": "Cadeiras Higiênicas",
     "preco_avista": 900,
     "preco_cartao": 850,
     "descricao": "Cadeira Higiênica Monaco",
-    "imagem": "cadeira-higirnica-monaco.jpg",
+    "imagem": "cadeira-higienica-monaco.jpg",
     "estoque": 10
   }
 ]
