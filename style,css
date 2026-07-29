@@ -1,33 +1,9 @@
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;}
+body {margin: 0; font-family: Arial; background: #B22222;}
+header {background: #FFD700; color: #B22222; text-align: center; padding: 10px;}
+header h1 {margin: 0; font-size: 20px; font-weight: bold;}
+header p {margin: 2px 0 0 0; color: #B22222; font-size: 11px;}
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #B22222; /* FUNDO VERMELHO */
-}
-
-header {
-    background: #FFD700;
-    color: #B22222;
-    text-align: center;
-    padding: 10px;
-}
-
-header h1 { 
-    margin: 0; 
-    font-size: 20px; 
-    font-weight: bold; 
-}
-
-header p { 
-    margin: 2px 0 0 0; 
-    color: #B22222; 
-    font-size: 11px;
-}
-
-/* FORÇA 2 COLUNAS NO CELULAR */
 #grid {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important; /* 2 COLUNAS */
@@ -42,47 +18,17 @@ header p {
     padding: 6px !important;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
     text-align: center !important;
-    min-height: 200px !important; /* ALTURA FIXA PEQUENA */
+    min-height: 160px !important; /* AQUI DIMINUI */
 }
 
-/* FOTO BEM PEQUENA */
 .card img {
     width: 100% !important;
-    height: 70px !important; /* BEM BAIXA */
+    height: 60px !important; /* E AQUI TAMBEM */
     object-fit: contain !important;
     margin-bottom: 4px !important;
 }
 
-.card h3 {
-    font-size: 11px !important; /* LETRA MIÚDA */
-    margin: 4px 0 !important;
-    color: #B22222 !important;
-    height: 30px !important; /* 2 LINHAS SÓ */
-    overflow: hidden !important;
-}
-
-.preco {
-    font-size: 13px !important;
-    font-weight: bold !important;
-    color: #FF7000 !important;
-    margin: 2px 0 !important;
-}
-
-.cartao {
-    font-size: 10px !important;
-    color: #666 !important;
-    margin: 2px 0 6px 0 !important;
-}
-
-/* BOTÃO PEQUENO */
-.btn-whats {
-    background: #25D366 !important;
-    color: white !important;
-    padding: 5px !important;
-    width: 100% !important;
-    border-radius: 4px !important;
-    font-weight: bold !important;
-    font-size: 10px !important;
-    text-decoration: none !important;
-    display: block !important;
-}
+.card h3 {font-size: 11px !important; margin: 4px 0 !important; color: #B22222 !important; height: 26px !important; overflow: hidden !important;}
+.preco {font-size: 13px !important; font-weight: bold !important; color: #FF7000 !important; margin: 2px 0 !important;}
+.cartao {font-size: 10px !important; color: #666 !important; margin: 2px 0 6px 0 !important;}
+.btn-whats {background: #25D366 !important; color: white !important; padding: 5px !important; width: 100% !important; border-radius: 4px !important; font-weight: bold !important; font-size: 10px !important; text-decoration: non
