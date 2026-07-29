@@ -9,8 +9,9 @@ fetch('produtos.json')
     mostrarProdutos(produtos);
 })
 .catch(error => {
-    console.error('Erro ao carregar produtos:', error);
+    alert("ERRO AO CARREGAR: " + error);
 });
+
 
 // Função para mostrar os produtos na tela
 function mostrarProdutos(lista) {
