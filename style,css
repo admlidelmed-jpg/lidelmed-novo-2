@@ -1,40 +1,97 @@
-let produtos = [];
-const numeroZap = "5573999148898"; // SEU NUMERO JÁ ESTÁ AQUI
-const grid = document.getElementById('grid');
-
-// Carrega os produtos
-fetch('produtos.json')
-.then(res => res.json())
-.then(data => {
-    produtos = data;
-    mostrarProdutos(produtos);
-})
-.catch(error => {
-    alert("ERRO AO CARREGAR PRODUTOS: " + error);
-});
-
-// Mostra os produtos na tela
-function mostrarProdutos(lista) {
-    grid.innerHTML = '';
-    lista.forEach((p) => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.onclick = () => abrirWhatsApp(p);
-        
-        card.innerHTML = `
-            <img src="${p.imagem}" alt="${p.nome}">
-            <h3>${p.nome}</h3>
-            <p class="preco">À vista: R$ ${p.preco_avista.toFixed(2)}</p>
-            <p class="cartao">Cartão: R$ ${p.preco_cartao.toFixed(2)}</p>
-            <a href="https://wa.me/${numeroZap}?text=Olá! Tenho interesse no: ${p.nome} - R$ ${p.preco_avista}" target="_blank" class="btn-whats" onclick="event.stopPropagation()">Comprar no WhatsApp</a>
-        `;
-        grid.appendChild(card);
-    });
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
 }
 
-// Botão do WhatsApp
-function abrirWhatsApp(produto) {
-    const msg = Olá! Tenho interesse no produto: ${produto.nome} - À vista: R$ ${produto.preco_avista.toFixed(2)};
-    const link = https://wa.me/${numeroZap}?text=${encodeURIComponent(msg)};
-    window.open(link, '_blank');
+header {
+    background: #FFD700; /* AMARELO */
+    color: #FF0000; /* VERMELHO */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 { 
+    margin: 0; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+header p { 
+    margin: 5px 0 0 0; 
+    color: #FF0000; 
+    font-size: 13px;
+}
+
+/* AQUI QUE MUDA: 2 COLUNAS E MENOR */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* FORÇA 2 COLUNAS */
+    gap: 15px;
+    padding: 15px;
+    max-width: 700px; /* DIMINUI A LARGURA TOTAL */
+    margin: 20px auto;
+}
+
+.card {
+    background: #FFFDDC;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* FOTO MENOR */
+.card img {
+    width: 100%;
+    height: 120px; /* DIMINUI DE 200px PRA 120px */
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 14px; /* DIMINUI A LETRA */
+    margin: 8px 0;
+    color: #B22222;
+    min-height: 32px;
+}
+
+.preco {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF7000;
+    margin: 4px 0;
+}
+
+.cartao {
+    font-size: 12px;
+    color: #666;
+    margin: 4px 0 10px 0;
+}
+
+/* BOTÃO MENOR TAMBÉM */
+.btn-whats {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-whats:hover {
+    background: #1da851;
 }
