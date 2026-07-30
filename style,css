@@ -70,7 +70,7 @@ font-size: 14px !important;
 /* IMAGEM DO MODAL PEQUENA */
 .modal img {
     width: 100% !important;
-    height: 180px !important;
+    height:  100%!important;
     object-fit: contain !important;
     margin-bottom: 5px !important;
 }
