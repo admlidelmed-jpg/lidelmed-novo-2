@@ -1,54 +1,33 @@
-body {
-    margin:0 !important; 
-    background:#B22222 !important; /* FUNDO VERMELHO */
-    font-family:Arial !important;
-}
+* {box-sizing:border-box !important;}
+body {margin:0 !important; background:#B22222 !important; font-family:Arial !important;}
+header {background:#FFD700 !important; color:#B22222 !important; text-align:center !important; padding:8px !important;}
+header h1 {margin:0 !important; font-size:18px !important;}
 
-header {
-    background:#FFD700 !important; 
-    color:#B22222 !important; 
-    text-align:center !important; 
-    padding:10px !important;
-}
-header h1 {margin:0 !important; font-size:20px !important;}
-
-/* FORÇA 2 COLUNAS */
-main, #grid, .produtos {
+/* FORÇA 2 COLUNAS EM QUALQUER LUGAR */
+#produtos, #grid, main, .lista-produtos {
     display:grid !important;
     grid-template-columns: 1fr 1fr !important; /* 2 COLUNAS */
     gap:8px !important;
     padding:8px !important;
-    max-width:600px !important;
+    max-width:580px !important;
     margin:10px auto !important;
 }
 
-/* DEIXA O CARD PEQUENO */
-article, .card, .produto {
+/* CARD PEQUENO */
+.produto, .card, article {
     background:white !important;
     border-radius:5px !important;
     padding:6px !important;
     text-align:center !important;
-    width:100% !important;
 }
 
-article img, .card img, .produto img {
+.produto img, .card img {
     width:100% !important;
-    height:70px !important; /* FOTO PEQUENA */
+    height:60px !important; /* FOTO BEM PEQUENA */
     object-fit:contain !important;
 }
 
-article h3, .card h3 {font-size:11px !important; color:#B22222 !important; margin:4px 0 !important;}
-.preco {font-size:13px !important; color:#FF7000 !important; font-weight:bold;}
-.cartao {font-size:10px !important; color:#666;}
-
-/* BOTÃO PEQUENO */
-button, .btn-whats, a[href*="whatsapp"] {
-    background:#25D366 !important; 
-    color:white !important; 
-    padding:6px !important; 
-    width:100% !important; 
-    border-radius:4px !important; 
-    font-size:11px !important; 
-    border:none !important;
-    display:block !important;
-}
+.produto h3, .card h3 {font-size:10px !important; color:#B22222 !important; height:24px !important; overflow:hidden; margin:3px 0;}
+.preco {font-size:12px !important; color:#FF7000 !important; font-weight:bold; margin:2px;}
+.cartao {font-size:9px !important; color:#666;}
+.btn-whats {background:#25D366 !important; color:white !important; padding:4px !important; width:100% !important; border-radius:3px !important; font-size:9px !important; text-decoration:none !important; display:block !important;}
