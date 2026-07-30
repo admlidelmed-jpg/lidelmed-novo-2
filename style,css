@@ -1,33 +1,51 @@
-* {box-sizing:border-box !important;}
-body {margin:0 !important; background:#B22222 !important; font-family:Arial !important;}
-header {background:#FFD700 !important; color:#B22222 !important; text-align:center !important; padding:8px !important;}
-header h1 {margin:0 !important; font-size:18px !important;}
+body{background:#B22222 !important; margin:0 !important; padding:0 !important;}
+header{background:#FFD700 !important; color:#B22222 !important; text-align:center !important; padding:6px !important;}
+header h1{font-size:16px !important; margin:0 !important;}
 
-/* FORÇA 2 COLUNAS EM QUALQUER LUGAR */
-#produtos, #grid, main, .lista-produtos {
+/* FORÇA 2 COLUNAS NO CELULAR */
+main, #produtos, .container, body > div:nth-child(2){
     display:grid !important;
-    grid-template-columns: 1fr 1fr !important; /* 2 COLUNAS */
-    gap:8px !important;
-    padding:8px !important;
-    max-width:580px !important;
-    margin:10px auto !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap:4px !important;
+    padding:4px !important;
 }
 
-/* CARD PEQUENO */
-.produto, .card, article {
+/* QUADRADO BEM PEQUENO */
+.card, .produto, article, main > div{
     background:white !important;
-    border-radius:5px !important;
-    padding:6px !important;
-    text-align:center !important;
+    border-radius:3px !important;
+    padding:4px !important;
+    margin:0 !important;
+    height:auto !important;
+    min-height:0 !important;
 }
 
-.produto img, .card img {
+/* FOTO MINÚSCULA */
+.card img, .produto img, article img{
     width:100% !important;
-    height:60px !important; /* FOTO BEM PEQUENA */
+    height:45px !important; /* DIMINUI AQUI */
     object-fit:contain !important;
+    margin-bottom:2px !important;
 }
 
-.produto h3, .card h3 {font-size:10px !important; color:#B22222 !important; height:24px !important; overflow:hidden; margin:3px 0;}
-.preco {font-size:12px !important; color:#FF7000 !important; font-weight:bold; margin:2px;}
-.cartao {font-size:9px !important; color:#666;}
-.btn-whats {background:#25D366 !important; color:white !important; padding:4px !important; width:100% !important; border-radius:3px !important; font-size:9px !important; text-decoration:none !important; display:block !important;}
+/* TEXTO MINÚSCULO */
+.card h3, .produto h3{
+    font-size:9px !important; 
+    color:#B22222 !important; 
+    margin:2px 0 !important;
+    line-height:1.1 !important;
+    height:18px !important;
+    overflow:hidden !important;
+}
+.preco{font-size:10px !important; color:#FF7000 !important; font-weight:bold; margin:1px !important;}
+.cartao{font-size:8px !important; color:#666 !important; margin:1px !important;}
+
+/* BOTÃO MINÚSCULO */
+.btn-whats, button{
+    background:#25D366 !important; 
+    color:white !important; 
+    padding:3px !important; 
+    font-size:8px !important; 
+    border-radius:2px !important;
+    margin-top:2px !important;
+}
