@@ -95,7 +95,7 @@
     "categoria": "Cadeiras Higiênicas",
     "preco_avista": 450,
     "preco_cartao": 500,
-    "descricao": "Cadeira Higiênica clássica para menor",
+    "descricao": "Cadeira Higiênica clássica para Obeso",
     "imagem": "imagens/cadeira-higienica-MM.jpg",
     "estoque": 10
   },
@@ -331,12 +331,22 @@
       },
   {
      "id": 34,
-    "nome": "Cadeira Higienica Monaco ",
+    "nome": "Cadeira Higienica Monaco",
     "categoria": "Cadeiras Higiênicas",
     "preco_avista": 900,
     "preco_cartao": 850,
     "descricao": "Cadeira Higiênica Monaco",
     "imagem": "imagens/cadeira-higienica-monaco.jpg",
+    "estoque": 10
+    ,
+{
+    "id": 35,
+    "nome": "Cadeira Higiênica 3 em 1",
+    "categoria": "Cadeiras Higiênicas",
+    "preco_avista": 900,
+    "preco_cartao": 1100,
+    "descricao": "Cadeira Higiênica 3 em 1",
+    "imagem": "imagens/cadeira-higienica-3-em-1.jpg",
     "estoque": 10
   }
 ]
