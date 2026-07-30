@@ -42,6 +42,7 @@ main {
     font-weight: bold !important;
     margin: 1px 0 !important;
 }
+
 .cartao {
     font-size: 8px !important;
     color: #666 !important;
@@ -69,8 +70,9 @@ font-size: 14px !important;
 
 /* IMAGEM DO MODAL PEQUENA */
 .modal img {
-    width: 100% !important;
-    height:  100%!important;
+  width: auto !important;
+height: 70px !important;
+max-width: 100% !important;
     object-fit: contain !important;
     margin-bottom: 5px !important;
 }
@@ -80,12 +82,36 @@ font-size: 14px !important;
     width: 25px !important;
     height: 25px !important;
     font-size: 12px !important;
-    top: 90px !important;
+   top: 30px !important;
     background: #B22222 !important;
     color: white !important;
     border-radius: 50% !important;
     border: none !important;
     position: absolute !important;
 }
+
 .modal button.prev { left: 8px !important; }
 .modal button.next { right: 8px !important; }
+/* MODAL COMPACTO GERAL */
+.modal {
+  max-width: 90% !important;
+max-height: 70vh !important; /* era 85vh */
+   padding: 4px !important;
+   overflow-y: auto !important;
+}
+.modal .conteudo {
+    padding: 3px !important;
+    margin: 0 !important;
+}
+.modal h2 {
+    font-size: 14px !important;
+    margin: 3px 0 !important;
+}
+.modal p {
+    font-size: 12px !important;
+    margin: 2px 0 !important;
+}
+.modal .preco {
+    font-size: 14px !important;
+    margin: 3px 0 !important;
+}
