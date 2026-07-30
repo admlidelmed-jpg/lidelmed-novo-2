@@ -348,5 +348,45 @@
     "descricao": "Cadeira Higiênica 3 em 1",
     "imagem": "imagens/cadeira-higienica-3-em-1.jpg",
     "estoque": 10
+   },
+{
+    "id": 37,
+    "nome": "Cadeira Higiênica CDS",
+    "categoria": "Cadeiras Higiênicas",
+    "preco_avista": 400,
+    "preco_cartao": 450,
+    "descricao": "Cadeira Higiênica CDS",
+    "imagem": "imagens/cadeira-higienica-cds.jpg",
+    "estoque": 10
+},
+{
+    "id": 38,
+    "nome": "Cadeira Higiênica Chicago",
+    "categoria": "Cadeiras Higiênicas",
+    "preco_avista": 900,
+    "preco_cartao": 1000,
+    "descricao": "Cadeira Higiênica Chicago",
+    "imagem": "imagens/cadeira-higienica-chicago.jpg",
+    "estoque": 10
+},
+{
+    "id": 39,
+    "nome": "Cadeira Higiênica MM",
+    "categoria": "Cadeiras Higiênicas",
+    "preco_avista": 500,
+    "preco_cartao": 530,
+    "descricao": "Cadeira Higiênica MM",
+    "imagem": "imagens/cadeira-higienica-MM.jpg",
+    "estoque": 10
+},
+{
+    "id": 40,
+    "nome": "Cadeira Higiênica S50 Supermedy",
+    "categoria": "Cadeiras Higiênicas",
+    "preco_avista": 900,
+    "preco_cartao": 960,
+    "descricao": "Cadeira Higiênica S50 Supermedy",
+    "imagem": "imagens/cadeira-higienica-S50-supermedy.jpg",
+    "estoque": 10
 }
 ]
