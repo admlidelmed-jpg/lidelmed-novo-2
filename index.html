@@ -28,15 +28,34 @@ header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: cente
 #btnInstalar {display: block; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #007bff; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999;}
 
 }
-    /* MOBILE: 2 colunas */
-#grid {
+    /* MOBILE: 3 colunas */
+    #grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
-   max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas no celular */
+    gap: 4px; /* bem juntinho */
+    padding: 4px;
+    max-width: 1200px;
     margin: 0 auto;
 }
+  /* CARDS COMPACTOS */
+.card img, .produto img {
+    width: 100% !important;
+    height: 50px !important;
+    object-fit: contain !important;
+}
+
+.card h3, .produto h3 {
+    font-size: 9px !important;
+    margin: 2px 0 !important;
+    line-height: 1.1 !important;
+}
+
+.card p, .produto p {
+    font-size: 8px !important;
+    height: 24px !important;
+    overflow: hidden !important;
+    margin: 1px 0 !important;
+}  
 
 /* TABLET: 3 colunas */
 @media (min-width: 600px) {
@@ -51,20 +70,20 @@ header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: cente
 .produto {
   background: white; 
   border-radius: 12px; 
-  padding: 15px; 
+  padding: 8px; !important;
   text-align: center; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   cursor: pointer;
 }
 .produto img {
-  max-width: 100%; 
-  height: 150px;
-  object-fit: contain;
-  margin-bottom: 10px;
+    width: 100% !important;
+    height: 50px !important;
+    object-fit: contain !important;
+    margin-bottom: 4px !important;
 }
-.produto h3 {font-size: 14px; min-height: 40px; color: #B22222; margin-bottom: 5px;}
-.preco {font-weight: bold; color: #B22222; font-size: 16px;}
-.cartao {font-size: 13px; color: #555; margin-bottom: 8px;}
+.produto h3 {font-size: 9px !important; min-height: 20px !important; color: #222; margin-bottom: 2px !important;}
+.preco {font-weight: bold; color: #222; font-size: 10px !important;}
+.cartao {font-size: 9px !important; color: #555; margin-bottom: 4px !important;}
 .btnZapProduto {display:block; background:#25D366; color:white; padding:10px; border-radius:8px; text-decoration:none; font-weight:bold; font-size: 13px;}
 
 .modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
