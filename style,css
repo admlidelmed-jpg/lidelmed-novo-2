@@ -2,61 +2,64 @@ body{background:#B22222 !important; margin:0 !important;}
 header{background:#FFD700 !important; color:#B22222 !important; text-align:center !important; padding:5px !important;}
 header h1{font-size:15px !important; margin:0 !important;}
 
-/* FORÇA 2 COLUNAS */
+/* FORÇA 3 COLUNAS NO CELULAR */
 main {
-    display:grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap:5px !important;
-    padding:5px !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 4px !important;
+    padding: 4px !important;
 }
 
 /* CARD MINÚSCULO */
 .card, .produto {
-    background:white !important;
-    border-radius:3px !important;
-    padding:3px !important;
-    margin:0 !important;
+    background: white !important;
+    border-radius: 6px !important;
+    padding: 4px !important;
+    margin: 0 !important;
 }
 
 /* FOTO BEM PEQUENA */
-.card img, .produto img{
-    width:100% !important;
-    height:40px !important; /* DIMINUI AQUI */
-    object-fit:contain !important;
+.card img, produto img {
+    width: 100% !important;
+  height: 50px !important; /* DIMINUI AQUI */
+    object-fit: contain !important;
+    margin-bottom: 2px !important;
 }
 
 /* TEXTO MINÚSCULO */
-.card h3, .produto h3{
-    font-size:8px !important; 
-    color:#B22222 !important; 
-    margin:2px 0 !important;
-    height:16px !important;
-    overflow:hidden !important;
+.card h3, .produto h3 {
+    font-size: 9px !important; /* era 10px */
+    color: #B22222 !important;
+    margin: 0 !important;
+   height: 24px !important; /* era 28px */
+    overflow: hidden !important;
+    line-height: 14px !important;
 }
-.preco{font-size:9px !important; color:#FF7000 !important; font-weight:bold; margin:1px !important;}
-.cartao{font-size:7px !important; color:#666 !important; margin:1px !important;}
-.btn-whats, button{
-    background:#25D366 !important; 
-    color:white !important; 
-    padding:2px !important; 
-    font-size:7px !important; 
-    border-radius:2px !important;
-    width:100% !important;
-    display:block !important;
+
+.preco {
+    font-size: 11px !important;
+    color: #FF7000 !important;
+    font-weight: bold !important;
+    margin: 1px 0 !important;
+}
+.cartao {
+    font-size: 8px !important;
+    color: #666 !important;
+    margin: 1px 0 !important;
 }
 
 /* BOTÃO BAIXAR APP */
 #btnInstalar{
     display: block !important;
     position: fixed !important;
-    bottom: 20px !important;
+  bottom: 10px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     background: #004aad !important;
     color: white !important;
-    padding: 12px 25px !important;
-    border-radius: 25px !important;
-    font-size: 14px !important;
+   padding: 8px 15px !important;
+ border-radius: 25px !important;
+font-size: 14px !important;
     font-weight: bold !important;
     border: none !important;
     z-index: 99999 !important;
