@@ -2,7 +2,7 @@ body{background:#B22222 !important; margin:0 !important;}
 header{background:#FFD700 !important; color:#B22222 !important; text-align:center !important; padding:5px !important;}
 header h1{font-size:15px !important; margin:0 !important;}
 
-/* FORÇA 3 COLUNAS NO CELULAR */
+/* FORÇA 2 COLUNAS NO CELULAR */
 main {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
