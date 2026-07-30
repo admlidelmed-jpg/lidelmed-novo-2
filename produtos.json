@@ -13,8 +13,8 @@
     "id": 2,
     "nome": "Cadeira de Rodas D400",
     "categoria": "Cadeiras de Rodas",
-    "preco_avista": 1450,
-    "preco_cartao": 1500,
+    "preco_avista": 1500,
+    "preco_cartao": 1680,
     "descricao": "Cadeira de Rodas D400",
     "imagem": "imagens/cadeira-de-rodas-D400.jpg",
     "estoque": 10
