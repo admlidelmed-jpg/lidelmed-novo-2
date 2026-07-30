@@ -19,11 +19,10 @@ main {
 }
 
 /* FOTO BEM PEQUENA */
-.card img, produto img {
+.card img, .produto img {
     width: 100% !important;
-  height: 50px !important; /* DIMINUI AQUI */
-    object-fit: contain !important;
-    margin-bottom: 2px !important;
+  height: 50px !important; 
+object-fit: contain !important;
 }
 
 /* TEXTO MINÚSCULO */
@@ -93,7 +92,14 @@ max-width: 100% !important;
 .modal button.prev { left: 8px !important; }
 .modal button.next { right: 8px !important; }
 /* MODAL COMPACTO GERAL */
-.modal {
+/* IMAGEM DO MODAL PEQUENA */
+.modal img {
+    width: auto !important;
+    height: 60px !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+.modal  {
   max-width: 90% !important;
 max-height: 70vh !important; /* era 85vh */
    padding: 4px !important;
@@ -104,14 +110,14 @@ max-height: 70vh !important; /* era 85vh */
     margin: 0 !important;
 }
 .modal h2 {
-    font-size: 14px !important;
-    margin: 3px 0 !important;
-}
-.modal p {
     font-size: 12px !important;
     margin: 2px 0 !important;
 }
+.modal p {
+    font-size: 10px !important;
+    margin: 2px 0 !important;
+}
 .modal .preco {
-    font-size: 14px !important;
+    font-size: 12px !important;
     margin: 3px 0 !important;
 }
