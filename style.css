@@ -116,7 +116,7 @@ body {
 .btn-app:active { background: #b45309; }
 .letreiro {
   background-color: #FFFACD; /* fundo vermelho */
-  color: #C0392B; /* letra vermelha */
+  color: #FFFFFF; /* letra branca */
   padding: 10px;
   font-size: 1.5em;
   font-weight: bold;
