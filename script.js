@@ -1,8 +1,11 @@
-fetch('produtos.json?v=' + new Date().getTime())
-  .then(res => res.json())
-  .then(produtos => {
+async function carregarProdutos() {
+  try {
+    const resposta = await fetch('./produtos.json');
+    const produtos = await resposta.json();
+    
     const div = document.getElementById('produtos');
-    div.innerHTML = '';
+    div.innerHTML = ''; // limpa o "Carregando..."
+
     produtos.forEach(p => {
       div.innerHTML += `
       <div class="card-produto">
@@ -12,7 +15,11 @@ fetch('produtos.json?v=' + new Date().getTime())
         <p class="preco-parcelado">Parcelado: R$ ${p.preco_parcelado}</p>
       </div>`;
     });
-  })
-  .catch(() => {
-    document.getElementById('produtos').innerHTML = 'Erro ao carregar produtos.';
-  });
+
+  } catch (erro) {
+    document.getElementById('produtos').innerHTML = 'Erro ao carregar produtos. Recarregue a página.';
+    console.log(erro);
+  }
+}
+
+carregarProdutos();
