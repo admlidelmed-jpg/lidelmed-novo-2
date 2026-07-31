@@ -2,14 +2,13 @@ body{background:#B22222 !important; margin:0 !important;}
 header{background:#FFD700 !important; color:#B22222 !important; text-align:center !important; padding:5px !important;}
 header h1{font-size:15px !important; margin:0 !important;}
 
-/* FORÇA 3 COLUNAS NO CELULAR */
+/* FORCA 3 COLUNAS NO CELULAR */ 
 main {
     display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 4px !important;
-    padding: 4px !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+    padding: 8px !important;
 }
-
 /* CARD MINÚSCULO */
 .card, .produto {
     background: white !important;
@@ -18,11 +17,13 @@ main {
     margin: 0 !important;
 }
 
-/* FOTO BEM PEQUENA */
+/* FOTO BEM PEQUENA */ 
 .card img, .produto img {
     width: 100% !important;
-  height: 50px !important; 
-object-fit: contain !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: contain !important;
+    background: #fff !important;
 }
 
 /* TEXTO MINÚSCULO */
@@ -128,7 +129,7 @@ max-height: 70vh !important; /* era 85vh */
     main {
         grid-template-columns: repeat(4, 1fr) !important;
         gap: 20px !important;
-        padding: 20px !important;
+    padding: 20px !important;
     }
 
     .card, .produto {
