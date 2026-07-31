@@ -1,192 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>LIDEL MED</title>
-    <link rel="manifest" href="manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIDEL MED</title>
+<link rel="manifest" href="manifest.json">
 </head>
-  <div class="marquee">
-  <div class="marquee-content">
-    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-    <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-     <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-     <span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 🏥 MELHORES PREÇOS!</span>
-  </div>
-<header>
-    <h1>LIDEL MED</h1>
-</header>
+<body>
+
+<div class="marquee">
+<div class="marquee-content">
+<span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 💰 MELHORES PREÇOS</span>
+<span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 💰 MELHORES PREÇOS</span>
+<span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 💰 MELHORES PREÇOS</span>
+<span class="marquee-item">🚚 FRETE GRÁTIS PARA ITABUNA E REGIÃO | 💬 ATENDIMENTO PELO WHATSAPP | 💰 MELHORES PREÇOS</span>
+</div>
+</div>
+
+<header><h1>LIDEL MED</h1></header>
+
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
-<!-- COPIA E COLA O CSS TODO AQUI -->
-<style>
-* {box-sizing: border-box; margin: 0; padding: 0;}
-body {font-family: Arial, sans-serif; background: #FFF8DC; padding-bottom: 80px;}
-header {background: #FFD700; padding: 15px; text-align: center;}
-header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: center;}
-/* LETREIRO VERMELHO PASSANDO */
-.marquee {background: #B22222; color: white; padding: 12px 0; font-weight: bold; overflow: hidden; white-space: nowrap;}
-.marquee-content {display: inline-block; animation: marquee 25s linear infinite;}
-.marquee-item {display: inline-block; padding-right: 100px; font-size: 15px;}
-@keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
-#btnInstalar {display: block; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #007bff; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999;}
-
-}
-  /* MOBILE PRIMEIRO: 3 colunas */
-#grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
-    padding: 6px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
- /* CARDS COMPACTOS */
-.produto img {
-    width: 100% !important;
-    height: 120px !important;
-    object-fit: contain !important;
-    background: #fff !important;
-    margin-bottom: 6px !important;
-}
-.card h3, .produto h3 {
-    font-size: 12px !important;
-    margin: 2px 0 !important;
-    line-height: 1.1 !important;
-}
-
-.card p, .produto p {
-    font-size: 11px !important;
-    height: auto !important;
-    margin: 2px 0 !important;
-}
-.produto h3 {font-size: 12px !important; min-height: 28px !important; color: #222; margin-bottom: 4px !important;}
-.preco {font-weight: bold; color: #222; font-size: 14px !important;}
-.cartao {font-size: 11px !important; color: #555; margin-bottom: 6px !important;}
-}
-    
-/* MOBILE: 3 COLUNAS */
-@media (max-width: 767px) {
-    #grid {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 6px !important;
-        padding: 6px !important;
-    }
-    .produto {padding: 6px !important;}
-    .produto h3 {font-size: 11px !important; min-height: 26px !important;}
-    .preco {font-size: 13px !important;}
-    .cartao {font-size: 10px !important;}
-    .btnZapProduto {font-size: 11px !important; padding: 6px !important;}
-}
-
-/* TABLET/DESKTOP: 4 COLUNAS */
-@media (min-width: 768px) {
-    #grid {
-        grid-template-columns: repeat(4, 1fr) !important;
-        gap: 20px !important;
-        padding: 20px !important;
-    }
-}
-
-.produto img {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 1 / 1 !important;
-    object-fit: contain !important;
-    background: #fff !important;
-}
-
-.produto h3 {font-size: 14px !important; margin-bottom: 6px !important;}
-.preco {font-size: 16px !important; font-weight: bold !important;}
-.cartao {font-size: 12px !important; margin-bottom: 8px !important;}
-.btnZapProduto {
-    display: block !important;
-    background: #250366 !important;
-    color: white !important;
-    font-size: 13px !important;
-    padding: 10px !important;
-    border-radius: 8px !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-    width: 100% !important;
-}
-
-/* ARRUMAR O POPUP */
-.modal-content {
-    max-width: 400px !important;
-    max-height: 90vh !important;
-    overflow-y: auto !important;
-}
-.modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
-.modal-content {background: white; margin: 5% auto; padding: 20px; border-radius: 12px; width: 90%; max-width: 500px; text-align: center;}
-.fechar {float: right; font-size: 28px; cursor: pointer;}
-.seta {background: #B22222; color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; margin: 0 10px;}
-#modalImg {max-width: 100%; height: 200px; object-fit: contain;}
-</style>
 
 <div id="grid"></div>
 
 <div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="fechar" onclick="fecharModal()">&times;</span>
-    <button class="seta anterior" onclick="trocarProduto(-1)">&#10094;</button>
-    <img id="modalImg">
-    <h3 id="modalNome"></h3>
-    <p class="preco" id="modalAVista"></p>
-    <p class="cartao" id="modalCartao"></p>
-    <a id="modalZap" href="#" target="_blank" class="btnZapProduto">💬 PEDIR NO WHATSAPP</a>
-    <button class="seta proximo" onclick="trocarProduto(1)">&#10095;</button>
-  </div>
+<div class="modal-content">
+<span class="fechar" onclick="fecharModal()">&times;</span>
+<button class="seta anterior" onclick="trocarProduto(-1)">❮</button>
+<img id="modalImg">
+<h3 id="modalNome"></h3>
+<p id="modalAVista"></p>
+<p id="modalCartao"></p>
+<a id="modalZap" target="_blank" class="btnZapProduto">PEDIR NO WHATSAPP</a>
+<button class="seta proximo" onclick="trocarProduto(1)">❯</button>
 </div>
+</div>
+
+<style>
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: Arial, sans-serif; background: #FFFBDC; padding-bottom: 80px;}
+header {background: #FFD700; padding: 15px; text-align: center;}
+header h1 {color: #B22222; font-size: 36px; font-weight: bold;}
+
+/* LETREIRO */
+.marquee {background: #B22222; color: white; padding: 12px 0; font-weight: bold; overflow: hidden; white-space: nowrap;}
+.marquee-content {display: inline-block; animation: marquee 25s linear infinite;}
+.marquee-item {display: inline-block; padding-right: 100px; font-size: 15px;}
+@keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
+
+/* BOTÃO APP VERDE */
+#btnInstalar {display: none; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #25D366 !important; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.2);}
+
+/* MOBILE PRIMEIRO: 3 COLUNAS FORÇADO */
+#grid {
+display: grid !important;
+grid-template-columns: repeat(3, 1fr) !important;
+gap: 6px !important;
+padding: 6px !important;
+max-width: 1200px !important;
+margin: 0 auto !important;
+}
+
+.produto {
+background: white !important;
+border-radius: 12px !important;
+padding: 6px !important;
+text-align: center !important;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+cursor: pointer !important;
+}
+
+.produto img {
+width: 100% !important;
+height: 120px !important;
+object-fit: contain !important;
+background: #fff !important;
+margin-bottom: 4px !important;
+}
+
+.produto h3 {
+font-size: 11px !important;
+min-height: 26px !important;
+margin: 2px 0 !important;
+color: #222 !important;
+line-height: 1.1 !important;
+}
+
+.preco {
+font-weight: bold !important; 
+color: #222 !important; 
+font-size: 13px !important;
+margin: 2px 0 !important;
+}
+
+.cartao {
+font-size: 10px !important; 
+color: #555 !important; 
+margin-bottom: 4px !important;
+}
+
+.btnZapProduto {
+display: block !important;
+background: #250366 !important;
+color: white !important;
+font-size: 11px !important;
+padding: 6px !important;
+border-radius: 8px !important;
+text-decoration: none !important;
+font-weight: bold !important;
+width: 100% !important;
+}
+
+/* DESKTOP: 4 COLUNAS */
+@media (min-width: 768px) {
+#grid {
+grid-template-columns: repeat(4, 1fr) !important;
+gap: 20px !important;
+padding: 20px !important;
+}
+.produto img {height: 200px !important;}
+.produto h3 {font-size: 14px !important;}
+.preco {font-size: 16px !important;}
+.btnZapProduto {font-size: 14px !important; padding: 10px !important;}
+}
+
+/* POPUP */
+.modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
+.modal-content {background: white; margin: 5% auto; padding: 20px; border-radius: 12px; max-width: 400px !important; max-height: 90vh !important; overflow-y: auto !important; text-align: center;}
+.fechar {float: right; font-size: 28px; font-weight: bold; cursor: pointer;}
+</style>
 
 <script>
 let deferredPrompt;
 let produtos = [];
 let produtoAtual = 0;
-const numeroZap = "5573999144898"; // SEU NUMERO
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredPrompt = e;
-  document.getElementById('btnInstalar').style.display = 'block';
+const numeroZap = "5573999144808"; // SEU NUMERO
+
+window.addEventListener('beforeinstallprompt', (e) => {
+e.preventDefault();
+deferredPrompt = e;
+document.getElementById('btnInstalar').style.display = 'block';
 });
 document.getElementById('btnInstalar').onclick = async () => {
-  if(deferredPrompt) {
-    deferredPrompt.prompt();
-    await deferredPrompt.userChoice;
-    deferredPrompt = null;
-  } else {
-    alert('Para instalar: toque nos 3 pontinhos > Instalar app');
-  }
+if (deferredPrompt) {
+deferredPrompt.prompt();
+await deferredPrompt.userChoice;
+deferredPrompt = null;
+}
 };
 
 fetch('produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
 const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
-let avista = p.preco_avista;
-let cartao = p.preco_cartao;
-let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${avista}`);
-
-return`
+let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista});
+return `
 <div class="produto" onclick="abrirModal(${i})">
 <img src="${p.imagem}">
 <h3>${p.nome}</h3>
-<p class="preco">À vista: R$ ${avista}</p>
-<p class="cartao">Cartão: R$ ${cartao}</p>
-<a href="https://wa.me/5573999144898?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">PEDIR NO WHATSAPP</a>
-</div>`}).join('')
+<p class="preco">À vista: R$ ${p.preco_avista}</p>
+<p class="cartao">Cartão: R$ ${p.preco_cartao}</p>
+<a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">PEDIR NO WHATSAPP</a>
+</div>`;
+}).join('');
 });
 
 function abrirModal(indice){
 produtoAtual=indice;
 let p=produtos[produtoAtual];
-let msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista}`);
+let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista});
 document.getElementById('modalImg').src=p.imagem;
 document.getElementById('modalNome').innerText=p.nome;
-document.getElementById('modalAVista').innerText='À vista: R$ '+p.preco_avista;
-document.getElementById('modalCartao').innerText='Cartão: R$ '+p.preco_cartao;
-document.getElementById('modalZap').href=`https://wa.me/${numeroZap}?text=${msg}`;
+document.getElementById('modalAVista').innerText=À vista: R$ ${p.preco_avista};
+document.getElementById('modalCartao').innerText=Cartão: R$ ${p.preco_cartao};
+document.getElementById('modalZap').href=https://wa.me/${numeroZap}?text=${msg};
 document.getElementById('modal').style.display='flex';
 }
-function fecharModal(){document.getElementById('modal').style.display='none'}
-function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;abrirModal(produtoAtual)}
+function fecharModal(){document.getElementById('modal').style.display='none';}
+function trocarProduto(direcao){produtoAtual=produtoAtual+direcao;if(produtoAtual<0)produtoAtual=produtos.length-1;if(produtoAtual>=produtos.length)produtoAtual=0;abrirModal(produtoAtual);}
 window.onclick=function(event){if(event.target==document.getElementById('modal')){fecharModal()}}
 </script>
 
