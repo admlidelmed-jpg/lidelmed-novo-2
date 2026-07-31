@@ -115,8 +115,8 @@ body {
 }
 .btn-app:active { background: #b45309; }
 .letreiro {
-  background-color: #FFD700; /* fundo amarelo */
-  color: #C0392B; /* letra vermelha */
+  background-color: #C0392B; /* fundo vermelho */
+  color: #FFFFFF; /* letra branca */
   padding: 10px;
   font-size: 1.5em;
   font-weight: bold;
@@ -124,8 +124,14 @@ body {
 }
 
 .logo-marquee {
-  height: 40px; /* tamanho da logo */
+  height: 25px; 
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
 }
 
+@media (max-width: 768px) {
+  .logo-marquee {
+    height: 35px;
+  }
+}
