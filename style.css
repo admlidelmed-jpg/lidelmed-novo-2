@@ -100,7 +100,7 @@ body {
   object-fit: contain;  /* mudei de cover pra contain */
   border-radius: 8px;
   margin-bottom: 10px;
-  background: #f5f5f5; /* fundo cinza atrás da foto */
+  background:#FFD7005; /* fundo amarelo atrás da foto */
 }
 .btn-app { 
   background: #d97706; 
