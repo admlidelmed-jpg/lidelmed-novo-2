@@ -28,26 +28,25 @@ header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: cente
 #btnInstalar {display: block; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #007bff; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999;}
 
 }
-    /* MOBILE: 3 colunas */
-    #grid {
+  /* MOBILE PRIMEIRO: 3 colunas */
+#grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas no celular */
-    gap: 4px; /* bem juntinho */
-    padding: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 6px;
     max-width: 1200px;
     margin: 0 auto;
 }
-  /* CARDS COMPACTOS */
-.card img, .produto img {
+ /* CARDS COMPACTOS */
+.produto img {
     width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 1 / 1 !important;
+    height: 120px !important;
     object-fit: contain !important;
     background: #fff !important;
     margin-bottom: 6px !important;
 }
 .card h3, .produto h3 {
-    font-size: 9px !important;
+    font-size: 12px !important;
     margin: 2px 0 !important;
     line-height: 1.1 !important;
 }
