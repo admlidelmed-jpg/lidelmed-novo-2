@@ -100,7 +100,7 @@ body {
   object-fit: contain;  /* mudei de cover pra contain */
   border-radius: 8px;
   margin-bottom: 10px;
-  background:#FFD7005; /* fundo amarelo atrás da foto */
+ background:#FFE55C; /* amarelo manteiga mais forte */
 }
 .btn-app { 
   background: #d97706; 
@@ -115,8 +115,9 @@ body {
 }
 .btn-app:active { background: #b45309; }
 .letreiro {
-  background-color: #FFFACD; /* fundo vermelho */
-  color: #FFFFFF; /* letra branca */
+  background-color: #FFFACD; /* amarelo bebê */
+  color: #C0392B; /* TROCA PRA VERMELHO */
+}
   padding: 10px;
   font-size: 1.5em;
   font-weight: bold;
