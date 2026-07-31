@@ -53,22 +53,32 @@ header h1 {color: #B22222; font-size: 36px; font-weight: bold; text-align: cente
 }
 
 .card p, .produto p {
-    font-size: 8px !important;
-    height: 24px !important;
-    overflow: hidden !important;
-    margin: 1px 0 !important;
-}  
-
-/* TABLET: 3 colunas */
-@media (min-width: 600px) {
-   #grid {grid-template-columns: repeat(4, 1fr) !important; gap: 20px !important; padding: 20px !important;}
+    font-size: 11px !important;
+    height: auto !important;
+    margin: 2px 0 !important;
 }
+.produto h3 {font-size: 12px !important; min-height: 28px !important; color: #222; margin-bottom: 4px !important;}
+.preco {font-weight: bold; color: #222; font-size: 14px !important;}
+.cartao {font-size: 11px !important; color: #555; margin-bottom: 6px !important;}
+}
+    
+/* MOBILE: 3 COLUNAS */
+@media (max-width: 767px) {
+    #grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 6px !important;
+        padding: 6px !important;
 
-/* DESKTOP: 3 colunas */
+    }
+/* TABLET/DESKTOP: 4 COLUNAS */
 @media (min-width: 768px) {
-    #grid {grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px;}
+    #grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
 }
-
 .produto {
   background: white; 
   border-radius: 12px; 
@@ -85,14 +95,20 @@ background: #fff !important;
     object-fit: contain !important;
     margin-bottom: 4px !important;
 }
-.produto h3 {font-size: 9px !important; min-height: 20px !important; color: #222; margin-bottom: 2px !important;}
-.preco {font-weight: bold; color: #222; font-size: 10px !important;}
-.cartao {font-size: 9px !important; color: #555; margin-bottom: 4px !important;}
-.btnZapProduto {display:block; background:#25D366; color:white; padding:10px; border-radius:8px; text-decoration:none; font-weight:bold; font-size: 13px;}
-    .btnZapProduto {
-    font-size: 10px !important;
-    padding: 5px 8px !important;
-    height: auto !important;
+.produto h3 {font-size: 12px !important; min-height: 28px !important; color: #222; margin-bottom: 4px !important;}
+.preco {font-weight: bold; color: #222; font-size: 14px !important;}
+.cartao {font-size: 11px !important; color: #555; margin-bottom: 6px !important;}
+.btnZapProduto {
+    display: block !important;
+    background: #250366 !important;
+    color: white !important;
+    font-size: 12px !important;
+    padding: 8px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    width: 100% !important;
+}
 }
 
 .modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
