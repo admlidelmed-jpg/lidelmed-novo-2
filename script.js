@@ -13,7 +13,7 @@ async function carregarProdutos() {
         <h3>${p.nome}</h3>
         <p>${p.descricao}</p>
         <p class="preco-avista">À vista: R$ ${p.preco_avista}</p>
-        <p class="preco-parcelado">Parcelado: R$ ${p.precoParcelado || 'Consulte'}</p>
+      <p class="preco-parcelado">Cartão: R$ ${p.preco_cartao}</p>
       </div>`;
     });
 
