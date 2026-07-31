@@ -166,3 +166,58 @@ max-height: 70vh !important; /* era 85vh */
         aspect-ratio: 1 / 1 !important; /* quadrado também no cel */
     }
 }
+/* FORÇA GERAL - DESKTOP E MOBILE */
+main, #products, .products-grid, .grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px !important;
+    padding: 20px !important;
+}
+
+/* CARD */
+.card, .produto, .product, .item {
+    padding: 12px !important;
+    border-radius: 8px !important;
+}
+
+/* FOTO QUADRADA */
+.card img, .produto img, .product img, .item img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: contain !important;
+    background: #fff !important;
+    margin-bottom: 8px !important;
+}
+
+/* BOTÃO PEQUENO */
+.btn-whatsapp, .btn, button, a[href*="whatsapp"] {
+    font-size: 11px !important;
+    padding: 6px 8px !important;
+    height: auto !important;
+    width: 100% !important;
+    margin-top: 6px !important;
+}
+
+/* MOBILE: 3 COLUNAS */
+@media (max-width: 767px) {
+    main, #products, .products-grid, .grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 6px !important;
+        padding: 8px !important;
+    }
+    
+    .card, .produto, .product, .item {
+        padding: 6px !important;
+    }
+    
+    .card img, .produto img, .product img, .item img {
+        aspect-ratio: 1 / 1 !important;
+    }
+    
+    .btn-whatsapp, .btn, button {
+        font-size: 9px !important;
+        padding: 4px 6px !important;
+    }
+}
+
