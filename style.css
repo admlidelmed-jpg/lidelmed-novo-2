@@ -1,0 +1,81 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: Arial; 
+  background: linear-gradient(135deg, #e5d314 0%, #d97706 100%); 
+  min-height: 100vh; 
+  padding: 20px; 
+  display: flex; 
+  justify-content: center;
+}
+.card { 
+  background: white; 
+  width: 100%; 
+  max-width: 900px; 
+  padding: 30px 20px; 
+  border-radius: 24px; 
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2); 
+  text-align: center; 
+}
+.letreiro { 
+  color: #d97706; 
+  font-size: 32px; 
+  margin-bottom: 5px; 
+  font-weight: 900; 
+  letter-spacing: 2px;
+}
+.subtitulo { 
+  color: #666; 
+  font-size: 16px; 
+  margin-bottom: 25px; 
+}
+
+/* GRADE DE PRODUTOS */
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 15px; 
+  margin: 20px 0; 
+  text-align: left; 
+}
+.card-produto { 
+  background: #FFF8E1; 
+  padding: 15px; 
+  border-radius: 12px; 
+  border: 2px solid #FFD700; 
+}
+.card-produto h3 { 
+  font-size: 18px; 
+  color: #800020; 
+  margin-bottom: 8px; 
+}
+.card-produto p { 
+  font-size: 14px; 
+  color: #333; 
+  margin: 4px 0; 
+}
+.preco-avista { 
+  font-weight: bold; 
+  color: #d97706; 
+  font-size: 20px; 
+}
+.preco-parcelado { 
+  color: #555; 
+  font-size: 14px; 
+}
+
+/* WHATSAPP */
+.whats-box { margin-top: 30px; padding-top: 20px; border-top: 2px solid #eee; }
+.whats-box h2 { color: #d97706; margin-bottom: 15px; }
+.btn-whats { 
+  background: #25D366; 
+  color: white; 
+  padding: 16px; 
+  border-radius: 12px; 
+  text-decoration: none; 
+  display: block; 
+  font-weight: bold; 
+  font-size: 16px; 
+  margin-bottom: 10px; 
+}
+.btn-whats:active { background: #1da851; }
+.tel { color: #999; font-size: 14px; margin-top: 10px; }
