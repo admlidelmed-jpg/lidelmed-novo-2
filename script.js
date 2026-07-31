@@ -1,30 +1,27 @@
-const grid = document.getElementById('product-grid');
-
-fetch('produtos.json') // tirei o ./ da frente
-.then(res => {
-  if(!res.ok) throw new Error('Arquivo não encontrado');
-  return res.json();
-})
-.then(produtos => {
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById('product-grid');
   grid.innerHTML = '';
-  grid.style.display = 'grid';
-  grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(250px, 1fr))';
-  grid.style.gap = '15px';
-  grid.style.padding = '15px';
+
+  // SEUS 40 PRODUTOS ESTÃO AQUI DENTRO AGORA
+  const produtos = 
+  [
+    // COPIA E COLA SEU produtos.json INTEIRO AQUI
+    // EXEMPLO:
+    {"id":1,"nome":"Cadeira de Rodas D600","categoria":"Cadeira de Rodas","descricao":"Dobrável","imagem":"cadeira-de-roda-D600.jpg","preco_avista":1200.00,"preco_cartao":1320.00},
+    {"id":2,"nome":"Andador Articulado","categoria":"Andadores","descricao":"Com rodas","imagem":"andador.jpg","preco_avista":350.00,"preco_cartao":385.00}
+    // COPIA TUDO DO SEU ARQUIVO ATE O FINAL AQUI
+  ];
 
   produtos.forEach(p => {
     grid.innerHTML += `
       <div style="background:white; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1)">
-        <img src="imagens/${p.imagem}" style="width:100%; height:180px; object-fit:cover; border-radius:8px" onerror="this.style.display='none'">
-        <h3 style="color:#800020; font-size:16px; margin:10px 0 5px">${p.nome}</h3>
-        <p style="font-size:12px; color:#666">${p.categoria}</p>
-        <p style="font-size:14px; margin:8px 0">${p.descricao}</p>
+        <img src="./imagens/${p.imagem}" style="width:100%; height:200px; object-fit:cover" onerror="this.src='https://via.placeholder.com/200'">
+        <h3 style="color:#800020; margin:10px 0 5px">${p.nome}</h3>
+        <p>${p.categoria}</p>
+        <p>${p.descricao}</p>
         <p style="color:green; font-weight:bold">À vista: R$ ${p.preco_avista.toFixed(2)}</p>
-        <p style="font-size:13px">Cartão: R$ ${p.preco_cartao.toFixed(2)}</p>
+        <p>Cartão: R$ ${p.preco_cartao.toFixed(2)}</p>
       </div>
     `;
   });
-})
-.catch(err => {
-  grid.innerHTML = <p style="color:red; padding:20px">ERRO: Não achei o arquivo produtos.json<br>Erro: ${err.message}</p>;
 });
