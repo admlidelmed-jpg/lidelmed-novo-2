@@ -1,38 +1,22 @@
-const auth = firebase.auth();
-let confirmationResult;
+const NUMERO_WHATS = "5573999144898"; // TROCA pelo seu WhatsApp com DDD. Ex: 5573999144898
 
-const sendCodeBtn = document.getElementById('send-code');
-const verifyCodeBtn = document.getElementById('verify-code');
-const phoneInput = document.getElementById('phone-number');
-const codeInput = document.getElementById('code');
-
-window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
-  'size': 'invisible'
-});
-
-sendCodeBtn.addEventListener('click', () => {
-  const phoneNumber = "+55" + phoneInput.value;
-  auth.signInWithPhoneNumber(phoneNumber, window.recaptchaVerifier)
-    .then((result) => {
-      confirmationResult = result;
-      codeInput.style.display = 'block';
-      verifyCodeBtn.style.display = 'block';
-      alert("Código enviado! Olha o SMS");
-    }).catch((error) => {
-      alert("Erro: " + error.message);
-    });
-});
-
-verifyCodeBtn.addEventListener('click', () => {
-  const code = codeInput.value;
-  confirmationResult.confirm(code).then(() => {
-    document.getElementById('login-box').style.display = 'none';
-    document.getElementById('app-content').style.display = 'block';
-  }).catch(() => {
-    alert("Código inválido");
-  });
- });
-// CÓDIGO DO BOTÃO BAIXAR APP
-document.getElementById('btnInstalar').addEventListener('click', () => {
-    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto! Vai aparecer na sua tela");
+fetch('produtos.json')
+.then(r => r.json())
+.then(produtos => {
+  const grid = document.getElementById('produtos');
+  grid.innerHTML = produtos.map(p => {
+    const msg = Olá! Tenho interesse no ${p.nome} - ${p.preco};
+    const link = https://wa.me/${NUMERO_WHATS}?text=${encodeURIComponent(msg)};
+    return `
+    <div class="card">
+      <img src="${p.imagem}" alt="${p.nome}">
+      <div class="card-body">
+        <h3>${p.nome}</h3>
+        <p>${p.descricao}</p>
+        <div class="preco">${p.preco}</div>
+        <a href="${link}" target="_blank" class="btn-whats">Falar no WhatsApp</a>
+      </div>
+    </div>
+    `;
+  }).join('');
 });
