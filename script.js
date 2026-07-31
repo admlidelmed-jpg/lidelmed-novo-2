@@ -1,22 +1,38 @@
-fetch('./produtos.json')
-  .then(res => res.json())
-  .then(produtos => {
-    const grid = document.getElementById('product-grid');
-    grid.innerHTML = ''; // tira o "Carregando"
-    
-    produtos.forEach(p => {
-      grid.innerHTML += `
-        <div style="border:1px solid #ddd; padding:15px; border-radius:10px; background:white;">
-          <img src="./imagens/${p.imagem}" style="width:100%; height:200px; object-fit:cover;" onerror="this.src='https://via.placeholder.com/200'">
-          <h3 style="color:#800020; margin-top:10px;">${p.nome}</h3>
-          <p>${p.categoria}</p>
-          <p>${p.descricao}</p>
-          <p><b>À vista:</b> R$ ${p.preco_avista.toFixed(2)}</p>
-          <p><b>Cartão:</b> R$ ${p.preco_cartao.toFixed(2)}</p>
-        </div>
-      `;
+const auth = firebase.auth();
+let confirmationResult;
+
+const sendCodeBtn = document.getElementById('send-code');
+const verifyCodeBtn = document.getElementById('verify-code');
+const phoneInput = document.getElementById('phone-number');
+const codeInput = document.getElementById('code');
+
+window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+  'size': 'invisible'
+});
+
+sendCodeBtn.addEventListener('click', () => {
+  const phoneNumber = "+55" + phoneInput.value;
+  auth.signInWithPhoneNumber(phoneNumber, window.recaptchaVerifier)
+    .then((result) => {
+      confirmationResult = result;
+      codeInput.style.display = 'block';
+      verifyCodeBtn.style.display = 'block';
+      alert("Código enviado! Olha o SMS");
+    }).catch((error) => {
+      alert("Erro: " + error.message);
     });
-  })
-  .catch(erro => {
-    document.getElementById('product-grid').innerHTML = 'Erro ao carregar. Veja se produtos.json está na raiz.';
+});
+
+verifyCodeBtn.addEventListener('click', () => {
+  const code = codeInput.value;
+  confirmationResult.confirm(code).then(() => {
+    document.getElementById('login-box').style.display = 'none';
+    document.getElementById('app-content').style.display = 'block';
+  }).catch(() => {
+    alert("Código inválido");
   });
+ });
+// CÓDIGO DO BOTÃO BAIXAR APP
+document.getElementById('btnInstalar').addEventListener('click', () => {
+    alert("Para instalar o app:\n1. Clique nos 3 pontinhos do Chrome\n2. Clique em 'Adicionar à tela inicial'\n3. Pronto! Vai aparecer na sua tela");
+});
