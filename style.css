@@ -102,7 +102,6 @@ body {
   margin-bottom: 10px;
   background: #f5f5f5; /* fundo cinza atrás da foto */
 }
-}
 .btn-app { 
   background: #d97706; 
   color: white; 
@@ -115,3 +114,18 @@ body {
   margin: 20px 0; 
 }
 .btn-app:active { background: #b45309; }
+.letreiro {
+  background-color: #FFD700; /* fundo amarelo */
+  color: #C0392B; /* letra vermelha */
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.logo-marquee {
+  height: 40px; /* tamanho da logo */
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
