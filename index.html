@@ -21,7 +21,7 @@
 
 <button id="btnInstalar">📲 BAIXAR APLICATIVO</button>
 
-<div id="grid"></div>
+<div id="grid">Carregando produtos...</div>
 
 <div id="modal" class="modal">
 <div class="modal-content">
@@ -49,85 +49,88 @@ header h1 {color: #B22222; font-size: 36px; font-weight: bold;}
 @keyframes marquee {0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }}
 
 /* BOTÃO APP VERDE */
-#btnInstalar {display: none; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #25D366 !important; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.2);}
+#btnInstalar {display: none; position: fixed; bottom: 20px; right: 20px; padding: 15px 20px; background: #25D366; color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; z-index: 999;}
 
-/* MOBILE PRIMEIRO: 3 COLUNAS FORÇADO */
+/* MOBILE: 3 COLUNAS */
 #grid {
-display: grid !important;
-grid-template-columns: repeat(3, 1fr) !important;
-gap: 6px !important;
-padding: 6px !important;
-max-width: 1200px !important;
-margin: 0 auto !important;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 6px;
+padding: 6px;
+max-width: 1200px;
+margin: 0 auto;
 }
 
 .produto {
-background: white !important;
-border-radius: 12px !important;
-padding: 6px !important;
-text-align: center !important;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
-cursor: pointer !important;
+background: white;
+border-radius: 12px;
+padding: 6px;
+text-align: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+cursor: pointer;
 }
 
 .produto img {
-width: 100% !important;
-height: 120px !important;
-object-fit: contain !important;
-background: #fff !important;
-margin-bottom: 4px !important;
+width: 100%;
+height: 120px;
+object-fit: contain;
+background: #fff;
+margin-bottom: 4px;
 }
 
 .produto h3 {
-font-size: 11px !important;
-min-height: 26px !important;
-margin: 2px 0 !important;
-color: #222 !important;
-line-height: 1.1 !important;
+font-size: 11px;
+min-height: 26px;
+margin: 2px 0;
+color: #222;
+line-height: 1.1;
 }
 
 .preco {
-font-weight: bold !important; 
-color: #222 !important; 
-font-size: 13px !important;
-margin: 2px 0 !important;
+font-weight: bold; 
+color: #222; 
+font-size: 13px;
+margin: 2px 0;
 }
 
 .cartao {
-font-size: 10px !important; 
-color: #555 !important; 
-margin-bottom: 4px !important;
+font-size: 10px; 
+color: #555; 
+margin-bottom: 4px;
 }
 
 .btnZapProduto {
-display: block !important;
-background: #250366 !important;
-color: white !important;
-font-size: 11px !important;
-padding: 6px !important;
-border-radius: 8px !important;
-text-decoration: none !important;
-font-weight: bold !important;
-width: 100% !important;
+display: block;
+background: #250366;
+color: white;
+font-size: 11px;
+padding: 6px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+width: 100%;
 }
 
 /* DESKTOP: 4 COLUNAS */
 @media (min-width: 768px) {
 #grid {
-grid-template-columns: repeat(4, 1fr) !important;
-gap: 20px !important;
-padding: 20px !important;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+padding: 20px;
 }
-.produto img {height: 200px !important;}
-.produto h3 {font-size: 14px !important;}
-.preco {font-size: 16px !important;}
-.btnZapProduto {font-size: 14px !important; padding: 10px !important;}
+.produto img {height: 200px;}
+.produto h3 {font-size: 14px;}
+.preco {font-size: 16px;}
+.btnZapProduto {font-size: 14px; padding: 10px;}
 }
 
 /* POPUP */
 .modal {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
-.modal-content {background: white; margin: 5% auto; padding: 20px; border-radius: 12px; max-width: 400px !important; max-height: 90vh !important; overflow-y: auto !important; text-align: center;}
+.modal-content {background: white; margin: 5% auto; padding: 20px; border-radius: 12px; max-width: 400px; max-height: 90vh; overflow-y: auto; text-align: center; position: relative;}
 .fechar {float: right; font-size: 28px; font-weight: bold; cursor: pointer;}
+.seta {position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 10px; cursor: pointer; border-radius: 50%;}
+.anterior {left: 10px;}
+.proximo {right: 10px;}
 </style>
 
 <script>
@@ -149,27 +152,30 @@ deferredPrompt = null;
 }
 };
 
-fetch('produtos.json').then(r=>r.json()).then(d=>{
+// CORRIGIDO: coloquei ./ na frente
+fetch('./produtos.json').then(r=>r.json()).then(d=>{
 produtos = d;
 const grid = document.getElementById('grid');
 grid.innerHTML = produtos.map((p,i)=>{
 let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista});
+// CORRIGIDO: coloquei ./imagens/ na frente
+let imgCaminho = ./imagens/${p.imagem};
 return `
 <div class="produto" onclick="abrirModal(${i})">
-<img src="${p.imagem}">
+<img src="${imgCaminho}">
 <h3>${p.nome}</h3>
 <p class="preco">À vista: R$ ${p.preco_avista}</p>
 <p class="cartao">Cartão: R$ ${p.preco_cartao}</p>
 <a href="https://wa.me/${numeroZap}?text=${msg}" target="_blank" class="btnZapProduto" onclick="event.stopPropagation()">PEDIR NO WHATSAPP</a>
 </div>`;
 }).join('');
-});
+}).catch(()=>{document.getElementById('grid').innerHTML = "Erro ao carregar produtos.json. Verifique se o arquivo está na pasta principal."});
 
 function abrirModal(indice){
 produtoAtual=indice;
 let p=produtos[produtoAtual];
 let msg = encodeURIComponent(Olá! Tenho interesse no produto: ${p.nome} - À vista: R$ ${p.preco_avista});
-document.getElementById('modalImg').src=p.imagem;
+document.getElementById('modalImg').src=./imagens/${p.imagem};
 document.getElementById('modalNome').innerText=p.nome;
 document.getElementById('modalAVista').innerText=À vista: R$ ${p.preco_avista};
 document.getElementById('modalCartao').innerText=Cartão: R$ ${p.preco_cartao};
