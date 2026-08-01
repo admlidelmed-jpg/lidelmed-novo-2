@@ -26,6 +26,10 @@ body {
   margin: 10px 0;
   text-align: center;
 }
+.letreiro {
+  background-color: #FFFACD; /* amarelo bebê */
+  color: #C0392B; /* TROCA PRA VERMELHO */
+}
 .subtitulo { 
   color: #666; 
   font-size: 16px; 
