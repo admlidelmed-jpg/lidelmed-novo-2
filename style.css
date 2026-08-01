@@ -17,19 +17,21 @@ body {
   text-align: center; 
 }
 .letreiro {
-  background-color: #FFD700; /* amarelo */
-  color: #C0392B; /* vermelho que já está */
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 2em;
-  font-weight: bold;
-  margin: 10px 0;
-  text-align: center;
-}
-.letreiro {
   background-color: #FFFACD; /* amarelo bebê */
   color: #C0392B; /* TROCA PRA VERMELHO */
 }
+.letreiro img {
+  max-width: 120px; /* tamanho pro celular */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Só pro PC/Tela grande */
+@media (min-width: 768px) {
+  .letreiro img {
+    max-width: 220px; /* tamanho pro PC */
+  }
 .subtitulo { 
   color: #666; 
   font-size: 16px; 
