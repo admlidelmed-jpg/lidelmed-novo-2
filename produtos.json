@@ -91,11 +91,11 @@
   },
   {
     "id": 10,
-    "nome": "Cadeira Higiênica CDS",
+    "nome": "Cadeira Higiênica 120KG CDS",
     "categoria": "Cadeiras Higiênicas",
-    "preco_avista": 450,
-    "preco_cartao": 500,
-    "descricao": "Cadeira Higiênica CDS",
+    "preco_avista": 500,
+    "preco_cartao": 530,
+    "descricao": "Cadeira Higiênica 120KG CDS",
     "imagem": "cadeira-higienica-cds.jpg",
     "estoque": 10
   },
@@ -356,7 +356,7 @@
     "preco_avista": 400,
     "preco_cartao": 450,
     "descricao": "Cadeira Higiênica CDS",
-    "imagem": "cadeira-higienica-cds.jpg",
+    "imagem": "cadeira-higienica-CDS.jpg",
     "estoque": 10
 },
 {
