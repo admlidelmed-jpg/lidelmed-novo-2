@@ -96,7 +96,7 @@
     "preco_avista": 500,
     "preco_cartao": 530,
     "descricao": "Cadeira Higiênica 120KG CDS",
-    "imagem": "cadeira-higienica-120kg-CDS.jpg",",
+    "imagem": "cadeira-higienica-120kg-CDS.jpg",
     "estoque": 10
   },
   {
@@ -270,7 +270,7 @@
     "estoque": 10
   },
   {
-    "id": 28
+    "id": 28,
     "nome": "Cadeira de rodas motorizada D800",
     "categoria": "Cadeira de Rodas Motorizada",
     "preco_avista": 6500,
@@ -330,7 +330,7 @@
     "estoque": 1
   },
   {
-     "id": 34,
+    "id": 34,
     "nome": "Cadeira Higienica Monaco",
     "categoria": "Cadeiras Higiênicas",
     "preco_avista": 900,
@@ -338,8 +338,8 @@
     "descricao": "Cadeira Higiênica Monaco",
     "imagem": "cadeira-higienica-monaco.jpg",
     "estoque": 10
- },
- {
+  },
+  {
     "id": 35,
     "nome": "Cadeira Higiênica 3 em 1",
     "categoria": "Cadeiras Higiênicas",
@@ -348,8 +348,8 @@
     "descricao": "Cadeira Higiênica 3 em 1",
     "imagem": "cadeira-higienica-3-em-1.jpg",
     "estoque": 10
-   },
-{
+  },
+  {
     "id": 37,
     "nome": "Cadeira Higiênica CDS",
     "categoria": "Cadeiras Higiênicas",
@@ -358,8 +358,8 @@
     "descricao": "Cadeira Higiênica CDS",
     "imagem": "cadeira-higienica-CDS.jpg",
     "estoque": 10
-},
-{
+  },
+  {
     "id": 38,
     "nome": "Cadeira Higiênica Chicago",
     "categoria": "Cadeiras Higiênicas",
@@ -368,5 +368,5 @@
     "descricao": "Cadeira Higiênica Chicago",
     "imagem": "cadeira-higienica-chicago.jpg",
     "estoque": 10
-}
+  }
 ]
