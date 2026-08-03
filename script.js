@@ -1,6 +1,6 @@
 async function carregarProdutos() {
   try {
-    const resposta = await fetch('./produtos.json');
+  const resposta = await fetch('produtos.json'); 
     const produtos = await resposta.json();
     
     const div = document.getElementById('produtos');
