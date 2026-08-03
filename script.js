@@ -5,12 +5,11 @@ async function carregarProdutos() {
     
     const produtos = await resposta.json();
     const div = document.getElementById('produtos');
-    div.innerHTML = ''; // limpa "Carregando..."
+    div.innerHTML = '';
 
     produtos.forEach(p => {
-      // Formata o preço pra R$ 1.800,00
-      const avista = p.preco_avista.toLocaleString('pt-BR', {minimumFractionDigits: 2});
-      const cartao = p.preco_cartao.toLocaleString('pt-BR', {minimumFractionDigits: 2});
+      const avista = p.preco_avista;
+      const cartao = p.preco_cartao;
       
       div.innerHTML += `
       <div class="card-produto">
@@ -24,7 +23,6 @@ async function carregarProdutos() {
     });
   } catch (erro) {
     document.getElementById('produtos').innerHTML = 'Erro: ' + erro.message;
-    console.error(erro);
   }
 }
 carregarProdutos();
