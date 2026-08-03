@@ -83,20 +83,20 @@
     "id": 9,
     "nome": "Cadeira de rodas 120KG mm",
     "categoria": "Cadeiras de Rodas",
-    "preco_avista": 850,
-    "preco_cartao": 900,
+    "preco_avista": 500,
+    "preco_cartao": 530,
     "descricao": "Cadeira de rodas 120KG mm",
     "imagem": "cadeira-de-rodas-120KG-mm.jpg",
     "estoque": 10
   },
   {
     "id": 10,
-    "nome": "Cadeira Higiênica MM",
+    "nome": "Cadeira Higiênica CDS",
     "categoria": "Cadeiras Higiênicas",
     "preco_avista": 450,
     "preco_cartao": 500,
-    "descricao": "Cadeira Higiênica clássica para Obeso",
-    "imagem": "cadeira-higienica-MM.jpg",
+    "descricao": "Cadeira Higiênica CDS",
+    "imagem": "cadeira-higienica-cds.jpg",
     "estoque": 10
   },
   {
@@ -367,26 +367,6 @@
     "preco_cartao": 1000,
     "descricao": "Cadeira Higiênica Chicago",
     "imagem": "cadeira-higienica-chicago.jpg",
-    "estoque": 10
-},
-{
-    "id": 39,
-    "nome": "Cadeira Higiênica MM",
-    "categoria": "Cadeiras Higiênicas",
-    "preco_avista": 500,
-    "preco_cartao": 530,
-    "descricao": "Cadeira Higiênica MM",
-    "imagem": "cadeira-higienica-MM.jpg",
-    "estoque": 10
-},
-{
-    "id": 40,
-    "nome": "Cadeira Higiênica S50 Supermedy",
-    "categoria": "Cadeiras Higiênicas",
-    "preco_avista": 900,
-    "preco_cartao": 960,
-    "descricao": "Cadeira Higiênica S50 Supermedy",
-    "imagem": "cadeira-higienica-S50-supermedy.jpg",
     "estoque": 10
 }
 ]
