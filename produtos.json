@@ -227,7 +227,7 @@
     "preco_cartao": 200,
     "descricao": "nebulizador compressor compacto",
     "imagem": "nebolizador-compressor-compacto.jpg",
-    "estoque": 10
+    "estoque": 10,
   },
   {
     "id": 24,
@@ -267,7 +267,7 @@
     "preco_cartao": 30.00,
     "descricao": "Fracionador de comprimido",
     "imagem": "fracionador-de-comprimido.jpg",
-    "estoque": 10
+    "estoque": 10,
   },
   {
     "id": 28,
