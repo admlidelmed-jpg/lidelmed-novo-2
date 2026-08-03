@@ -123,16 +123,6 @@ body {
   font-size: 16px; 
   margin: 20px 0; 
 }
-.btn-app:active { background: #b45309; }
-.letreiro {
-  background-color: #FFFACD; /* amarelo bebê */
-  color: #C0392B; /* TROCA PRA VERMELHO */
-}
-  padding: 10px;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 10px 0;
-}
 
 .logo-marquee {
   height: 25px; 
