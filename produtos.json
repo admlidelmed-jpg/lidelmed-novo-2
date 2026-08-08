@@ -422,8 +422,8 @@
 {
   "id": 43,
   "nome": "Variedade em Sondas",
- ${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
- ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/variedade-em-sondas.jpg",
   "descricao": "Diversos modelos de sondas hospitalares.",
   "estoque": 0
@@ -449,8 +449,8 @@
 {
   "id": 46,
   "nome": "Itens para Treinar Sutura",
-${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
-${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/itens-para-treinar-sutura.jpg",
   "descricao": "Kit para treinamento de sutura médica.",
   "estoque": 0
@@ -458,8 +458,8 @@ ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Con
 {
   "id": 47,
   "nome": "Produtos Pielsana",
- ${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
- ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/produtos-pielsana.jpg",
   "descricao": "Linha completa de produtos Pielsana.",
   "estoque": 0
@@ -467,8 +467,8 @@ ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Con
 {
   "id": 48,
   "nome": "Água Destilada",
- ${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
- ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/agua-destilada.jpg",
   "descricao": "Água destilada para uso hospitalar.",
   "estoque": 0
@@ -476,8 +476,8 @@ ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Con
 {
   "id": 49,
   "nome": "Clorexidina Detergente Enzimático",
- ${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
- ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/clorexidina-detergente-ezimatico.jpg",
   "descricao": "Detergente enzimático à base de clorexidina.",
   "estoque": 0
@@ -494,8 +494,8 @@ ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Con
 {
   "id": 51,
   "nome": "Seringas",
- ${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
- ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/seringas.jpg",
   "descricao": "Seringas de diversos tamanhos.",
   "estoque": 0
@@ -503,8 +503,8 @@ ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Con
 {
   "id": 52,
   "nome": "Seringa 1ml com Agulha Fixa",
- ${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
- ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/seringa-1ml-com-agulha-fixa.jpg",
   "descricao": "Seringa 1ml com agulha fixa.",
   "estoque": 0
@@ -512,8 +512,8 @@ ${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Con
 {
   "id": 53,
   "nome": "Material EPI Hospitalar",
-${produto.preco_avista > 0 ? À vista: R$ ${produto.preco_avista} : 'À vista: Consulte'}
-${produto.preco_cartao > 0 ? Cartão: R$ ${produto.preco_cartao} : 'Cartão: Consulte'}
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "imagens/material-epi-hospitalar.jpg",
   "descricao": "Materiais de EPI para uso hospitalar.",
   "estoque": 0
