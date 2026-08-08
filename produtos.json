@@ -418,5 +418,63 @@
     "descricao": "Maca Clinica",
     "imagem": "maca-clinica.jpg",
     "estoque": 0
-  }
+{
+  id: 43,
+  nome: "Variedade em Sondas",
+  preco: "Consulte",
+  imagem: "imagens/variedade-em-sondas.jpg",
+  descricao: "Diversos modelos de sondas hospitalares."
+},
+{
+  id: 44,
+  nome: "Colchão Pneumático Dellamed 220V e 127V",
+  "preco_avista": 300,
+    "preco_cartao": 280,
+  imagem: "imagens/colchao-pneumatico-dellamed-220V-e-127V.jpg",
+  descricao: "Colchão pneumático anti escaras Dellamed bivolt."
+},
+{
+  id: 45,
+  nome: "Campo Operatório Fio Radiopaco",
+  "preco_avista": 25,
+    "preco_cartao": 30,
+  imagem: "imagens/campo-operatorio-fio-radiopaco.jpg",
+  descricao: "Campo operatório com fio radiopaco."
+},
+{
+  id: 46,
+  nome: "Itens para Treinar Sutura",
+  preco: "Consulte",
+  imagem: "imagens/itens-para-treinar-sutura.jpg",
+  descricao: "Kit para treinamento de sutura médica."
+},
+{
+  id: 47,
+  nome: "Produtos Pielsana",
+  preco: "Consulte",
+  imagem: "imagens/produtos-pielsana.jpg",
+  descricao: "Linha completa de produtos Pielsana."
+},
+{
+  id: 48,
+  nome: "Água Destilada",
+  preco: "Consulte",
+  imagem: "imagens/agua-detilada.jpg",
+  descricao: "Água destilada para uso hospitalar."
+},
+{
+  id: 49,
+  nome: "Clorexidina Detergente Enzimático",
+  preco: "Consulte",
+  imagem: "imagens/clorexidina-detergente-ezimatico.jpg",
+  descricao: "Detergente enzimático à base de clorexidina."
+},
+{
+  id: 50,
+  nome: "Óculos de Proteção Hospitalar EPI",
+   "preco_avista": 10,
+    "preco_cartao": 12,
+  imagem: "imagens/oculos-de-protecao-hospitalar-epi.jpg",
+  descricao: "Óculos de proteção para uso hospitalar."
+}
 ]
