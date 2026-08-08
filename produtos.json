@@ -418,63 +418,104 @@
     "descricao": "Maca Clinica",
     "imagem": "maca-clinica.jpg",
     "estoque": 0
+  },
 {
-  id: 43,
-  nome: "Variedade em Sondas",
-  preco: "Consulte",
-  imagem: "imagens/variedade-em-sondas.jpg",
-  descricao: "Diversos modelos de sondas hospitalares."
+  "id": 43,
+  "nome": "Variedade em Sondas",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/variedade-em-sondas.jpg",
+  "descricao": "Diversos modelos de sondas hospitalares.",
+  "estoque": 0
 },
 {
-  id: 44,
-  nome: "Colchão Pneumático Dellamed 220V e 127V",
+  "id": 44,
+  "nome": "Colchão Pneumático Dellamed 220V e 127V",
   "preco_avista": 300,
-    "preco_cartao": 280,
-  imagem: "imagens/colchao-pneumatico-dellamed-220V-e-127V.jpg",
-  descricao: "Colchão pneumático anti escaras Dellamed bivolt."
+  "preco_cartao": 280,
+  "imagem": "imagens/colchao-pneumatico-dellamed-220V-e-127V.jpg",
+  "descricao": "Colchão pneumático anti escaras Dellamed bivolt.",
+  "estoque": 0
 },
 {
-  id: 45,
-  nome: "Campo Operatório Fio Radiopaco",
+  "id": 45,
+  "nome": "Campo Operatório Fio Radiopaco",
   "preco_avista": 25,
-    "preco_cartao": 30,
-  imagem: "imagens/campo-operatorio-fio-radiopaco.jpg",
-  descricao: "Campo operatório com fio radiopaco."
+  "preco_cartao": 30,
+  "imagem": "imagens/campo-operatorio-fio-radiopaco.jpg",
+  "descricao": "Campo operatório com fio radiopaco.",
+  "estoque": 0
 },
 {
-  id: 46,
-  nome: "Itens para Treinar Sutura",
-  preco: "Consulte",
-  imagem: "imagens/itens-para-treinar-sutura.jpg",
-  descricao: "Kit para treinamento de sutura médica."
+  "id": 46,
+  "nome": "Itens para Treinar Sutura",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/itens-para-treinar-sutura.jpg",
+  "descricao": "Kit para treinamento de sutura médica.",
+  "estoque": 0
 },
 {
-  id: 47,
-  nome: "Produtos Pielsana",
-  preco: "Consulte",
-  imagem: "imagens/produtos-pielsana.jpg",
-  descricao: "Linha completa de produtos Pielsana."
+  "id": 47,
+  "nome": "Produtos Pielsana",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/produtos-pielsana.jpg",
+  "descricao": "Linha completa de produtos Pielsana.",
+  "estoque": 0
 },
 {
-  id: 48,
-  nome: "Água Destilada",
-  preco: "Consulte",
-  imagem: "imagens/agua-detilada.jpg",
-  descricao: "Água destilada para uso hospitalar."
+  "id": 48,
+  "nome": "Água Destilada",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/agua-detilada.jpg",
+  "descricao": "Água destilada para uso hospitalar.",
+  "estoque": 0
 },
 {
-  id: 49,
-  nome: "Clorexidina Detergente Enzimático",
-  preco: "Consulte",
-  imagem: "imagens/clorexidina-detergente-ezimatico.jpg",
-  descricao: "Detergente enzimático à base de clorexidina."
+  "id": 49,
+  "nome": "Clorexidina Detergente Enzimático",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/clorexidina-detergente-ezimatico.jpg",
+  "descricao": "Detergente enzimático à base de clorexidina.",
+  "estoque": 0
 },
 {
-  id: 50,
-  nome: "Óculos de Proteção Hospitalar EPI",
-   "preco_avista": 10,
-    "preco_cartao": 12,
-  imagem: "imagens/oculos-de-protecao-hospitalar-epi.jpg",
-  descricao: "Óculos de proteção para uso hospitalar."
+  "id": 50,
+  "nome": "Óculos de Proteção Hospitalar EPI",
+  "preco_avista": 10,
+  "preco_cartao": 12,
+  "imagem": "imagens/oculos-de-protecao-hospitalar-epi.jpg",
+  "descricao": "Óculos de proteção para uso hospitalar.",
+  "estoque": 0
+},
+{
+  "id": 51,
+  "nome": "Seringas",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/seringas.jpg",
+  "descricao": "Seringas de diversos tamanhos.",
+  "estoque": 0
+},
+{
+  "id": 52,
+  "nome": "Seringa 1ml com Agulha Fixa",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/seringa-1ml-com-agulha-fixa.jpg",
+  "descricao": "Seringa 1ml com agulha fixa.",
+  "estoque": 0
+},
+{
+  "id": 53,
+  "nome": "Material EPI Hospitalar",
+  "preco_avista": 0,
+  "preco_cartao": 0,
+  "imagem": "imagens/material-epi-hospitalar.jpg",
+  "descricao": "Materiais de EPI para uso hospitalar.",
+  "estoque": 0
 }
 ]
