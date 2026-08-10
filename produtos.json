@@ -496,15 +496,15 @@
   "nome": "Seringas Variadas",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/seringas.jpg",
+  "imagem": "imagens/seringas-variadas.jpg",
   "descricao": "Seringas de diversos tamanhos.",
   "estoque": 0
 },
 {
   "id": 52,
   "nome": "Seringa 1ml com Agulha Fixa",
-    "preco_avista": 0,
-    "preco_cartao": 0,
+    "preco_avista": 25,
+    "preco_cartao": 25,
   "imagem": "imagens/seringa-1ml-com-agulha-fixa.jpg",
   "descricao": "Seringa 1ml com agulha fixa.",
   "estoque": 0
