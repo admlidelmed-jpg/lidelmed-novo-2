@@ -424,7 +424,7 @@
   "nome": "Variedade em Sondas",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/variedade-em-sondas.jpg",
+  "imagem": "variedade-em-sondas.jpg",
   "descricao": "Diversos modelos de sondas hospitalares.",
   "estoque": 0
 },
@@ -433,7 +433,7 @@
   "nome": "Colchão Pneumático Dellamed 220V e 127V",
   "preco_avista": 300,
   "preco_cartao": 280,
-  "imagem": "imagens/colchao-pneumatico-dellamed-220v-e-127v.jpg",
+  "imagem": "colchao-pneumatico-dellamed-220v-e-127v.jpg",
   "descricao": "Colchão pneumático anti escaras Dellamed.",
   "estoque": 0
 },
@@ -442,7 +442,7 @@
   "nome": "Campo Operatório Fio Radiopaco",
   "preco_avista": 25,
   "preco_cartao": 30,
-  "imagem": "imagens/campo-operatorio-fio-radiopaco.jpg",
+  "imagem": "campo-operatorio-fio-radiopaco.jpg",
   "descricao": "Campo operatório com fio radiopaco.",
   "estoque": 0
 },
@@ -451,7 +451,7 @@
   "nome": "Itens para Treinar Sutura",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/itens-para-treinar-sutura.jpg",
+  "imagem": "itens-para-treinar-sutura.jpg",
   "descricao": "Kit para treinamento de sutura médica.",
   "estoque": 0
 },
@@ -460,7 +460,7 @@
   "nome": "Produtos Pielsana",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/produtos-pielsana.jpg",
+  "imagem": "produtos-pielsana.jpg",
   "descricao": "Linha completa de produtos Pielsana.",
   "estoque": 0
 },
@@ -469,7 +469,7 @@
   "nome": "Água Destilada",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/agua-destilada.jpg",
+  "imagem": "agua-destilada.jpg",
   "descricao": "Água destilada para uso hospitalar.",
   "estoque": 0
 },
@@ -478,7 +478,7 @@
   "nome": "Clorexidina e Detergente Enzimático",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/clorexidina-detergente-ezimatico.jpg",
+  "imagem": "clorexidina-detergente-ezimatico.jpg",
   "descricao": "Detergente enzimático à base de clorexidina.",
   "estoque": 0
 },
@@ -487,7 +487,7 @@
   "nome": "Óculos de Proteção Hospitalar EPI",
   "preco_avista": 10,
   "preco_cartao": 12,
-  "imagem": "imagens/oculos-de-protecao-hospitalar-epi.jpg",
+  "imagem": "oculos-de-protecao-hospitalar-epi.jpg",
   "descricao": "Óculos de proteção para uso hospitalar.",
   "estoque": 0
 },
@@ -496,7 +496,7 @@
   "nome": "Seringas Variadas",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/seringas-variadas.jpg",
+  "imagem": "seringas-variadas.jpg",
   "descricao": "Seringas de diversos tamanhos.",
   "estoque": 0
 },
@@ -505,7 +505,7 @@
   "nome": "Seringa 1ml com Agulha Fixa",
     "preco_avista": 25,
     "preco_cartao": 25,
-  "imagem": "imagens/seringa-1ml-com-agulha-fixa.jpg",
+  "imagem": "seringa-1ml-com-agulha-fixa.jpg",
   "descricao": "Seringa 1ml com agulha fixa.",
   "estoque": 0
 },
@@ -514,7 +514,7 @@
   "nome": "Material EPI Hospitalar",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "imagens/material-epi-hospitalar.jpg",
+  "imagem": "material-epi-hospitalar.jpg",
   "descricao": "Materiais de EPI para uso hospitalar.",
   "estoque": 0
 }
