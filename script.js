@@ -1,28 +1,57 @@
+let produtosGlobal = [];
+let indiceAtual = 0;
+
 async function carregarProdutos() {
   try {
     const resposta = await fetch('produtos.json');
     if (!resposta.ok) throw new Error('Arquivo produtos.json não encontrado');
-    
-    const produtos = await resposta.json();
+
+    produtosGlobal = await resposta.json();
     const div = document.getElementById('produtos');
     div.innerHTML = '';
 
-    produtos.forEach(p => {
+    produtosGlobal.forEach((p, index) => {
       const avista = p.preco_avista;
       const cartao = p.preco_cartao;
-      
+
       div.innerHTML += `
       <div class="card-produto">
-        <img src="imagens/${p.imagem}" alt="${p.nome}">
+        <img src="${p.imagem}" alt="${p.nome}" onclick="abrirGaleria(${index})">
         <h3>${p.nome}</h3>
         <p>${p.descricao}</p>
-        <p class="preco-avista"><b>À vista: R$ ${avista}</b></p>
-        <p class="preco-parcelado">Cartão: R$ ${cartao}</p>
+        <p class="preco-avista"><b>À vista: ${avista > 0? R$ ${avista} : 'Consulte'}</b></p>
+        <p class="preco-parcelado">Cartão: ${cartao > 0? R$ ${cartao} : 'Consulte'}</p>
         <a href="https://wa.me/557398144898?text=Olá! Quero o ${p.nome}" target="_blank" class="btn-whats">Comprar no Whats</a>
-      </div>`;
+      </div>
+      `;
     });
+
   } catch (erro) {
     document.getElementById('produtos').innerHTML = 'Erro: ' + erro.message;
   }
 }
-carregarProdutos();
+
+// FUNÇÕES DA GALERIA
+function abrirGaleria(index) {
+  indiceAtual = index;
+  const produto = produtosGlobal[indiceAtual];
+  document.getElementById('galeria-img').src = produto.imagem;
+  document.getElementById('galeria-nome').innerText = produto.nome;
+  document.getElementById('galeria-modal').style.display = 'flex';
+}
+
+function fecharGaleria() {
+  document.getElementById('galeria-modal').style.display = 'none';
+}
+
+function proximaImagem() {
+  indiceAtual = (indiceAtual + 1) % produtosGlobal.length;
+  abrirGaleria(indiceAtual);
+}
+
+function imagemAnterior() {
+  indiceAtual = (indiceAtual - 1 + produtosGlobal.length) % produtosGlobal.length;
+  abrirGaleria(indiceAtual);
+}
+
+carregarProdutos();,
