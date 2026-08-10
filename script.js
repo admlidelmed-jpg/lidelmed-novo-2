@@ -56,5 +56,4 @@ function imagemAnterior() {
   abrirGaleria(indiceAtual);
 }
 
-carregarProdutos();,
 carregarProdutos();
