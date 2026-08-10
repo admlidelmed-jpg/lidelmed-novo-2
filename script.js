@@ -3,7 +3,7 @@ let indiceAtual = 0;
 
 async function carregarProdutos() {
   try {
-    const resposta = await fetch('produtos.json');
+    const resposta = await fetch('products.json');
     if (!resposta.ok) throw new Error('Arquivo products.json não encontrado');
 
     produtosGlobal = await resposta.json();
