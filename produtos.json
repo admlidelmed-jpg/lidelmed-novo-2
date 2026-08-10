@@ -494,8 +494,8 @@
 {
   "id": 51,
   "nome": "Seringas Variadas",
-    "preco_avista": consultar,
-    "preco_cartao": consultar,
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "seringas-variadas.jpg",
   "descricao": "Seringas de diversos tamanhos.",
   "estoque": 0
@@ -512,8 +512,8 @@
 {
   "id": 53,
   "nome": "Material EPI Hospitalar",
-    "preco_avista": consultar,
-    "preco_cartao": consultar,
+    "preco_avista": 0,
+    "preco_cartao": 0,
   "imagem": "material-epi-hospitalar.jpg",
   "descricao": "Materiais de EPI para uso hospitalar.",
   "estoque": 0
