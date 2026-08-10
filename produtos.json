@@ -433,7 +433,7 @@
   "nome": "Colchão Pneumático Dellamed 220V e 127V",
   "preco_avista": 300,
   "preco_cartao": 280,
-  "imagem": "imagens/colchao-pneumatico-dellamed-220V-e-127V.jpg",
+  "imagem": "imagens/colchao-pneumatico-dellamed-220v-e-127v.jpg",
   "descricao": "Colchão pneumático anti escaras Dellamed.",
   "estoque": 0
 },
@@ -475,7 +475,7 @@
 },
 {
   "id": 49,
-  "nome": "Clorexidina Detergente Enzimático",
+  "nome": "Clorexidina e Detergente Enzimático",
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "imagens/clorexidina-detergente-ezimatico.jpg",
@@ -493,7 +493,7 @@
 },
 {
   "id": 51,
-  "nome": "Seringas",
+  "nome": "Seringas Variadas",
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "imagens/seringas.jpg",
