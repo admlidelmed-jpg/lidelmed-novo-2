@@ -19,8 +19,8 @@ async function carregarProdutos() {
         <img src="${p.imagem}" alt="${p.nome}" onclick="abrirGaleria(${index})">
         <h3>${p.nome}</h3>
         <p>${p.descricao}</p>
-        <p class="preco-avista"><b>À vista: ${avista > 0? R$ ${avista} : 'Consulte'}</b></p>
-        <p class="preco-parcelado">Cartão: ${cartao > 0? R$ ${cartao} : 'Consulte'}</p>
+      ${avista > 0? <p class="preco-avista"><b>À vista: R$ ${avista.toFixed(2)}</b></p> : ''}
+      ${cartao > 0? <p class="preco-parcelado">Cartão: R$ ${cartao.toFixed(2)}</p> : ''}
         <a href="https://wa.me/557398144898?text=Olá! Quero o ${p.nome}" target="_blank" class="btn-whats">Comprar no Whats</a>
       </div>
       `;
@@ -54,4 +54,4 @@ function imagemAnterior() {
   abrirGaleria(indiceAtual);
 }
 
-carregarProdutos();,
+carregarProdutos();
