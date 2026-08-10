@@ -478,8 +478,8 @@
   "nome": "Clorexidina e Detergente Enzimático",
     "preco_avista": 0,
     "preco_cartao": 0,
-  "imagem": "clorexidina-detergente-ezimatico.jpg",
-  "descricao": "Detergente enzimático à base de clorexidina.",
+  "imagem": "clorexidina-e-detergente-ezimatico.jpg",
+  "descricao": "Detergente enzimático e clorexidina.",
   "estoque": 0
 },
 {
@@ -494,8 +494,8 @@
 {
   "id": 51,
   "nome": "Seringas Variadas",
-    "preco_avista": 0,
-    "preco_cartao": 0,
+    "preco_avista": consultar,
+    "preco_cartao": consultar,
   "imagem": "seringas-variadas.jpg",
   "descricao": "Seringas de diversos tamanhos.",
   "estoque": 0
@@ -512,8 +512,8 @@
 {
   "id": 53,
   "nome": "Material EPI Hospitalar",
-    "preco_avista": 0,
-    "preco_cartao": 0,
+    "preco_avista": consultar,
+    "preco_cartao": consultar,
   "imagem": "material-epi-hospitalar.jpg",
   "descricao": "Materiais de EPI para uso hospitalar.",
   "estoque": 0
