@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIDEL MED - Produtos Médicos e Ortopédicos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#007bff">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIDEL MED</title>
+<meta name="theme-color" content="#007bff">
+<style>
+body { font-family: Arial; background: #ff9800; margin: 0; padding: 20px; }
+.card { background: white; padding: 20px; border-radius: 15px; max-width: 600px; margin: auto; text-align: center; }
+.btn { background: #ff6600; color: white; padding: 15px; border-radius: 10px; text-decoration: none; display: block; margin: 15px 0; }
+.modal { display: none; position: fixed; z-index: 1; padding-top: 60px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); }
+.galeria-conteudo { margin: auto; display: block; max-width: 90%; }
+.fechar { position: absolute; top: 15px; right: 35px; color: white; font-size: 40px; cursor: pointer; }
+.seta { position: absolute; top: 50%; color: white; font-size: 40px; cursor: pointer; padding: 16px; }
+.anterior { left: 0; }
+.proxima { right: 0; }
+.galeria-nome { text-align: center; color: white; padding: 10px; }
+</style>
 </head>
 <body>
-    <div class="card">
-  <img src="logo-lidelmed.jpg" alt="LIDEL MED" style="max-width: 180px; display: block; margin: 0 auto 10px;">   style="max-width: 180px; display: block; margin: 0 auto 1">
+<div class="card">
+<img src="logo-lidelmed.jpg" alt="LIDEL MED" style="max-width: 180px; display: block; margin: 0 auto 10px;">
+<h1 style="color: #d32f2f;">LIDEL MED FRETE GRÁTIS</h1>
+<div id="produtos">Carregando produtos...</div>
+<a href="https://lidelmed.com.br" class="btn">🌐 Acessar Site Completo LIDEL MED</a>
+<h2 style="color: #ff9800;">Fale Conosco</h2>
+</div>
 
-    <div class="letreiro">
-        <p>LIDEL MED FRETE GRÁTIS PARA ITABUNA • LIDEL MED FRETE GRÁTIS PARA ITABUNA •</p>
-         <p>LIDEL MED FRETE GRÁTIS PARA ITABUNA • LIDEL MED FRETE GRÁTIS PARA ITABUNA •</p>
-    </div>
-    <div id="produtos" class="grid">
-        Carregando produtos...
-    </div>
-
-    <a class="btn-app" href="https://lidelmed.com.br" target="_blank">
-        🌐 Acessar Site Completo LIDEL MED
-    </a>
-
-    <div class="whats-box">
-        <h2>Fale Conosco</h2>
-    </div>
-
-
-   <!-- MODAL DA GALERIA - COLA AQUI NO FINAL -->
+<!-- MODAL DA GALERIA -->
 <div id="galeria-modal" class="modal">
   <span class="fechar" onclick="fecharGaleria()">X</span>
   <span class="seta anterior" onclick="imagemAnterior()"><</span>
@@ -38,6 +36,6 @@
   <div id="galeria-nome" class="galeria-nome"></div>
 </div>
 
-<script src="script.js?v=119"></script>
+<script src="script.js?v=125"></script>
 </body>
 </html>
