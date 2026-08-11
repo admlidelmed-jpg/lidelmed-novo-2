@@ -26,8 +26,8 @@ const resposta = await fetch('./products.json?v=3007');
       `;
     });
 
-  } catch (erro) {
-    document.getElementById('produtos').innerHTML = 'Erro: ' + erro.message;
+} catch (erro) {
+    document.getElementById('produtos').innerHTML = 'ERRO: ' + erro.message;
     console.log("ERRO COMPLETO:", erro);
 }
 }
