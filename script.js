@@ -21,7 +21,7 @@ async function carregarProdutos() {
         <p>${p.descricao}</p>
       ${avista > 0? <p class="preco-avista"><b>À vista: R$ ${avista.toFixed(2)}</b></p> : ''}
       ${cartao > 0? <p class="preco-parcelado">Cartão: R$ ${cartao.toFixed(2)}</p> : ''}
-        <a href="https://wa.me/557398144898?text=Olá! Quero o ${p.nome}" target="_blank" class="btn-whats">Comprar no Whats</a>
+        <a href="https://wa.me/557398144898?text=Olá! Quero o ${p.nome}" target="_blank" class="btn-whats">Comprar no WhatsApp</a>
       </div>
       `;
     });
