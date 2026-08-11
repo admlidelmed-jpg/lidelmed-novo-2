@@ -105,8 +105,8 @@
     "categoria": "Ortopedia",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Meias de compressao Sigvaris",
-    "imagem": "imagens/meias-sigvaris.jpg",
+    "imagem": "meias-sigvaris.jpg",
+    "descricao": "imagens/Meias de compressao Sigvaris",
     "estoque": 0
   },
   {
@@ -115,8 +115,8 @@
     "categoria": "Fisioterapia",
     "preco_avista": 230,
     "preco_cartao": 230,
-    "descricao": "Bola para Pilates tamanhos variados",
-    "imagem": "imagens/bola-para-pilats.jpg",
+    "imagem": "bola-para-pilats.jpg",
+    "descricao": "imagens/Bola para Pilates tamanhos variados",
     "estoque": 10
   },
   {
@@ -125,8 +125,8 @@
     "categoria": "Ortopedia",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Cintas pos cirurgicas variadas",
-    "imagem": "imagens/cinta-pos-cirurgica.jpg",
+    "imagem": "cinta-pos-cirurgica.jpg",
+    "descricao": "imagens/Cintas pos cirurgicas variadas",
     "estoque": 10
   },
   {
@@ -135,8 +135,8 @@
     "categoria": "Curativos",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Placas de curativos variadas",
-    "imagem": "imagens/placas-curativos.jpg",
+    "imagem": "placas-curativos.jpg",
+    "descricao": "imagens/Placas de curativos variadas",
     "estoque": 0
   },
   {
@@ -145,8 +145,8 @@
     "categoria": "Curativos",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Curativos variados",
-    "imagem": "imagens/curativos.jpg",
+    "imagem": "curativos.jpg",
+    "descricao": "imagens/Curativos variados",
     "estoque": 0
   },
   {
@@ -155,8 +155,8 @@
     "categoria": "Acessorios",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Soro fisiologico",
-    "imagem": "imagens/soro-fisiologico.jpg",
+    "imagem": "soro-fisiologico.jpg",
+    "descricao": "imagens/Soro fisiologico",
     "estoque": 0
   },
   {
@@ -165,8 +165,8 @@
     "categoria": "Acessorios",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Soro glicosado",
-    "imagem": "imagens/soro-clicosado.jpg",
+    "imagem": "soro-glicosado.jpg
+    "descricao": "imagens/Soro glicosado",  
     "estoque": 0
   },
   {
@@ -175,8 +175,8 @@
     "categoria": "Acessorios",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Soro glicofisiologico",
-    "imagem": "imagens/soro-glicofisiologico.jpg",
+    "imagem": "soro-glicofisiologico.jpg",
+    "descricao": "imagens/Soro glicofisiologico",
     "estoque": 0
   },
   {
@@ -185,8 +185,8 @@
     "categoria": "Acessorios",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Soro ringer com lactato",
-    "imagem": "imagens/soro-ringer-com-lactato.jpg",
+    "imagem": "soro-ringer-com-lactato.jpg",
+    "descricao": "imagens/Soro ringer com lactato",
     "estoque": 0
   },
   {
@@ -195,8 +195,8 @@
     "categoria": "Acessorios",
     "preco_avista": 0,
     "preco_cartao": 0,
-    "descricao": "Monitol",
-    "imagem": "imagens/monitol.jpg",
+    "imagem": "monitol.jpg",
+    "descricao": "imagens/Monitol",
     "estoque": 0
   },
   {
@@ -205,8 +205,8 @@
     "categoria": "Acessorios",
     "preco_avista": 380,
     "preco_cartao": 380,
-    "descricao": "Suporte de soro",
-    "imagem": "imagens/suporte-soro.jpg",
+    "imagem": "suporte-soro.jpg",
+    "descricao": "imagens/Suporte de soro",
     "estoque": 10
   },
   {
@@ -215,8 +215,8 @@
     "categoria": "Ortopedia",
     "preco_avista": 60,
     "preco_cartao": 80,
-    "descricao": "Palmilha de silicone",
-    "imagem": "imagens/palmilha-de-silicone.jpg",
+    "imagem": "palmilha-de-silicone.jpg",
+    "descricao": "imagens/Palmilha de silicone",
     "estoque": 10
   },
   {
@@ -225,8 +225,9 @@
     "categoria": "Equipamentos",
     "preco_avista": 180,
     "preco_cartao": 200,
-    "descricao": "nebulizador compressor compacto",
-    "imagem": "imagens/nebolizador-compressor-compacto.jpg",
+    "imagem": "nebolizador-compressor-compacto.jpg",
+    "descricao": "imagens/nebulizador compressor compacto",
+    
     "estoque": 10
   },
   {
@@ -245,8 +246,8 @@
     "categoria": "Monitoramento",
     "preco_avista": 180,
     "preco_cartao": 200,
-    "descricao": "Monitor de pressao KF65",
-    "imagem": "imagens/Monitor-de-pressao-KF65.jpg",
+    "imagem": "Monitor-de-pressao-KF65.jpg",
+    "descricao": "imagens/Monitor de pressao KF65",
     "estoque": 10
   },
   {
@@ -255,8 +256,8 @@
     "categoria": "Monitoramento",
     "preco_avista": 180,
     "preco_cartao": 200,
-    "descricao": "medidor de pressao ultra max",
-    "imagem": "imagens/medidor-de-pressao-ultra-max.jpg",
+    "imagem": "medidor-de-pressao-ultra-max.jpg",
+    "descricao": "imagens/medidor de pressao ultra max",
     "estoque": 10
   },
   {
@@ -265,7 +266,7 @@
     "categoria": "Acessorios",
     "preco_avista": 40.00,
     "preco_cartao": 45.00,
-    "descricao": "Fracionador de comprimido",
+    "descricao": "imagens/Fracionador de comprimido",
     "imagem": "imagens/fracionador-de-comprimido.jpg",
     "estoque": 10
   },
@@ -275,7 +276,7 @@
     "categoria": "Cadeira de Rodas Motorizada",
     "preco_avista": 6500,
     "preco_cartao": 7000,
-    "descricao": "Cadeira de rodas motorizada D800",
+    "descricao": "imagens/Cadeira de rodas motorizada D800",
     "imagem": "imagens/cadeira-de-rodas-motorizada-d800.jpg",
     "estoque": 10
   },
@@ -285,7 +286,7 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 765,
     "preco_cartao": 800,
-    "descricao": "Cadeira Higienica S50 Supermedy",
+    "descricao": "imagens/Cadeira Higienica S50 Supermedy",
     "imagem": "imagens/cadeira-higienica-S50-supermedy.jpg",
     "estoque": 10
   },
@@ -295,7 +296,7 @@
     "categoria": "Botas Ortopedicas",
     "preco_avista": 200,
     "preco_cartao": 200,
-    "descricao": "Bota Ortopedica Cano Longo e Curto",
+    "descricao": "imagens/Bota Ortopedica Cano Longo e Curto",
     "imagem": "imagens/bota-ortopedica-longa-e-curta.jpg",
     "estoque": 10
   },
@@ -305,7 +306,7 @@
     "categoria": "curativo",
     "preco_avista": 30,
     "preco_cartao": 30,
-    "descricao": "Luva latex de procedimento",
+    "descricao": "imagens/Luva latex de procedimento",
     "imagem": "imagens/luva-latex-para-procedimento.jpg",
     "estoque": 5000
   },
@@ -315,7 +316,7 @@
     "categoria": "curativo",
     "preco_avista": 35,
     "preco_cartao": 35,
-    "descricao": "Luva nitrilica",
+    "descricao": "imagens/Luva nitrilica",
     "imagem": "imagens/luva-nitrilica.jpg",
     "estoque": 5000
   },
@@ -325,8 +326,8 @@
     "categoria": "Mobilidade",
     "preco_avista": 2500,
     "preco_cartao": 2800,
-    "descricao": "Guincho hidraulico para transferencia segura de pacientes acamados. Estrutura em aco resistente, capacidade 150kg",
-    "imagem": "imagens/guincho-de-transferencia-para-acamado.jpg",
+    "imagem": "guincho-de-transferencia-para-acamado.jpg",
+    "descricao": "imagens/Guincho hidraulico para transferencia segura de pacientes acamados. Estrutura em aco resistente, capacidade 150kg",
     "estoque": 1
   },
   {
@@ -335,8 +336,8 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 900,
     "preco_cartao": 850,
-    "descricao": "Cadeira Higienica Monaco",
-    "imagem": "imagens/cadeira-higienica-monaco.jpg",
+       "imagem": "cadeira-higienica-monaco.jpg",
+    "descricao": "imagens/Cadeira Higienica Monaco",
     "estoque": 10
   },
   {
@@ -345,8 +346,8 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 900,
     "preco_cartao": 1100,
-    "descricao": "Cadeira Higienica 3 em 1",
-    "imagem": "imagens/cadeira-higienica-3-em-1.jpg",
+    "imagem": "cadeira-higienica-3-em-1.jpg",
+    "descricao": "imagens/Cadeira Higienica 3 em 1",
     "estoque": 10
   },
   {
@@ -355,8 +356,8 @@
     "categoria": "Mobilidade",
     "preco_avista": 3150,
     "preco_cartao": 3300,
-    "descricao": "Cama Hospitalar",
-    "imagem": "imagens/cama-hospitalar.jpg",
+    "imagem": "cama-hospitalar.jpg",
+    "descricao": "imagens/Cama Hospitalar",
     "estoque": 0
   },
   {
@@ -365,8 +366,8 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 400,
     "preco_cartao": 450,
-    "descricao": "Cadeira Higienica CDS",
-    "imagem": "imagens/cadeira-higienica-CDS.jpg",
+    "imagem": "cadeira-higienica-CDS.jpg",
+    "descricao": "imagens/Cadeira Higienica CDS",
     "estoque": 10
   },
   {
@@ -375,8 +376,8 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 900,
     "preco_cartao": 1000,
-    "descricao": "Cadeira Higienica Chicago",
-    "imagem": "imagens/cadeira-higienica-chicago.jpg",
+      "imagem": "cadeira-higienica-chicago.jpg",
+    "descricao": "imagens/Cadeira Higienica Chicago",
     "estoque": 10
   },
   {
@@ -385,7 +386,7 @@
     "categoria": "Colchoes",
     "preco_avista": 560,
     "preco_cartao": 575,
-    "imagem": "imagens/colchao-d33.jpg",
+    "imagem": "colchao-d33.jpg",
     "descricao": "imagens/Colchao D33",
     "estoque": 0
   },
