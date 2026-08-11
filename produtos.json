@@ -266,8 +266,8 @@
     "categoria": "Acessorios",
     "preco_avista": 40.00,
     "preco_cartao": 45.00,
+      "imagem": "fracionador-de-comprimido.jpg",
     "descricao": "imagens/Fracionador de comprimido",
-    "imagem": "imagens/fracionador-de-comprimido.jpg",
     "estoque": 10
   },
   {
@@ -276,8 +276,8 @@
     "categoria": "Cadeira de Rodas Motorizada",
     "preco_avista": 6500,
     "preco_cartao": 7000,
+      "imagem": "cadeira-de-rodas-motorizada-d800.jpg",
     "descricao": "imagens/Cadeira de rodas motorizada D800",
-    "imagem": "imagens/cadeira-de-rodas-motorizada-d800.jpg",
     "estoque": 10
   },
   {
@@ -286,8 +286,8 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 765,
     "preco_cartao": 800,
+    "imagem": "cadeira-de-rodas-motorizada-d800.jpg",
     "descricao": "imagens/Cadeira Higienica S50 Supermedy",
-    "imagem": "imagens/cadeira-higienica-S50-supermedy.jpg",
     "estoque": 10
   },
   {
@@ -296,8 +296,9 @@
     "categoria": "Botas Ortopedicas",
     "preco_avista": 200,
     "preco_cartao": 200,
+    "imagem": "bota-ortopedica-longa-e-curta.jpg",
     "descricao": "imagens/Bota Ortopedica Cano Longo e Curto",
-    "imagem": "imagens/bota-ortopedica-longa-e-curta.jpg",
+  
     "estoque": 10
   },
   {
@@ -306,8 +307,8 @@
     "categoria": "curativo",
     "preco_avista": 30,
     "preco_cartao": 30,
+     "imagem": "luva-latex-para-procedimento.jpg",
     "descricao": "imagens/Luva latex de procedimento",
-    "imagem": "imagens/luva-latex-para-procedimento.jpg",
     "estoque": 5000
   },
   {
@@ -316,8 +317,8 @@
     "categoria": "curativo",
     "preco_avista": 35,
     "preco_cartao": 35,
+    "imagem": "luva-nitrilica.jpg",
     "descricao": "imagens/Luva nitrilica",
-    "imagem": "imagens/luva-nitrilica.jpg",
     "estoque": 5000
   },
   {
