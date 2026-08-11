@@ -15,8 +15,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 1500,
     "preco_cartao": 1680,
-    "descricao": "Cadeira de Rodas D400",
-    "imagem": "imagens/cadeira-de-rodas-D400.jpg",
+    "imagem": "cadeira-de-rodas-D400.jpg",
+    "descricao": "imagens/Cadeira de Rodas D400",
     "estoque": 10
   },
   {
@@ -25,8 +25,8 @@
     "categoria": "Equipamentos",
     "preco_avista": 610,
     "preco_cartao": 640,
-    "descricao": "Aspirador de secrecao portatil",
-    "imagem": "imagens/aspirador-secrecao-portatil.jpg",
+     "imagem": "aspirador-secrecao-portatil.jpg",
+    "descricao": "imagens/Aspirador de secrecao portatil",
     "estoque": 10
   },
   {
@@ -35,8 +35,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 950,
     "preco_cartao": 963,
-    "descricao": "Cadeira de Rodas D100",
-    "imagem": "imagens/cadeira-de-roda-D100.jpg",
+     "imagem": "cadeira-de-roda-D100.jpg",
+    "descricao": "imagens/Cadeira de Rodas D100",
     "estoque": 10
   },
   {
@@ -45,8 +45,8 @@
     "categoria": "Higiene e Banho",
     "preco_avista": 600,
     "preco_cartao": 650,
-    "descricao": "Cadeira de Higienizacao D55",
-    "imagem": "imagens/cadeira-de-higienizacao-d55.jpg",
+    "imagem": "cadeira-de-higienizacao-d55.jpg",
+    "descricao": "imagens/Cadeira de Higienizacao D55",
     "estoque": 10
   },
   {
@@ -55,8 +55,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 750,
     "preco_cartao": 800,
-    "descricao": "Cadeira de rodas CDS pneu inflavel",
-    "imagem": "imagens/cadeira-cds.jpg",
+    "imagem": "cadeira-cds.jpg",
+    "descricao": "imagens/Cadeira de rodas CDS pneu inflavel",
     "estoque": 10
   },
   {
@@ -65,8 +65,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 700,
     "preco_cartao": 880,
-    "descricao": "Cadeira de rodas Prolife simples pneu macico",
-    "imagem": "imagens/cadeira-de-rodas-simples-inflavel-prolife.jpg",
+    "imagem": "cadeira-de-rodas-simples-inflavel-prolife.jpg",
+    "descricao": "imagens/Cadeira de rodas Prolife simples pneu macico",
     "estoque": 10
   },
   {
@@ -75,8 +75,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 600,
     "preco_cartao": 680,
-    "descricao": "Cadeira de rodas MM simples pneu macico",
-    "imagem": "imagens/cadeira-de-rodas-MM.jpg",
+     "imagem": "cadeira-de-rodas-MM.jpg",
+    "descricao": "imagens/Cadeira de rodas MM simples pneu macico",
     "estoque": 10
   },
   {
@@ -85,8 +85,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 500,
     "preco_cartao": 530,
-    "descricao": "Cadeira de rodas 120KG mm",
-    "imagem": "imagens/cadeira-de-rodas-120KG-mm.jpg",
+    "imagem": "cadeira-de-rodas-120KG-mm.jpg",
+    "descricao": "imagens/Cadeira de rodas 120KG mm",
     "estoque": 10
   },
   {
@@ -95,8 +95,8 @@
     "categoria": "Cadeiras Higienicas",
     "preco_avista": 500,
     "preco_cartao": 530,
-    "descricao": "Cadeira Higienica 120KG CDS",
-    "imagem": "imagens/cadeira-higienica-120kg-CDS.jpg",
+    "imagem": "cadeira-higienica-120kg-CDS.jpg",
+    "descricao": "imagens/Cadeira Higienica 120KG CDS",
     "estoque": 10
   },
   {
