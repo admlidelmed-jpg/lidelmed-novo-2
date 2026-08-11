@@ -6,7 +6,7 @@
     "preco_avista": 1800,
     "preco_cartao": 1850,
      "imagem": "cadeira-de-roda-D600.jpg",
-    "descricao": "imagens/Cadeira de Rodas D600",
+    "descricao": "Cadeira de Rodas D600",
     "estoque": 10
   },
   {
@@ -16,7 +16,7 @@
     "preco_avista": 1500,
     "preco_cartao": 1680,
     "imagem": "cadeira-de-rodas-D400.jpg",
-    "descricao": "imagens/Cadeira de Rodas D400",
+    "descricao": "Cadeira de Rodas D400",
     "estoque": 10
   },
   {
@@ -26,7 +26,7 @@
     "preco_avista": 610,
     "preco_cartao": 640,
      "imagem": "aspirador-secrecao-portatil.jpg",
-    "descricao": "imagens/Aspirador de secrecao portatil",
+    "descricao": "Aspirador de secrecao portatil",
     "estoque": 10
   },
   {
@@ -36,7 +36,7 @@
     "preco_avista": 950,
     "preco_cartao": 963,
      "imagem": "cadeira-de-roda-D100.jpg",
-    "descricao": "imagens/Cadeira de Rodas D100",
+    "descricao": "Cadeira de Rodas D100",
     "estoque": 10
   },
   {
@@ -46,7 +46,7 @@
     "preco_avista": 600,
     "preco_cartao": 650,
     "imagem": "cadeira-de-higienizacao-d55.jpg",
-    "descricao": "imagens/Cadeira de Higienizacao D55",
+    "descricao": "Cadeira de Higienizacao D55",
     "estoque": 10
   },
   {
@@ -56,7 +56,7 @@
     "preco_avista": 750,
     "preco_cartao": 800,
     "imagem": "cadeira-cds.jpg",
-    "descricao": "imagens/Cadeira de rodas CDS pneu inflavel",
+    "descricao": "Cadeira de rodas CDS pneu inflavel",
     "estoque": 10
   },
   {
@@ -66,7 +66,7 @@
     "preco_avista": 700,
     "preco_cartao": 880,
     "imagem": "cadeira-de-rodas-simples-inflavel-prolife.jpg",
-    "descricao": "imagens/Cadeira de rodas Prolife simples pneu macico",
+    "descricao": "Cadeira de rodas Prolife simples pneu macico",
     "estoque": 10
   },
   {
@@ -76,7 +76,7 @@
     "preco_avista": 600,
     "preco_cartao": 680,
      "imagem": "cadeira-de-rodas-MM.jpg",
-    "descricao": "imagens/Cadeira de rodas MM simples pneu macico",
+    "descricao": "Cadeira de rodas MM simples pneu macico",
     "estoque": 10
   },
   {
@@ -86,7 +86,7 @@
     "preco_avista": 500,
     "preco_cartao": 530,
     "imagem": "cadeira-de-rodas-120KG-mm.jpg",
-    "descricao": "imagens/Cadeira de rodas 120KG mm",
+    "descricao": "Cadeira de rodas 120KG mm",
     "estoque": 10
   },
   {
@@ -96,7 +96,7 @@
     "preco_avista": 500,
     "preco_cartao": 530,
     "imagem": "cadeira-higienica-120kg-CDS.jpg",
-    "descricao": "imagens/Cadeira Higienica 120KG CDS",
+    "descricao": "Cadeira Higienica 120KG CDS",
     "estoque": 10
   },
   {
@@ -106,7 +106,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "meias-sigvaris.jpg",
-    "descricao": "imagens/Meias de compressao Sigvaris",
+    "descricao": "Meias de compressao Sigvaris",
     "estoque": 0
   },
   {
@@ -116,7 +116,7 @@
     "preco_avista": 230,
     "preco_cartao": 230,
     "imagem": "bola-para-pilats.jpg",
-    "descricao": "imagens/Bola para Pilates tamanhos variados",
+    "descricao": "Bola para Pilates tamanhos variados",
     "estoque": 10
   },
   {
@@ -126,7 +126,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "cinta-pos-cirurgica.jpg",
-    "descricao": "imagens/Cintas pos cirurgicas variadas",
+    "descricao": "Cintas pos cirurgicas variadas",
     "estoque": 10
   },
   {
@@ -136,7 +136,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "placas-curativos.jpg",
-    "descricao": "imagens/Placas de curativos variadas",
+    "descricao": "Placas de curativos variadas",
     "estoque": 0
   },
   {
@@ -146,7 +146,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "curativos.jpg",
-    "descricao": "imagens/Curativos variados",
+    "descricao": "Curativos variados",
     "estoque": 0
   },
   {
@@ -156,7 +156,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "soro-fisiologico.jpg",
-    "descricao": "imagens/Soro fisiologico",
+    "descricao": "Soro fisiologico",
     "estoque": 0
   },
   {
@@ -166,7 +166,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "soro-glicosado.jpg",
-    "descricao": "imagens/Soro glicosado",  
+    "descricao": "Soro glicosado",  
     "estoque": 0
   },
   {
@@ -176,7 +176,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "soro-glicofisiologico.jpg",
-    "descricao": "imagens/Soro glicofisiologico",
+    "descricao": "Soro glicofisiologico",
     "estoque": 0
   },
   {
@@ -186,7 +186,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "soro-ringer-com-lactato.jpg",
-    "descricao": "imagens/Soro ringer com lactato",
+    "descricao": "Soro ringer com lactato",
     "estoque": 0
   },
   {
@@ -196,7 +196,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "monitol.jpg",
-    "descricao": "imagens/Monitol",
+    "descricao": "Monitol",
     "estoque": 0
   },
   {
@@ -206,7 +206,7 @@
     "preco_avista": 380,
     "preco_cartao": 380,
     "imagem": "suporte-soro.jpg",
-    "descricao": "imagens/Suporte de soro",
+    "descricao": "Suporte de soro",
     "estoque": 10
   },
   {
@@ -216,7 +216,7 @@
     "preco_avista": 60,
     "preco_cartao": 80,
     "imagem": "palmilha-de-silicone.jpg",
-    "descricao": "imagens/Palmilha de silicone",
+    "descricao": "Palmilha de silicone",
     "estoque": 10
   },
   {
@@ -226,7 +226,7 @@
     "preco_avista": 180,
     "preco_cartao": 200,
     "imagem": "nebolizador-compressor-compacto.jpg",
-    "descricao": "imagens/nebulizador compressor compacto",
+    "descricao": "nebulizador compressor compacto",
     
     "estoque": 10
   },
@@ -237,7 +237,7 @@
     "preco_avista": 590,
     "preco_cartao": 600,
     "imagem": "aspirador-de-secrecao-maxmed.jpg",
-    "descricao": "imagens/Aspirador de secrecao MAXMED",
+    "descricao": "Aspirador de secrecao MAXMED",
     "estoque": 10
   },
   {
@@ -247,7 +247,7 @@
     "preco_avista": 180,
     "preco_cartao": 200,
     "imagem": "Monitor-de-pressao-KF65.jpg",
-    "descricao": "imagens/Monitor de pressao KF65",
+    "descricao": "Monitor de pressao KF65",
     "estoque": 10
   },
   {
@@ -257,7 +257,7 @@
     "preco_avista": 180,
     "preco_cartao": 200,
     "imagem": "medidor-de-pressao-ultra-max.jpg",
-    "descricao": "imagens/medidor de pressao ultra max",
+    "descricao": "medidor de pressao ultra max",
     "estoque": 10
   },
   {
@@ -267,7 +267,7 @@
     "preco_avista": 40.00,
     "preco_cartao": 45.00,
       "imagem": "fracionador-de-comprimido.jpg",
-    "descricao": "imagens/Fracionador de comprimido",
+    "descricao": "Fracionador de comprimido",
     "estoque": 10
   },
   {
@@ -277,7 +277,7 @@
     "preco_avista": 6500,
     "preco_cartao": 7000,
       "imagem": "cadeira-de-rodas-motorizada-d800.jpg",
-    "descricao": "imagens/Cadeira de rodas motorizada D800",
+    "descricao": "Cadeira de rodas motorizada D800",
     "estoque": 10
   },
   {
@@ -287,7 +287,7 @@
     "preco_avista": 765,
     "preco_cartao": 800,
     "imagem": "cadeira-de-rodas-motorizada-d800.jpg",
-    "descricao": "imagens/Cadeira Higienica S50 Supermedy",
+    "descricao": "Cadeira Higienica S50 Supermedy",
     "estoque": 10
   },
   {
@@ -297,7 +297,7 @@
     "preco_avista": 200,
     "preco_cartao": 200,
     "imagem": "bota-ortopedica-longa-e-curta.jpg",
-    "descricao": "imagens/Bota Ortopedica Cano Longo e Curto",
+    "descricao": "Bota Ortopedica Cano Longo e Curto",
   
     "estoque": 10
   },
@@ -308,7 +308,7 @@
     "preco_avista": 30,
     "preco_cartao": 30,
      "imagem": "luva-latex-para-procedimento.jpg",
-    "descricao": "imagens/Luva latex de procedimento",
+    "descricao": "Luva latex de procedimento",
     "estoque": 5000
   },
   {
@@ -318,7 +318,7 @@
     "preco_avista": 35,
     "preco_cartao": 35,
     "imagem": "luva-nitrilica.jpg",
-    "descricao": "imagens/Luva nitrilica",
+    "descricao": "Luva nitrilica",
     "estoque": 5000
   },
   {
@@ -328,7 +328,7 @@
     "preco_avista": 2500,
     "preco_cartao": 2800,
     "imagem": "guincho-de-transferencia-para-acamado.jpg",
-    "descricao": "imagens/Guincho hidraulico para transferencia segura de pacientes acamados. Estrutura em aco resistente, capacidade 150kg",
+    "descricao": "Guincho hidraulico para transferencia segura de pacientes acamados. Estrutura em aco resistente, capacidade 150kg",
     "estoque": 1
   },
   {
@@ -338,7 +338,7 @@
     "preco_avista": 900,
     "preco_cartao": 850,
        "imagem": "cadeira-higienica-monaco.jpg",
-    "descricao": "imagens/Cadeira Higienica Monaco",
+    "descricao": "Cadeira Higienica Monaco",
     "estoque": 10
   },
   {
@@ -348,7 +348,7 @@
     "preco_avista": 900,
     "preco_cartao": 1100,
     "imagem": "cadeira-higienica-3-em-1.jpg",
-    "descricao": "imagens/Cadeira Higienica 3 em 1",
+    "descricao": "Cadeira Higienica 3 em 1",
     "estoque": 10
   },
   {
@@ -358,7 +358,7 @@
     "preco_avista": 3150,
     "preco_cartao": 3300,
     "imagem": "cama-hospitalar.jpg",
-    "descricao": "imagens/Cama Hospitalar",
+    "descricao": "Cama Hospitalar",
     "estoque": 0
   },
   {
@@ -368,7 +368,7 @@
     "preco_avista": 400,
     "preco_cartao": 450,
     "imagem": "cadeira-higienica-CDS.jpg",
-    "descricao": "imagens/Cadeira Higienica CDS",
+    "descricao": "Cadeira Higienica CDS",
     "estoque": 10
   },
   {
@@ -378,7 +378,7 @@
     "preco_avista": 900,
     "preco_cartao": 1000,
       "imagem": "cadeira-higienica-chicago.jpg",
-    "descricao": "imagens/Cadeira Higienica Chicago",
+    "descricao": "Cadeira Higienica Chicago",
     "estoque": 10
   },
   {
@@ -388,7 +388,7 @@
     "preco_avista": 560,
     "preco_cartao": 575,
     "imagem": "colchao-d33.jpg",
-    "descricao": "imagens/Colchao D33",
+    "descricao": "Colchao D33",
     "estoque": 0
   },
   {
@@ -398,7 +398,7 @@
     "preco_avista": 325,
     "preco_cartao": 350,
      "imagem": "colchao-pneumatico.jpg",
-    "descricao": "imagens/Colchao Pneumatico",
+    "descricao": "Colchao Pneumatico",
     "estoque": 0
   },
   {
@@ -408,7 +408,7 @@
     "preco_avista": 300,
     "preco_cartao": 330,
     "imagem": "escadinha-hospitalar.jpg",
-    "descricao": "imagens/Escadinha Hospitalar",
+    "descricao": "Escadinha Hospitalar",
     "estoque":20
   },
   {
@@ -418,7 +418,7 @@
     "preco_avista": 1000,
     "preco_cartao": 900,
     "imagem": "maca-clinica.jpg",
-    "descricao": "imagens/Maca Clinica",
+    "descricao": "Maca Clinica",
     "estoque": 3
   },
 {
@@ -427,7 +427,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "variedade-em-sondas.jpg",
-  "descricao": "imagens/Diversos modelos de sondas hospitalares.",
+  "descricao": "Diversos modelos de sondas hospitalares.",
   "estoque": 0
 },
 {
@@ -436,7 +436,7 @@
   "preco_avista": 300,
   "preco_cartao": 280,
   "imagem": "colchao-pneumatico-dellamed-220V-e-127V.jpg",
-  "descricao": "imagens/Colchão pneumático anti escaras Dellamed.",
+  "descricao": "Colchão pneumático anti escaras Dellamed.",
   "estoque":10
 },
 {
@@ -445,7 +445,7 @@
   "preco_avista": 25,
   "preco_cartao": 30,
   "imagem": "campo-operatorio-fio-radiopaco.jpg",
-  "descricao": "imagens/Campo operatório com fio radiopaco.",
+  "descricao": "Campo operatório com fio radiopaco.",
   "estoque": 0
 },
 {
@@ -454,7 +454,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "itens-para-treinar-sutura.jpg",
-  "descricao": "imagens/Kit para treinamento de sutura médica.",
+  "descricao": "Kit para treinamento de sutura médica.",
   "estoque": 0
 },
 {
@@ -463,7 +463,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "produtos-pielsana.jpg",
-  "descricao": "imagens/Linha completa de produtos Pielsana.",
+  "descricao": "Linha completa de produtos Pielsana.",
   "estoque": 0
 },
 {
@@ -472,7 +472,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "agua-destilada.jpg",
-  "descricao": "imagens/Água destilada para uso hospitalar.",
+  "descricao": "Água destilada para uso hospitalar.",
   "estoque": 20
 },
 {
@@ -481,7 +481,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "clorexidina-e-detergente-ezimatico.jpg",
-  "descricao": "imagens/Clorexidina e Detergente Ezimatico.",
+  "descricao": "Clorexidina e Detergente Ezimatico.",
   "estoque": 10
 },
 {
@@ -490,7 +490,7 @@
   "preco_avista": 10,
   "preco_cartao": 12,
   "imagem": "oculos-de-protecao-hospitalar-epi.jpg",
-  "descricao": "imagens/Óculos de proteção para uso hospitalar.",
+  "descricao": "Óculos de proteção para uso hospitalar.",
   "estoque":300
 },
 {
@@ -499,7 +499,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "seringas-variadas.jpg",
-  "descricao": "imagens/Seringas de diversos tamanhos.",
+  "descricao": "Seringas de diversos tamanhos.",
   "estoque": 0
 },
 {
@@ -508,7 +508,7 @@
     "preco_avista": 25,
     "preco_cartao": 25,
   "imagem": "seringa-1ml-com-agulha-fixa.jpg",
-  "descricao": "imagens/Seringa 1ml com agulha fixa.",
+  "descricao": "Seringa 1ml com agulha fixa.",
   "estoque":800
 },
 {
@@ -517,7 +517,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "material-epi-hospitalar.jpg",
-  "descricao": "imagens/Materiais de EPI para uso hospitalar.",
+  "descricao": "Materiais de EPI para uso hospitalar.",
   "estoque": 0
 }
 ]
