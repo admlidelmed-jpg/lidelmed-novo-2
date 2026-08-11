@@ -415,8 +415,8 @@
     "categoria": "Mobilidade",
     "preco_avista": 1000,
     "preco_cartao": 900,
-    "descricao": "Maca Clinica",
-    "imagem": "imagens/maca-clinica.jpg",
+    "imagem": "maca-clinica.jpg",
+    "descricao": "imagens/Maca Clinica",
     "estoque": 0
   },
 {
