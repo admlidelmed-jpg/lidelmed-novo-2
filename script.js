@@ -16,7 +16,7 @@ const resposta = await fetch('./products.json?v=3007');
 
       div.innerHTML += `
       <div class="card-produto">
-        <img src="${p.imagem}" alt="${p.nome}" onclick="abrirGaleria(${index})">
+       <img src="imagens/${p.imagem}" alt="${p.nome}" onclick="abrirGaleria(${index})">
         <h3>${p.nome}</h3>
         <p>${p.descricao}</p>
       ${avista > 0 ? `<p class="preco-avista"><b>À vista: R$ ${avista.toFixed(2)}</b></p>` : ''}
