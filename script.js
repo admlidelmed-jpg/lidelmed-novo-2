@@ -19,9 +19,9 @@ const resposta = await fetch('./products.json?v=3007');
         <img src="${p.imagem}" alt="${p.nome}" onclick="abrirGaleria(${index})">
         <h3>${p.nome}</h3>
         <p>${p.descricao}</p>
-      ${avista > 0? <p class="preco-avista"><b>À vista: R$ ${avista.toFixed(2)}</b></p> : ''}
-      ${cartao > 0? <p class="preco-cartao">Cartão: R$ ${cartao.toFixed(2)}</p> : ''}
-      <a href="https://wa.me/557398144898?text=Olá! Quero o ${p.nome}" target="_blank" class="btn-whats">Comprar no WhatsApp</a>
+      ${avista > 0 ? `<p class="preco-avista"><b>À vista: R$ ${avista.toFixed(2)}</b></p>` : ''}
+      ${cartao > 0 ? `<p class="preco-cartao">Cartão: R$ ${cartao.toFixed(2)}</p> : ''}
+     <a href="https://wa.me/557398144898?text=Olá! Quero o ${p.nome}" target="_blank" class="btn-whats">Comprar no WhatsApp</a>
       </div>
       `;
     });
