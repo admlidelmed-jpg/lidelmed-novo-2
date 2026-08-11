@@ -126,7 +126,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "cinta-pos-cirurgica.jpg",
-    "descricao": "Cintas pos cirurgicas variadas",
+    "descricao": "Cintas pos cirurgicas precos variadas",
     "estoque": 10
   },
   {
@@ -146,7 +146,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "curativos.jpg",
-    "descricao": "Curativos variados",
+    "descricao": "Curativos precos variados",
     "estoque": 0
   },
   {
@@ -156,7 +156,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "soro-fisiologico.jpg",
-    "descricao": "Soro fisiologico",
+    "descricao": "Soro fisiologico precos variados",
     "estoque": 0
   },
   {
@@ -166,15 +166,15 @@
     "preco_avista": 0,
     "preco_cartao": 0,
     "imagem": "soro-glicosado.jpg",
-    "descricao": "Soro glicosado",  
+    "descricao": "Soro glicosado precos variados",  
     "estoque": 0
   },
   {
     "id": 18,
     "nome": "Soro glicofisiologico",
     "categoria": "Acessorios",
-    "preco_avista": 0,
-    "preco_cartao": 0,
+    "preco_avista": 26,
+    "preco_cartao": 26,
     "imagem": "soro-glicofisiologico.jpg",
     "descricao": "Soro glicofisiologico",
     "estoque": 0
@@ -183,8 +183,8 @@
     "id": 19,
     "nome": "Soro ringer com lactato",
     "categoria": "Acessorios",
-    "preco_avista": 0,
-    "preco_cartao": 0,
+    "preco_avista": 20,
+    "preco_cartao": 20,
     "imagem": "soro-ringer-com-lactato.jpg",
     "descricao": "Soro ringer com lactato",
     "estoque": 0
@@ -193,8 +193,8 @@
     "id": 20,
     "nome": "Monitol",
     "categoria": "Acessorios",
-    "preco_avista": 0,
-    "preco_cartao": 0,
+    "preco_avista": 26,
+    "preco_cartao": 26,
     "imagem": "monitol.jpg",
     "descricao": "Monitol",
     "estoque": 0
@@ -454,7 +454,7 @@
     "preco_avista": 0,
     "preco_cartao": 0,
   "imagem": "itens-para-treinar-sutura.jpg",
-  "descricao": "Kit para treinamento de sutura médica.",
+  "descricao": "Kit para treinamento de sutura médica precos variados.",
   "estoque": 0
 },
 {
