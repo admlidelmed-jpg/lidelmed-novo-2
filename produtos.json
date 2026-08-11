@@ -5,8 +5,8 @@
     "categoria": "Cadeiras de Rodas",
     "preco_avista": 1800,
     "preco_cartao": 1850,
-    "descricao": "Cadeira de Rodas D600",
-    "imagem": "imagens/cadeira-de-roda-D600.jpg",
+     "imagem": "cadeira-de-roda-D600.jpg",
+    "descricao": "imagens/Cadeira de Rodas D600",
     "estoque": 10
   },
   {
