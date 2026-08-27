@@ -272,12 +272,12 @@
   },
   {
     "id": 28,
-    "nome": "Cadeira de rodas motorizada D800",
-    "categoria": "Cadeira de Rodas Motorizada",
+    "nome": "Cadeira de rodas motorizada Freedom",
+    "categoria": "Cadeira de Rodas Motorizada 120kg",
     "preco_avista": 6500,
     "preco_cartao": 7000,
-      "imagem": "cadeira-de-rodas-motorizada-d800.jpg",
-    "descricao": "Cadeira de rodas motorizada D800",
+      "imagem": "",
+    "descricao": "cadeira-de-rodas-motorizada-freedom-jpg",
     "estoque": 10
   },
   {
