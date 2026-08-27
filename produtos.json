@@ -272,12 +272,12 @@
   },
   {
     "id": 28,
-    "nome": "Cadeira de rodas motorizada Freedom",
-    "categoria": "Cadeira de Rodas Motorizada 120kg",
+    "nome": "Cadeira de rodas motorizada freedom",
+    "categoria": "Cadeira de Rodas Motorizada",
     "preco_avista": 6500,
     "preco_cartao": 7000,
-      "imagem": "",
-    "descricao": "cadeira-de-rodas-motorizada-freedom-jpg",
+      "imagem": "cadeira-de-rodas-motorizada-freedom-jpg",
+    "descricao": "cadeira motorizada 120kg",
     "estoque": 10
   },
   {
