@@ -271,16 +271,6 @@
     "estoque": 10
   },
   {
-    "id": 29,
-    "nome": "Cadeira Higienica S50 Supermedy",
-    "categoria": "Cadeiras Higienicas",
-    "preco_avista": 765,
-    "preco_cartao": 800,
-    "imagem": "cadeira-higienica-S50-supermedy.jpg",
-    "descricao": "Cadeira Higienica S50 Supermedy",
-    "estoque": 10
-  },
-  {
     "id": 30,
     "nome": "Bota Ortopedica Cano Longo e Curto",
     "categoria": "Botas Ortopedicas",
@@ -288,7 +278,6 @@
     "preco_cartao": 200,
     "imagem": "bota-ortopedica-longa-e-curta.jpg",
     "descricao": "Bota Ortopedica Cano Longo e Curto",
-  
     "estoque": 10
   },
   {
